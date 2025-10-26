@@ -8,6 +8,7 @@ import cv2
 import matplotlib.pyplot as plt
 import os
 import sys
+import glob
 from PIL import Image
 
 # Get model name and detection type from command line arguments
@@ -65,6 +66,29 @@ for epoch in range(10):
 model_filename = f"model_{model_name.upper()}_{detection_type}.pth"
 torch.save(model.state_dict(), model_filename)
 print(f"Model saved to {model_filename}")
+
+# Delete old images and masks after saving the model
+print("Cleaning up old training images...")
+import glob
+import shutil
+
+# Delete all images and masks used for training
+img_files = glob.glob(f"{img_folder}/image_*.png")
+mask_files = glob.glob(f"{mask_folder}/image_*.png")
+
+for file in img_files:
+    try:
+        os.remove(file)
+    except Exception as e:
+        print(f"Error deleting {file}: {e}")
+
+for file in mask_files:
+    try:
+        os.remove(file)
+    except Exception as e:
+        print(f"Error deleting {file}: {e}")
+
+print(f"Deleted {len(img_files)} images and {len(mask_files)} masks")
 
 # Predict and draw on sample
 model.eval()
