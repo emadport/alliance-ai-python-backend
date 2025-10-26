@@ -9,9 +9,17 @@ import numpy as np
 import io
 import base64
 import os
+from datetime import datetime
 from unet import UNet
+from motor.motor_asyncio import AsyncIOMotorClient
+from pymongo import MongoClient
 
 app = FastAPI()
+
+# MongoDB connection
+MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://emadaskari_db_user:kLnkczzLG9QpgXn6@cluster0.mongodb.net/emadaskari_db?retryWrites=true&w=majority")
+mongo_client = MongoClient(MONGO_URI)
+db = mongo_client.emadaskari_db
 
 # Enable CORS
 app.add_middleware(
@@ -82,7 +90,16 @@ if __name__ == "__main__":
 
 @app.get("/health")
 def health_check():
-    return {"status": "ok"}
+    return {"status": "ok", "mongodb": "connected"}
+
+@app.get("/datasets")
+def get_datasets():
+    """Get all saved datasets"""
+    try:
+        datasets = list(db.datasets.find({}, {"_id": 0}).sort("created_at", -1))
+        return {"success": True, "datasets": datasets}
+    except Exception as e:
+        return {"success": False, "error": str(e)}
 
 @app.post("/train")
 async def train_model(request: Request):
@@ -160,6 +177,19 @@ async def save_mask(request: Request, original: UploadFile = File(None), mask: U
         mask_contents = await mask.read()
         with open(f"{mask_folder}/{filename}.png", "wb") as f:
             f.write(mask_contents)
+        
+        # Save to MongoDB
+        try:
+            dataset_doc = {
+                "model": model_name.upper(),
+                "detection_type": detection_type,
+                "image_filename": f"{filename}.png",
+                "created_at": datetime.now(),
+                "folders": {"images": img_folder, "masks": mask_folder}
+            }
+            db.datasets.insert_one(dataset_doc)
+        except Exception as e:
+            print(f"MongoDB error: {e}")
         
         return {
             "success": True,

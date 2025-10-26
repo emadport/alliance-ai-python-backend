@@ -6,3 +6,5 @@ torchvision
 opencv-python-headless
 numpy
 gradio
+pymongo
+motor
