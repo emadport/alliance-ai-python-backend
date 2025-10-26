@@ -75,6 +75,11 @@ def mask_to_base64(pred_mask, orig_image):
     
     return img_base64
 
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
+
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
