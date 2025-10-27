@@ -107,7 +107,7 @@ def health_check():
 def get_datasets():
     """Get all saved datasets"""
     try:
-        datasets = list(db.datasets.find({}, {"_id": 0}).sort("created_at", -1))
+        datasets = list(get_db().datasets.find({}, {"_id": 0}).sort("created_at", -1))
         return {"success": True, "datasets": datasets}
     except Exception as e:
         return {"success": False, "error": str(e)}
@@ -198,7 +198,7 @@ async def save_mask(request: Request, original: UploadFile = File(None), mask: U
                 "created_at": datetime.now(),
                 "folders": {"images": img_folder, "masks": mask_folder}
             }
-            db.datasets.insert_one(dataset_doc)
+            get_db().datasets.insert_one(dataset_doc)
         except Exception as e:
             print(f"MongoDB error: {e}")
         
