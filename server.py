@@ -16,10 +16,17 @@ from pymongo import MongoClient
 
 app = FastAPI()
 
-# MongoDB connection
+# MongoDB connection - lazy init
 MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://emadaskari_db_user:kLnkczzLG9QpgXn6@cluster0.mongodb.net/emadaskari_db?retryWrites=true&w=majority")
-mongo_client = MongoClient(MONGO_URI)
-db = mongo_client.emadaskari_db
+mongo_client = None
+db = None
+
+def get_db():
+    global mongo_client, db
+    if db is None:
+        mongo_client = MongoClient(MONGO_URI)
+        db = mongo_client.emadaskari_db
+    return db
 
 # Enable CORS
 app.add_middleware(
@@ -90,7 +97,11 @@ if __name__ == "__main__":
 
 @app.get("/health")
 def health_check():
-    return {"status": "ok", "mongodb": "connected"}
+    try:
+        get_db()
+        return {"status": "ok", "mongodb": "connected"}
+    except:
+        return {"status": "ok", "mongodb": "not connected"}
 
 @app.get("/datasets")
 def get_datasets():
