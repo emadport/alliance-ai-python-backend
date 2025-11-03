@@ -3,7 +3,7 @@ from torch import nn, optim
 from torchvision import transforms
 from torch.utils.data import DataLoader
 from unet import UNet
-from utils import HaircutDataset, draw_haircut_line
+from utils import LineDetectionDataset, draw_line_detection
 import cv2
 import matplotlib.pyplot as plt
 import os
@@ -15,7 +15,7 @@ from huggingface_hub import hf_hub_download
 
 # Get model name and detection type from command line arguments
 model_name = sys.argv[1] if len(sys.argv) > 1 else "unet"
-detection_type = sys.argv[2] if len(sys.argv) > 2 else "haircut"
+detection_type = sys.argv[2] if len(sys.argv) > 2 else "line_detection"
 
 # Determine folders based on model and detection type
 # Format: images_UNET_haircut, masks_UNET_haircut
@@ -32,7 +32,7 @@ transform = transforms.Compose([
     transforms.ToTensor()
 ])
 
-dataset = HaircutDataset(img_folder, mask_folder, transform=transform)
+dataset = LineDetectionDataset(img_folder, mask_folder, transform=transform)
 dataloader = DataLoader(dataset, batch_size=4, shuffle=True)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -88,7 +88,7 @@ if len(dataset) > 0:
     orig = cv2.imread(f"{img_folder}/image_0001.png")
     if orig is not None:
         orig = cv2.resize(orig, (256, 256))
-        result = draw_haircut_line(pred_mask, orig)
+        result = draw_line_detection(pred_mask, orig)
         cv2.imwrite(f"output_with_line_{detection_type}.jpg", result)
         print(f"Output saved to output_with_line_{detection_type}.jpg")
 

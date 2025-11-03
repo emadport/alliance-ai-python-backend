@@ -51,7 +51,7 @@ model = UNet().to(device)
 
 # Try to load trained weights if available
 try:
-    model.load_state_dict(torch.load("model_UNET_haircut.pth", map_location=device))
+    model.load_state_dict(torch.load("model_UNET_line_detection.pth", map_location=device))
     model.eval()
     print("Model loaded successfully")
 except Exception as e:
@@ -148,7 +148,7 @@ async def train_model(request: Request):
         
         # Get model and detection type from query parameters
         model_name = request.query_params.get("model", "unet")
-        detection_type = request.query_params.get("type", "haircut")
+        detection_type = request.query_params.get("type", "line_detection")
         
         # Change to the correct directory
         os.chdir(os.path.dirname(__file__))
@@ -184,7 +184,7 @@ async def get_training_status(request: Request):
         
         # Get model and detection type from query parameters
         model_name = request.query_params.get("model", "unet")
-        detection_type = request.query_params.get("type", "haircut")
+        detection_type = request.query_params.get("type", "line_detection")
         
         log_file = f"training_{model_name}_{detection_type}.log"
         
@@ -253,7 +253,7 @@ async def save_mask(request: Request, original: UploadFile = File(None), mask: U
         
         # Get model and detection type from query parameters
         model_name = request.query_params.get("model", "unet")
-        detection_type = request.query_params.get("type", "haircut")
+        detection_type = request.query_params.get("type", "line_detection")
         
         # Determine folders based on model and detection type
         # Format: images_UNET_haircut, masks_UNET_haircut
@@ -285,6 +285,13 @@ async def save_mask(request: Request, original: UploadFile = File(None), mask: U
             orig_contents = await original.read()
             orig_image = Image.open(io.BytesIO(orig_contents))
             
+            # Fix EXIF orientation (critical for phone photos!)
+            try:
+                from PIL import ImageOps
+                orig_image = ImageOps.exif_transpose(orig_image)
+            except Exception as e:
+                print(f"Could not fix EXIF orientation: {e}")
+            
             # Resize to target size for training
             orig_image = orig_image.resize(TARGET_SIZE, Image.Resampling.LANCZOS)
             
@@ -295,6 +302,9 @@ async def save_mask(request: Request, original: UploadFile = File(None), mask: U
                     orig_image = orig_image.convert('RGBA')
                 rgb_image.paste(orig_image, mask=orig_image.split()[-1] if orig_image.mode in ('RGBA', 'LA') else None)
                 orig_image = rgb_image
+            elif orig_image.mode != 'RGB':
+                # Handle any other non-RGB modes
+                orig_image = orig_image.convert('RGB')
             
             # Save as optimized PNG
             orig_image.save(f"{img_folder}/{filename}.png", "PNG", optimize=True)
@@ -339,9 +349,22 @@ async def save_mask(request: Request, original: UploadFile = File(None), mask: U
             "message": f"Mask and image saved (resized to {TARGET_SIZE[0]}x{TARGET_SIZE[1]} and optimized)"
         }
     except Exception as e:
+        import traceback
+        error_details = traceback.format_exc()
+        print(f"Error in save_mask: {error_details}")
+        
+        # Provide helpful error messages
+        error_msg = str(e)
+        if "cannot identify image file" in error_msg.lower():
+            error_msg = "Unsupported image format. Please use JPG, PNG, or convert HEIC to JPG first."
+        elif "decoder" in error_msg.lower():
+            error_msg = "Image format error. Try converting your photo to JPG before uploading."
+        elif "memory" in error_msg.lower():
+            error_msg = "Image too large. Please use a smaller photo."
+        
         return {
             "success": False,
-            "error": str(e)
+            "error": error_msg
         }
 
 @app.post("/predict")
@@ -350,7 +373,7 @@ async def predict(request: Request, file: UploadFile = File(...)):
     try:
         # Get model and detection type from query parameters
         model_name = request.query_params.get("model", "unet")
-        detection_type = request.query_params.get("type", "haircut")
+        detection_type = request.query_params.get("type", "line_detection")
         
         # Load the correct model
         model_filename = f"model_{model_name.upper()}_{detection_type}.pth"
@@ -403,6 +426,20 @@ async def segment_parking(file: UploadFile = File(...)):
         
         # Read image
         contents = await file.read()
+        
+        # Fix EXIF orientation for phone photos before processing
+        try:
+            from PIL import ImageOps
+            image = Image.open(io.BytesIO(contents))
+            image = ImageOps.exif_transpose(image)
+            
+            # Convert back to bytes
+            img_byte_arr = io.BytesIO()
+            image.save(img_byte_arr, format='JPEG', quality=95)
+            contents = img_byte_arr.getvalue()
+        except Exception as e:
+            print(f"Could not fix EXIF orientation for parking: {e}")
+            # Continue with original image
         
         # Process with parking segmenter
         result = parking_segmenter.process_image_bytes(contents)

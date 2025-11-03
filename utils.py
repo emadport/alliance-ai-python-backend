@@ -5,7 +5,7 @@ from torch.utils.data import Dataset
 from PIL import Image
 import os
 
-class HaircutDataset(Dataset):
+class LineDetectionDataset(Dataset):
     def __init__(self, image_dir, mask_dir, transform=None):
         self.image_dir = image_dir
         self.mask_dir = mask_dir
@@ -36,7 +36,7 @@ class HaircutDataset(Dataset):
         return image, mask
 
 
-def draw_haircut_line(pred_mask, original_image):
+def draw_line_detection(pred_mask, original_image):
     """
     pred_mask: tensor or numpy array of shape (1, H, W) or (H, W)
     original_image: OpenCV image (BGR format)
