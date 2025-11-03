@@ -75,7 +75,7 @@ if len(dataset) > 0:
         pred_mask = model(sample_img.unsqueeze(0).to(device))
     
     # Draw line
-    orig = cv2.imread(f"{img_folder}/image_001.png")
+    orig = cv2.imread(f"{img_folder}/image_0001.png")
     if orig is not None:
         orig = cv2.resize(orig, (256, 256))
         result = draw_haircut_line(pred_mask, orig)

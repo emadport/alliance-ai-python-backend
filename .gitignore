@@ -1,0 +1,27 @@
+# Model files (too large for Git)
+*.pth
+*.pt
+*.ckpt
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Logs
+*.log
+training_*.log
+
+# OS files
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

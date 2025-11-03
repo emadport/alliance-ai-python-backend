@@ -13,7 +13,15 @@ from datetime import datetime
 from unet import UNet
 from motor.motor_asyncio import AsyncIOMotorClient
 from pymongo import MongoClient
-#Test
+
+# Try to import parking segmenter
+try:
+    from parking_segmenter import ParkingSegmenter
+    PARKING_AVAILABLE = True
+except ImportError:
+    PARKING_AVAILABLE = False
+    print("Warning: Parking segmenter not available")
+
 app = FastAPI()
 
 # MongoDB connection - lazy init
@@ -43,11 +51,21 @@ model = UNet().to(device)
 
 # Try to load trained weights if available
 try:
-    model.load_state_dict(torch.load("haircut_line_model.pth", map_location=device))
+    model.load_state_dict(torch.load("model_UNET_haircut.pth", map_location=device))
     model.eval()
     print("Model loaded successfully")
 except Exception as e:
     print(f"No pre-trained model found or error loading: {e}")
+
+# Initialize parking segmenter
+parking_segmenter = None
+if PARKING_AVAILABLE:
+    try:
+        parking_segmenter = ParkingSegmenter(checkpoint_path="sam_vit_h.pth")
+        print("Parking segmenter initialized successfully")
+    except Exception as e:
+        print(f"Could not initialize parking segmenter: {e}")
+        parking_segmenter = None
 
 # Image preprocessing
 transform = transforms.Compose([
@@ -90,11 +108,6 @@ def mask_to_base64(pred_mask, orig_image):
     
     return img_base64
 
-if __name__ == "__main__":
-    import uvicorn
-    port = int(os.getenv("PORT", 8000))
-    uvicorn.run(app, host="0.0.0.0", port=port)
-
 @app.get("/")
 def root():
     return {"message": "Alliance AI Python Backend", "status": "running"}
@@ -130,11 +143,15 @@ async def train_model(request: Request):
         # Change to the correct directory
         os.chdir(os.path.dirname(__file__))
         
-        # Run training with both model and detection type
+        # Create log file for training progress
+        log_file = f"training_{model_name}_{detection_type}.log"
+        
+        # Run training with both model and detection type, redirect output to log file
+        # Use -u flag for unbuffered output so logs appear immediately
         subprocess.Popen(
-            ["python3", "train.py", model_name, detection_type],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE
+            ["python3", "-u", "train.py", model_name, detection_type],
+            stdout=open(log_file, "w"),
+            stderr=subprocess.STDOUT
         )
         
         return {
@@ -142,6 +159,74 @@ async def train_model(request: Request):
             "message": f"Training started for {model_name.upper()} model ({detection_type} type) in background",
             "model": model_name,
             "type": detection_type
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+@app.get("/train/status")
+async def get_training_status(request: Request):
+    """Get training progress from log file"""
+    try:
+        import os
+        
+        # Get model and detection type from query parameters
+        model_name = request.query_params.get("model", "unet")
+        detection_type = request.query_params.get("type", "haircut")
+        
+        log_file = f"training_{model_name}_{detection_type}.log"
+        
+        if not os.path.exists(log_file):
+            return {
+                "success": True,
+                "status": "not_started",
+                "logs": []
+            }
+        
+        # Read last 50 lines of log file
+        with open(log_file, "r") as f:
+            lines = f.readlines()
+            recent_lines = lines[-50:] if len(lines) > 50 else lines
+            logs = [line.strip() for line in recent_lines if line.strip()]
+        
+        # Determine status based on log content
+        status = "running"
+        if logs:
+            last_line = logs[-1]
+            if "Training complete" in last_line or "complete" in last_line.lower():
+                status = "completed"
+                
+                # Delete training images and masks after successful training
+                import shutil
+                import glob
+                
+                img_folder = f"images_{model_name.upper()}_{detection_type}"
+                mask_folder = f"masks_{model_name.upper()}_{detection_type}"
+                
+                # Delete image folder
+                if os.path.exists(img_folder):
+                    shutil.rmtree(img_folder)
+                    print(f"Deleted training images: {img_folder}")
+                
+                # Delete mask folder
+                if os.path.exists(mask_folder):
+                    shutil.rmtree(mask_folder)
+                    print(f"Deleted training masks: {mask_folder}")
+                
+                # Also delete the log file
+                if os.path.exists(log_file):
+                    os.remove(log_file)
+                    print(f"Deleted training log: {log_file}")
+                    
+            elif "error" in last_line.lower() or "failed" in last_line.lower():
+                status = "error"
+        
+        return {
+            "success": True,
+            "status": status,
+            "logs": logs
         }
     except Exception as e:
         return {
@@ -259,4 +344,32 @@ async def predict(request: Request, file: UploadFile = File(...)):
             "success": False,
             "error": str(e)
         }
+
+@app.post("/parking/segment")
+async def segment_parking(file: UploadFile = File(...)):
+    """Segment parking areas using SAM"""
+    try:
+        if not parking_segmenter:
+            return {
+                "success": False,
+                "error": "Parking segmenter not available. Please install segment_anything and download SAM checkpoint."
+            }
+        
+        # Read image
+        contents = await file.read()
+        
+        # Process with parking segmenter
+        result = parking_segmenter.process_image_bytes(contents)
+        
+        return result
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
 

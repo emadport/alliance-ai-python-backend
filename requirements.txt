@@ -8,3 +8,4 @@ numpy
 gradio
 pymongo
 motor
+segment-anything
