@@ -7,6 +7,8 @@ from typing import List, Dict
 import io
 import base64
 from PIL import Image
+from huggingface_hub import hf_hub_download
+
 
 try:
     from segment_anything import SamPredictor, sam_model_registry
@@ -34,12 +36,20 @@ class ParkingSegmenter:
     def _load_model(self):
         """Load the SAM model"""
         try:
+            # Download checkpoint from Hugging Face if not already cached
+            self.checkpoint_path = hf_hub_download(
+                repo_id="Emad-askari/alliance-ai-models",
+                filename="sam_vit_h.pth"
+            )
+            
+            # Load SAM model using the downloaded checkpoint
             self.model = sam_model_registry["vit_h"](checkpoint=self.checkpoint_path)
             self.predictor = SamPredictor(self.model)
             print("SAM model loaded successfully")
+            
         except Exception as e:
             print(f"Error loading SAM model: {e}")
-            print("Make sure you have downloaded sam_vit_h.pth checkpoint file")
+            print("Make sure the checkpoint file is accessible")
             raise
     
     def segment_parking_areas(self, image: np.ndarray) -> Dict:

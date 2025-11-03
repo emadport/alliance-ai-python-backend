@@ -10,6 +10,8 @@ import os
 import sys
 import glob
 from PIL import Image
+from huggingface_hub import hf_hub_download
+
 
 # Get model name and detection type from command line arguments
 model_name = sys.argv[1] if len(sys.argv) > 1 else "unet"
@@ -36,12 +38,20 @@ dataloader = DataLoader(dataset, batch_size=4, shuffle=True)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = UNet().to(device)
 
-# Load previously trained weights if they exist
+# Build the filename as before
 model_filename = f"model_{model_name.upper()}_{detection_type}.pth"
-if os.path.exists(model_filename):
-    print(f"Loading pre-trained model from {model_filename}...")
-    model.load_state_dict(torch.load(model_filename))
 
+# Download from Hugging Face if the file doesn't exist locally
+if not os.path.exists(model_filename):
+    print(f"Downloading {model_filename} from Hugging Face...")
+    model_filename = hf_hub_download(
+        repo_id="Emad-askari/alliance-ai-models",
+        filename=model_filename
+    )
+
+# Load the model weights
+print(f"Loading pre-trained model from {model_filename}...")
+model.load_state_dict(torch.load(model_filename, map_location="cpu"))
 criterion = nn.BCELoss()
 optimizer = optim.Adam(model.parameters(), lr=1e-4)
 
