@@ -57,15 +57,25 @@ try:
 except Exception as e:
     print(f"No pre-trained model found or error loading: {e}")
 
-# Initialize parking segmenter
+# Initialize parking segmenter (only if explicitly enabled)
+# SAM model is ~2.5GB and requires significant RAM
+# Set ENABLE_PARKING_SEGMENTER=true in environment to enable
 parking_segmenter = None
-if PARKING_AVAILABLE:
+ENABLE_PARKING = os.getenv("ENABLE_PARKING_SEGMENTER", "false").lower() == "true"
+
+if PARKING_AVAILABLE and ENABLE_PARKING:
     try:
+        print("Initializing parking segmenter (this may take a while and requires ~3GB RAM)...")
         parking_segmenter = ParkingSegmenter(checkpoint_path="sam_vit_h.pth")
         print("Parking segmenter initialized successfully")
     except Exception as e:
         print(f"Could not initialize parking segmenter: {e}")
         parking_segmenter = None
+else:
+    if not PARKING_AVAILABLE:
+        print("Parking segmenter not available (segment_anything not installed)")
+    elif not ENABLE_PARKING:
+        print("Parking segmenter disabled (set ENABLE_PARKING_SEGMENTER=true to enable)")
 
 # Image preprocessing
 transform = transforms.Compose([
@@ -236,7 +246,7 @@ async def get_training_status(request: Request):
 
 @app.post("/save_mask")
 async def save_mask(request: Request, original: UploadFile = File(None), mask: UploadFile = File(...)):
-    """Save mask and original image to disk"""
+    """Save mask and original image to disk with compression"""
     try:
         import os
         import glob
@@ -267,16 +277,44 @@ async def save_mask(request: Request, original: UploadFile = File(None), mask: U
         img_num = max(numbers) + 1 if numbers else 1
         filename = f"image_{img_num:04d}"
         
-        # Save original image if provided
+        # Training image size (consistent size for model)
+        TARGET_SIZE = (256, 256)
+        
+        # Save original image if provided with compression
         if original:
             orig_contents = await original.read()
-            with open(f"{img_folder}/{filename}.png", "wb") as f:
-                f.write(orig_contents)
+            orig_image = Image.open(io.BytesIO(orig_contents))
+            
+            # Resize to target size for training
+            orig_image = orig_image.resize(TARGET_SIZE, Image.Resampling.LANCZOS)
+            
+            # Convert to RGB if needed (remove alpha channel)
+            if orig_image.mode in ('RGBA', 'LA', 'P'):
+                rgb_image = Image.new('RGB', orig_image.size, (255, 255, 255))
+                if orig_image.mode == 'P':
+                    orig_image = orig_image.convert('RGBA')
+                rgb_image.paste(orig_image, mask=orig_image.split()[-1] if orig_image.mode in ('RGBA', 'LA') else None)
+                orig_image = rgb_image
+            
+            # Save as optimized PNG
+            orig_image.save(f"{img_folder}/{filename}.png", "PNG", optimize=True)
         
-        # Save mask
+        # Save mask with compression (binary black and white only)
         mask_contents = await mask.read()
-        with open(f"{mask_folder}/{filename}.png", "wb") as f:
-            f.write(mask_contents)
+        mask_image = Image.open(io.BytesIO(mask_contents))
+        
+        # Resize mask to same target size
+        mask_image = mask_image.resize(TARGET_SIZE, Image.Resampling.NEAREST)  # NEAREST for binary masks
+        
+        # Convert to binary (black and white only) for smaller file size
+        mask_image = mask_image.convert('L')  # Convert to grayscale
+        mask_array = np.array(mask_image)
+        # Threshold to pure black (0) and white (255)
+        mask_array = ((mask_array > 127) * 255).astype(np.uint8)
+        mask_image = Image.fromarray(mask_array, mode='L')
+        
+        # Save as optimized PNG
+        mask_image.save(f"{mask_folder}/{filename}.png", "PNG", optimize=True)
         
         # Save to MongoDB
         try:
@@ -297,7 +335,8 @@ async def save_mask(request: Request, original: UploadFile = File(None), mask: U
             "model": model_name,
             "type": detection_type,
             "folders": {"images": img_folder, "masks": mask_folder},
-            "message": f"Mask and image saved to {img_folder} and {mask_folder}"
+            "image_size": f"{TARGET_SIZE[0]}x{TARGET_SIZE[1]}",
+            "message": f"Mask and image saved (resized to {TARGET_SIZE[0]}x{TARGET_SIZE[1]} and optimized)"
         }
     except Exception as e:
         return {
@@ -350,9 +389,16 @@ async def segment_parking(file: UploadFile = File(...)):
     """Segment parking areas using SAM"""
     try:
         if not parking_segmenter:
+            error_msg = "Parking segmenter not available. "
+            if not PARKING_AVAILABLE:
+                error_msg += "The segment_anything package is not installed. "
+            elif not ENABLE_PARKING:
+                error_msg += "The feature is disabled on this server (requires 3GB+ RAM). "
+            error_msg += "This feature requires significant resources and is disabled on free hosting tiers."
+            
             return {
                 "success": False,
-                "error": "Parking segmenter not available. Please install segment_anything and download SAM checkpoint."
+                "error": error_msg
             }
         
         # Read image

@@ -1,3 +1,10 @@
+# For local development with all features, use:
+# pip install -r requirements-dev.txt
+
+# For production deployment (lightweight, 512MB RAM), use:
+# pip install -r requirements-production.txt
+
+# This file includes everything for backward compatibility
 fastapi
 uvicorn[standard]
 pillow

@@ -2,12 +2,15 @@ services:
   - type: web
     name: alliance-ai-python-backend
     env: docker
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install -r requirements-production.txt
     startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    plan: starter  # Free tier with 512MB RAM (parking segmentation disabled)
     envVars:
       - key: PORT
         value: 10000
       - key: MONGO_URI
         sync: false
+      - key: ENABLE_PARKING_SEGMENTER
+        value: false  # Requires 4GB+ RAM, disabled on free tier
     dockerfilePath: ./Dockerfile
 

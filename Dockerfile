@@ -9,19 +9,22 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements first for better caching
-COPY requirements.txt .
+COPY requirements*.txt ./
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# Install Python dependencies (use production by default for lightweight deployment)
+ARG REQUIREMENTS_FILE=requirements-production.txt
+RUN pip install --no-cache-dir -r ${REQUIREMENTS_FILE}
 
 # Copy application code
 COPY . .
 
-# Download SAM checkpoint if not exists (large file, download during build)
-RUN if [ ! -f "sam_vit_h.pth" ]; then \
-    echo "Downloading SAM checkpoint (2.4GB)..."; \
-    wget -q https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth -O sam_vit_h.pth; \
-    fi
+# Note: SAM checkpoint download is DISABLED by default to save memory
+# The 2.4GB model requires 3GB+ RAM to run
+# Only download if ENABLE_PARKING_SEGMENTER=true is set
+# RUN if [ ! -f "sam_vit_h.pth" ]; then \
+#     echo "Downloading SAM checkpoint (2.4GB)..."; \
+#     wget -q https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth -O sam_vit_h.pth; \
+#     fi
 
 # Expose port
 EXPOSE ${PORT:-10000}

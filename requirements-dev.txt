@@ -1,0 +1,12 @@
+# Development requirements (includes all features)
+# Use this for local development with full features
+
+-r requirements-production.txt
+
+# Additional packages for development
+gradio
+segment-anything
+
+# These are only needed if you want to use the parking segmentation feature
+# which requires downloading a 2.4GB model and ~3GB RAM to run
+

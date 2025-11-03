@@ -1,0 +1,16 @@
+# Production requirements (lightweight, works on 512MB RAM)
+fastapi
+uvicorn[standard]
+pillow
+torch
+torchvision
+opencv-python-headless
+numpy
+pymongo
+motor
+
+# Note: segment-anything and gradio are excluded for production
+# They require significant RAM and are only needed for local development
+# If you need parking segmentation, upgrade to a plan with 4GB+ RAM
+# and use requirements.txt instead
+
