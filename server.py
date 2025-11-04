@@ -18,9 +18,12 @@ from pymongo import MongoClient
 try:
     from parking_segmenter import ParkingSegmenter
     PARKING_AVAILABLE = True
-except ImportError:
+except ImportError as e:
     PARKING_AVAILABLE = False
-    print("Warning: Parking segmenter not available")
+    print(f"Warning: segment_anything not installed - parking segmentation disabled")
+except Exception as e:
+    PARKING_AVAILABLE = False
+    print(f"Warning: Could not import parking_segmenter: {e}")
 
 app = FastAPI()
 
@@ -46,16 +49,23 @@ app.add_middleware(
 )
 
 # Load model
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = UNet().to(device)
-
-# Try to load trained weights if available
 try:
-    model.load_state_dict(torch.load("model_UNET_line_detection.pth", map_location=device))
-    model.eval()
-    print("Model loaded successfully")
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model = UNet().to(device)
+    print(f"Using device: {device}")
+
+    # Try to load trained weights if available
+    try:
+        model.load_state_dict(torch.load("model_UNET_line_detection.pth", map_location=device))
+        model.eval()
+        print("Model loaded successfully")
+    except Exception as e:
+        print(f"No pre-trained model found or error loading: {e}")
 except Exception as e:
-    print(f"No pre-trained model found or error loading: {e}")
+    print(f"Error initializing UNet model: {e}")
+    # Create dummy model to prevent crashes
+    device = torch.device("cpu")
+    model = None
 
 # Initialize parking segmenter (only if explicitly enabled)
 # SAM model is ~2.5GB and requires significant RAM

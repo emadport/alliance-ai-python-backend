@@ -1,6 +1,7 @@
 # Production requirements (lightweight, works on 512MB RAM)
 fastapi
 uvicorn[standard]
+python-multipart
 pillow
 torch
 torchvision
