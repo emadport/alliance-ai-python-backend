@@ -28,6 +28,8 @@ class AutoTrainer:
         self.training_log = []
     
     def search_urls_for_topic(self, topic: str, count: int = 5) -> List[str]:
+        topic_encoded = topic.replace(' ', '+')
+        topic_slug = topic.replace(' ', '-').lower()
         """
         Generate search URLs for a topic
         
@@ -39,12 +41,14 @@ class AutoTrainer:
             List of URLs to scrape
         """
         urls = [
-            f"https://en.wikipedia.org/wiki/{topic.replace(' ', '_')}",
-            f"https://www.youtube.com/results?search_query={topic}",
-            f"https://www.coursera.org/search?query={topic}",
-            f"https://www.udemy.com/courses/search/?q={topic}",
-            f"https://www.kaggle.com/search?q={topic}",
-        ]
+                f"https://en.wikipedia.org/wiki/{topic.replace(' ', '_')}",
+                f"https://www.coursera.org/search?query={topic_encoded}",
+                f"https://www.kaggle.com/search?q={topic_encoded}",
+                f"https://towardsdatascience.com/tagged/{topic_slug}",
+                f"https://www.datacamp.com/blog/how-to-learn-{topic_slug}",
+                f"https://roadmap.sh/{topic_slug}",
+                f"https://www.analyticsvidhya.com/blog/tag/{topic_slug}"
+            ]
         
         return urls[:count]
     
