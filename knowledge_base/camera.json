@@ -1,0 +1,7899 @@
+{
+  "url": "topic:camera",
+  "timestamp": "2025-11-08T18:55:14.205049",
+  "text_length": 60548,
+  "word_count": 8747,
+  "entities": [
+    {
+      "text": "Camera - Wikipedia Jump",
+      "label": "ORG",
+      "start": 0,
+      "end": 23
+    },
+    {
+      "text": "Navigation Main",
+      "label": "ORG",
+      "start": 76,
+      "end": 91
+    },
+    {
+      "text": "Search Search Appearance Donate Create",
+      "label": "ORG",
+      "start": 241,
+      "end": 279
+    },
+    {
+      "text": "Contents",
+      "label": "ORG",
+      "start": 339,
+      "end": 347
+    },
+    {
+      "text": "1",
+      "label": "CARDINAL",
+      "start": 375,
+      "end": 376
+    },
+    {
+      "text": "1.1 19th century",
+      "label": "DATE",
+      "start": 411,
+      "end": 427
+    },
+    {
+      "text": "1.2 20th century",
+      "label": "DATE",
+      "start": 428,
+      "end": 444
+    },
+    {
+      "text": "1.3 21st century",
+      "label": "DATE",
+      "start": 445,
+      "end": 461
+    },
+    {
+      "text": "Mechanics Toggle Mechanics",
+      "label": "ORG",
+      "start": 464,
+      "end": 490
+    },
+    {
+      "text": "2.1",
+      "label": "CARDINAL",
+      "start": 502,
+      "end": 505
+    },
+    {
+      "text": "2.1.1",
+      "label": "CARDINAL",
+      "start": 523,
+      "end": 528
+    },
+    {
+      "text": "2.1.3 Light",
+      "label": "QUANTITY",
+      "start": 552,
+      "end": 563
+    },
+    {
+      "text": "2.2 Lens",
+      "label": "PERSON",
+      "start": 570,
+      "end": 578
+    },
+    {
+      "text": "2.3",
+      "label": "CARDINAL",
+      "start": 579,
+      "end": 582
+    },
+    {
+      "text": "2.5",
+      "label": "CARDINAL",
+      "start": 614,
+      "end": 617
+    },
+    {
+      "text": "2.5.1",
+      "label": "CARDINAL",
+      "start": 637,
+      "end": 642
+    },
+    {
+      "text": "Flash 2.5.2",
+      "label": "WORK_OF_ART",
+      "start": 643,
+      "end": 654
+    },
+    {
+      "text": "3",
+      "label": "CARDINAL",
+      "start": 673,
+      "end": 674
+    },
+    {
+      "text": "Primary",
+      "label": "PERSON",
+      "start": 675,
+      "end": 682
+    },
+    {
+      "text": "Toggle Primary",
+      "label": "ORG",
+      "start": 689,
+      "end": 703
+    },
+    {
+      "text": "3.1",
+      "label": "CARDINAL",
+      "start": 721,
+      "end": 724
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 745,
+      "end": 748
+    },
+    {
+      "text": "3.2",
+      "label": "CARDINAL",
+      "start": 757,
+      "end": 760
+    },
+    {
+      "text": "3.2.1",
+      "label": "CARDINAL",
+      "start": 781,
+      "end": 786
+    },
+    {
+      "text": "3.3",
+      "label": "CARDINAL",
+      "start": 800,
+      "end": 803
+    },
+    {
+      "text": "3.3.1",
+      "label": "CARDINAL",
+      "start": 825,
+      "end": 830
+    },
+    {
+      "text": "3.4",
+      "label": "CARDINAL",
+      "start": 855,
+      "end": 858
+    },
+    {
+      "text": "3.4.1",
+      "label": "CARDINAL",
+      "start": 875,
+      "end": 880
+    },
+    {
+      "text": "3.4.2",
+      "label": "CARDINAL",
+      "start": 896,
+      "end": 901
+    },
+    {
+      "text": "3.4.3 Folding",
+      "label": "PRODUCT",
+      "start": 922,
+      "end": 935
+    },
+    {
+      "text": "3.4.4",
+      "label": "CARDINAL",
+      "start": 943,
+      "end": 948
+    },
+    {
+      "text": "3.5",
+      "label": "CARDINAL",
+      "start": 960,
+      "end": 963
+    },
+    {
+      "text": "Rangefinder",
+      "label": "PRODUCT",
+      "start": 964,
+      "end": 975
+    },
+    {
+      "text": "3.6.2",
+      "label": "CARDINAL",
+      "start": 1042,
+      "end": 1047
+    },
+    {
+      "text": "Camcorders 3.7 Digital",
+      "label": "PRODUCT",
+      "start": 1048,
+      "end": 1070
+    },
+    {
+      "text": "5",
+      "label": "CARDINAL",
+      "start": 1108,
+      "end": 1109
+    },
+    {
+      "text": "8",
+      "label": "CARDINAL",
+      "start": 1151,
+      "end": 1152
+    },
+    {
+      "text": "Toggle",
+      "label": "ORG",
+      "start": 1168,
+      "end": 1174
+    },
+    {
+      "text": "106",
+      "label": "CARDINAL",
+      "start": 1204,
+      "end": 1207
+    },
+    {
+      "text": "Afrikaans\u00c6nglisc\u0627\u0644\u0639\u0631\u0628\u064a\u0629\u062a\u06c6\u0631\u06a9\u062c\u0647\u09ac\u09be\u0982\u09b2\u09be\u95a9\u5357\u8a9e",
+      "label": "GPE",
+      "start": 1218,
+      "end": 1255
+    },
+    {
+      "text": "Franca NovaMagyar\u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438Malagasy\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02\u092e\u0930\u093e\u0920\u0940\u10db\u10d0\u10e0\u10d2\u10d0\u10da\u10e3\u10e0\u10d8Bahasa Melayu\u95a9\u6771\u8a9e / M\u00ecng-d\u0115\u0324ng-ng\u1e73\u0304\u1019\u103c\u1014\u103a\u1019\u102c\u1018\u102c\u101e\u102cNa Vosa VakavitiNederlandsNedersaksies\u0928\u0947\u092a\u093e\u0932\u0940\u65e5\u672c\u8a9eNordfriiskNorsk bokm\u00e5l\u0b13\u0b21\u0b3c\u0b3f\u0b06Oromoo\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40\u067e\u0646\u062c\u0627\u0628\u06cc\u067e\u069a\u062a\u0648Patois\u1797\u17b6\u179f\u17b6\u1781\u17d2\u1798\u17c2\u179aPolskiPortugu\u00easRuna Simi\u0420\u0443\u0441\u0441\u043a\u0438\u0439\u0938\u0902\u0938\u094d\u0915\u0943\u0924\u092e\u094dS\u00e4ng\u00f6\u1c65\u1c5f\u1c71\u1c5b\u1c5f\u1c72\u1c64Sesotho",
+      "label": "ORG",
+      "start": 1555,
+      "end": 1824
+    },
+    {
+      "text": "English",
+      "label": "LANGUAGE",
+      "start": 2064,
+      "end": 2071
+    },
+    {
+      "text": "Tools Tools",
+      "label": "PERSON",
+      "start": 2093,
+      "end": 2104
+    },
+    {
+      "text": "URLDownload",
+      "label": "ORG",
+      "start": 2262,
+      "end": 2273
+    },
+    {
+      "text": "Download",
+      "label": "GPE",
+      "start": 2295,
+      "end": 2303
+    },
+    {
+      "text": "PDFPrintable",
+      "label": "ORG",
+      "start": 2307,
+      "end": 2319
+    },
+    {
+      "text": "Wikimedia CommonsWikidata",
+      "label": "ORG",
+      "start": 2346,
+      "end": 2371
+    },
+    {
+      "text": "Appearance",
+      "label": "PERSON",
+      "start": 2377,
+      "end": 2387
+    },
+    {
+      "text": "Checked From Wikipedia",
+      "label": "WORK_OF_ART",
+      "start": 2409,
+      "end": 2431
+    },
+    {
+      "text": "Page",
+      "label": "PERSON",
+      "start": 2455,
+      "end": 2459
+    },
+    {
+      "text": "3 November 2025",
+      "label": "DATE",
+      "start": 2564,
+      "end": 2579
+    },
+    {
+      "text": "Camera",
+      "label": "PERSON",
+      "start": 2637,
+      "end": 2643
+    },
+    {
+      "text": "Leica",
+      "label": "PERSON",
+      "start": 2662,
+      "end": 2667
+    },
+    {
+      "text": "500",
+      "label": "CARDINAL",
+      "start": 2694,
+      "end": 2697
+    },
+    {
+      "text": "Zeiss",
+      "label": "PERSON",
+      "start": 2707,
+      "end": 2712
+    },
+    {
+      "text": "the 19th century",
+      "label": "DATE",
+      "start": 3157,
+      "end": 3173
+    },
+    {
+      "text": "the 21st century",
+      "label": "DATE",
+      "start": 3276,
+      "end": 3292
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 3739,
+      "end": 3742
+    },
+    {
+      "text": "the late 20th and",
+      "label": "DATE",
+      "start": 4264,
+      "end": 4281
+    },
+    {
+      "text": "early 21st century",
+      "label": "DATE",
+      "start": 4282,
+      "end": 4300
+    },
+    {
+      "text": "the 21st century",
+      "label": "DATE",
+      "start": 4411,
+      "end": 4427
+    },
+    {
+      "text": "the camera 19th",
+      "label": "DATE",
+      "start": 4668,
+      "end": 4683
+    },
+    {
+      "text": "the 19th century",
+      "label": "DATE",
+      "start": 4829,
+      "end": 4845
+    },
+    {
+      "text": "Thomas Wedgwood",
+      "label": "PERSON",
+      "start": 4874,
+      "end": 4889
+    },
+    {
+      "text": "Henry Fox Talbot",
+      "label": "PERSON",
+      "start": 4913,
+      "end": 4929
+    },
+    {
+      "text": "First",
+      "label": "ORDINAL",
+      "start": 4931,
+      "end": 4936
+    },
+    {
+      "text": "1839",
+      "label": "DATE",
+      "start": 5179,
+      "end": 5183
+    },
+    {
+      "text": "the 1850s",
+      "label": "DATE",
+      "start": 5336,
+      "end": 5345
+    },
+    {
+      "text": "Kodak",
+      "label": "ORG",
+      "start": 5559,
+      "end": 5564
+    },
+    {
+      "text": "1888",
+      "label": "DATE",
+      "start": 5591,
+      "end": 5595
+    },
+    {
+      "text": "World War I",
+      "label": "EVENT",
+      "start": 5893,
+      "end": 5904
+    },
+    {
+      "text": "Germany",
+      "label": "GPE",
+      "start": 5906,
+      "end": 5913
+    },
+    {
+      "text": "Leica",
+      "label": "PERSON",
+      "start": 6083,
+      "end": 6088
+    },
+    {
+      "text": "Contax",
+      "label": "ORG",
+      "start": 6104,
+      "end": 6110
+    },
+    {
+      "text": "Eastman Kodak's",
+      "label": "ORG",
+      "start": 6268,
+      "end": 6283
+    },
+    {
+      "text": "first",
+      "label": "ORDINAL",
+      "start": 6302,
+      "end": 6307
+    },
+    {
+      "text": "16-mm",
+      "label": "QUANTITY",
+      "start": 6308,
+      "end": 6313
+    },
+    {
+      "text": "8-mm",
+      "label": "QUANTITY",
+      "start": 6318,
+      "end": 6322
+    },
+    {
+      "text": "The World War II",
+      "label": "EVENT",
+      "start": 6346,
+      "end": 6362
+    },
+    {
+      "text": "the second half of the century",
+      "label": "DATE",
+      "start": 6541,
+      "end": 6571
+    },
+    {
+      "text": "Japanese",
+      "label": "NORP",
+      "start": 6573,
+      "end": 6581
+    },
+    {
+      "text": "Ricohflex III TLR",
+      "label": "PERSON",
+      "start": 6678,
+      "end": 6695
+    },
+    {
+      "text": "1952",
+      "label": "DATE",
+      "start": 6699,
+      "end": 6703
+    },
+    {
+      "text": "first",
+      "label": "ORDINAL",
+      "start": 6711,
+      "end": 6716
+    },
+    {
+      "text": "35",
+      "label": "CARDINAL",
+      "start": 6717,
+      "end": 6719
+    },
+    {
+      "text": "the Olympus AutoEye",
+      "label": "ORG",
+      "start": 6751,
+      "end": 6770
+    },
+    {
+      "text": "1960",
+      "label": "DATE",
+      "start": 6774,
+      "end": 6778
+    },
+    {
+      "text": "the 1970s",
+      "label": "DATE",
+      "start": 6875,
+      "end": 6884
+    },
+    {
+      "text": "Polaroid",
+      "label": "ORG",
+      "start": 6909,
+      "end": 6917
+    },
+    {
+      "text": "SX-70 and Canon's",
+      "label": "ORG",
+      "start": 6920,
+      "end": 6937
+    },
+    {
+      "text": "AE-1",
+      "label": "ORG",
+      "start": 6938,
+      "end": 6942
+    },
+    {
+      "text": "the late 20th century",
+      "label": "DATE",
+      "start": 6985,
+      "end": 7006
+    },
+    {
+      "text": "the United States",
+      "label": "GPE",
+      "start": 7071,
+      "end": 7088
+    },
+    {
+      "text": "2003",
+      "label": "DATE",
+      "start": 7092,
+      "end": 7096
+    },
+    {
+      "text": "UK",
+      "label": "GPE",
+      "start": 7143,
+      "end": 7145
+    },
+    {
+      "text": "Western Europe",
+      "label": "LOC",
+      "start": 7147,
+      "end": 7161
+    },
+    {
+      "text": "USA",
+      "label": "GPE",
+      "start": 7171,
+      "end": 7174
+    },
+    {
+      "text": "USSR",
+      "label": "GPE",
+      "start": 7241,
+      "end": 7245
+    },
+    {
+      "text": "German Democratic Republic",
+      "label": "GPE",
+      "start": 7247,
+      "end": 7273
+    },
+    {
+      "text": "China",
+      "label": "GPE",
+      "start": 7279,
+      "end": 7284
+    },
+    {
+      "text": "Western",
+      "label": "NORP",
+      "start": 7302,
+      "end": 7309
+    },
+    {
+      "text": "The 21st century",
+      "label": "DATE",
+      "start": 7347,
+      "end": 7363
+    },
+    {
+      "text": "The century",
+      "label": "DATE",
+      "start": 7581,
+      "end": 7592
+    },
+    {
+      "text": "AI",
+      "label": "GPE",
+      "start": 7665,
+      "end": 7667
+    },
+    {
+      "text": "HDR",
+      "label": "ORG",
+      "start": 7722,
+      "end": 7725
+    },
+    {
+      "text": "DSLR",
+      "label": "ORG",
+      "start": 7903,
+      "end": 7907
+    },
+    {
+      "text": "1182\u20131183",
+      "label": "CARDINAL",
+      "start": 8333,
+      "end": 8342
+    },
+    {
+      "text": "Light",
+      "label": "WORK_OF_ART",
+      "start": 8639,
+      "end": 8644
+    },
+    {
+      "text": "1.4",
+      "label": "CARDINAL",
+      "start": 9326,
+      "end": 9329
+    },
+    {
+      "text": "2",
+      "label": "CARDINAL",
+      "start": 9331,
+      "end": 9332
+    },
+    {
+      "text": "2.8",
+      "label": "DATE",
+      "start": 9334,
+      "end": 9337
+    },
+    {
+      "text": "4",
+      "label": "DATE",
+      "start": 9339,
+      "end": 9340
+    },
+    {
+      "text": "5.6",
+      "label": "DATE",
+      "start": 9342,
+      "end": 9345
+    },
+    {
+      "text": "8",
+      "label": "DATE",
+      "start": 9347,
+      "end": 9348
+    },
+    {
+      "text": "11",
+      "label": "DATE",
+      "start": 9350,
+      "end": 9352
+    },
+    {
+      "text": "16",
+      "label": "DATE",
+      "start": 9354,
+      "end": 9356
+    },
+    {
+      "text": "22",
+      "label": "DATE",
+      "start": 9358,
+      "end": 9360
+    },
+    {
+      "text": "32.[15",
+      "label": "CARDINAL",
+      "start": 9366,
+      "end": 9372
+    },
+    {
+      "text": "image.[17",
+      "label": "NORP",
+      "start": 10152,
+      "end": 10161
+    },
+    {
+      "text": "Shutter",
+      "label": "PERSON",
+      "start": 10191,
+      "end": 10198
+    },
+    {
+      "text": "one",
+      "label": "CARDINAL",
+      "start": 10254,
+      "end": 10257
+    },
+    {
+      "text": "two",
+      "label": "CARDINAL",
+      "start": 10261,
+      "end": 10264
+    },
+    {
+      "text": "two",
+      "label": "CARDINAL",
+      "start": 10543,
+      "end": 10546
+    },
+    {
+      "text": "iris diaphragm",
+      "label": "PERSON",
+      "start": 10658,
+      "end": 10672
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 11245,
+      "end": 11248
+    },
+    {
+      "text": "one second",
+      "label": "TIME",
+      "start": 12098,
+      "end": 12108
+    },
+    {
+      "text": "1/1,000",
+      "label": "CARDINAL",
+      "start": 12112,
+      "end": 12119
+    },
+    {
+      "text": "second",
+      "label": "ORDINAL",
+      "start": 12125,
+      "end": 12131
+    },
+    {
+      "text": "several minutes",
+      "label": "TIME",
+      "start": 12244,
+      "end": 12259
+    },
+    {
+      "text": "two",
+      "label": "CARDINAL",
+      "start": 12790,
+      "end": 12793
+    },
+    {
+      "text": "two",
+      "label": "CARDINAL",
+      "start": 12799,
+      "end": 12802
+    },
+    {
+      "text": "EV",
+      "label": "ORG",
+      "start": 12842,
+      "end": 12844
+    },
+    {
+      "text": "one",
+      "label": "CARDINAL",
+      "start": 13031,
+      "end": 13034
+    },
+    {
+      "text": "one",
+      "label": "CARDINAL",
+      "start": 13083,
+      "end": 13086
+    },
+    {
+      "text": "Light",
+      "label": "WORK_OF_ART",
+      "start": 13168,
+      "end": 13173
+    },
+    {
+      "text": "ISO 100",
+      "label": "ORG",
+      "start": 13301,
+      "end": 13308
+    },
+    {
+      "text": "meter",
+      "label": "PERSON",
+      "start": 13475,
+      "end": 13480
+    },
+    {
+      "text": "meter.[c] Taken",
+      "label": "ORG",
+      "start": 13493,
+      "end": 13508
+    },
+    {
+      "text": "TTL",
+      "label": "ORG",
+      "start": 13534,
+      "end": 13537
+    },
+    {
+      "text": "18%",
+      "label": "PERCENT",
+      "start": 14003,
+      "end": 14006
+    },
+    {
+      "text": "Two",
+      "label": "CARDINAL",
+      "start": 15735,
+      "end": 15738
+    },
+    {
+      "text": "Autofocus",
+      "label": "ORG",
+      "start": 16385,
+      "end": 16394
+    },
+    {
+      "text": "Lens",
+      "label": "PERSON",
+      "start": 16874,
+      "end": 16878
+    },
+    {
+      "text": "two",
+      "label": "CARDINAL",
+      "start": 17355,
+      "end": 17358
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 17462,
+      "end": 17465
+    },
+    {
+      "text": "Specialized",
+      "label": "ORG",
+      "start": 17870,
+      "end": 17881
+    },
+    {
+      "text": "One",
+      "label": "CARDINAL",
+      "start": 18771,
+      "end": 18774
+    },
+    {
+      "text": "knob",
+      "label": "PERSON",
+      "start": 18923,
+      "end": 18927
+    },
+    {
+      "text": "Charge-Coupled Devices",
+      "label": "ORG",
+      "start": 19672,
+      "end": 19694
+    },
+    {
+      "text": "Complementary Metal-Oxide-Semiconductor",
+      "label": "ORG",
+      "start": 19705,
+      "end": 19744
+    },
+    {
+      "text": "CMOS",
+      "label": "ORG",
+      "start": 19746,
+      "end": 19750
+    },
+    {
+      "text": "CCD",
+      "label": "ORG",
+      "start": 19848,
+      "end": 19851
+    },
+    {
+      "text": "CMOS",
+      "label": "ORG",
+      "start": 19969,
+      "end": 19973
+    },
+    {
+      "text": "Digital",
+      "label": "ORG",
+      "start": 20139,
+      "end": 20146
+    },
+    {
+      "text": "Compact Flash, Memory Sticks",
+      "label": "ORG",
+      "start": 20347,
+      "end": 20375
+    },
+    {
+      "text": "Digital",
+      "label": "ORG",
+      "start": 20520,
+      "end": 20527
+    },
+    {
+      "text": "1/1,000",
+      "label": "CARDINAL",
+      "start": 21017,
+      "end": 21024
+    },
+    {
+      "text": "second",
+      "label": "ORDINAL",
+      "start": 21030,
+      "end": 21036
+    },
+    {
+      "text": "the flash.[21][16]",
+      "label": "ORG",
+      "start": 21444,
+      "end": 21462
+    },
+    {
+      "text": "Lens",
+      "label": "PERSON",
+      "start": 21824,
+      "end": 21828
+    },
+    {
+      "text": "Microscope",
+      "label": "PERSON",
+      "start": 22664,
+      "end": 22674
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 23695,
+      "end": 23698
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 23886,
+      "end": 23889
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 24203,
+      "end": 24206
+    },
+    {
+      "text": "1954",
+      "label": "DATE",
+      "start": 24221,
+      "end": 24225
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 24278,
+      "end": 24281
+    },
+    {
+      "text": "The Asahiflex II",
+      "label": "WORK_OF_ART",
+      "start": 24421,
+      "end": 24437
+    },
+    {
+      "text": "Japanese",
+      "label": "NORP",
+      "start": 24451,
+      "end": 24459
+    },
+    {
+      "text": "Asahi (Pentax",
+      "label": "ORG",
+      "start": 24468,
+      "end": 24481
+    },
+    {
+      "text": "1954",
+      "label": "DATE",
+      "start": 24486,
+      "end": 24490
+    },
+    {
+      "text": "first",
+      "label": "ORDINAL",
+      "start": 24508,
+      "end": 24513
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 24514,
+      "end": 24517
+    },
+    {
+      "text": "5x7",
+      "label": "CARDINAL",
+      "start": 24853,
+      "end": 24856
+    },
+    {
+      "text": "220/120",
+      "label": "CARDINAL",
+      "start": 24878,
+      "end": 24885
+    },
+    {
+      "text": "12",
+      "label": "DATE",
+      "start": 24899,
+      "end": 24901
+    },
+    {
+      "text": "16",
+      "label": "CARDINAL",
+      "start": 24906,
+      "end": 24908
+    },
+    {
+      "text": "120",
+      "label": "CARDINAL",
+      "start": 24926,
+      "end": 24929
+    },
+    {
+      "text": "220",
+      "label": "CARDINAL",
+      "start": 24963,
+      "end": 24966
+    },
+    {
+      "text": "6x9",
+      "label": "CARDINAL",
+      "start": 24993,
+      "end": 24996
+    },
+    {
+      "text": "6x7",
+      "label": "CARDINAL",
+      "start": 24998,
+      "end": 25001
+    },
+    {
+      "text": "6x6",
+      "label": "CARDINAL",
+      "start": 25003,
+      "end": 25006
+    },
+    {
+      "text": "6x4.5",
+      "label": "ORG",
+      "start": 25012,
+      "end": 25017
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 25107,
+      "end": 25110
+    },
+    {
+      "text": "Bronica",
+      "label": "GPE",
+      "start": 25127,
+      "end": 25134
+    },
+    {
+      "text": "Graflex",
+      "label": "GPE",
+      "start": 25136,
+      "end": 25143
+    },
+    {
+      "text": "Hasselblad, Seagull, Mamiya",
+      "label": "ORG",
+      "start": 25145,
+      "end": 25172
+    },
+    {
+      "text": "Pentax",
+      "label": "PRODUCT",
+      "start": 25177,
+      "end": 25183
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 25220,
+      "end": 25223
+    },
+    {
+      "text": "35\u00a0mm",
+      "label": "QUANTITY",
+      "start": 25241,
+      "end": 25246
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 25289,
+      "end": 25292
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 25392,
+      "end": 25395
+    },
+    {
+      "text": "Canon",
+      "label": "LAW",
+      "start": 25786,
+      "end": 25791
+    },
+    {
+      "text": "three",
+      "label": "CARDINAL",
+      "start": 26144,
+      "end": 26149
+    },
+    {
+      "text": "19th-century",
+      "label": "DATE",
+      "start": 26764,
+      "end": 26776
+    },
+    {
+      "text": "Autochrome Lumi\u00e8re",
+      "label": "ORG",
+      "start": 27196,
+      "end": 27214
+    },
+    {
+      "text": "Glass",
+      "label": "PERSON",
+      "start": 27948,
+      "end": 27953
+    },
+    {
+      "text": "Hasselblad",
+      "label": "ORG",
+      "start": 28232,
+      "end": 28242
+    },
+    {
+      "text": "35\u00a0mm cameras.[29] Typically",
+      "label": "QUANTITY",
+      "start": 28348,
+      "end": 28376
+    },
+    {
+      "text": "120",
+      "label": "CARDINAL",
+      "start": 28395,
+      "end": 28398
+    },
+    {
+      "text": "220",
+      "label": "CARDINAL",
+      "start": 28402,
+      "end": 28405
+    },
+    {
+      "text": "6\u00d74.5\u00a0cm",
+      "label": "QUANTITY",
+      "start": 28453,
+      "end": 28461
+    },
+    {
+      "text": "6\u00d76\u00a0cm",
+      "label": "QUANTITY",
+      "start": 28463,
+      "end": 28469
+    },
+    {
+      "text": "6\u00d77\u00a0cm",
+      "label": "QUANTITY",
+      "start": 28474,
+      "end": 28480
+    },
+    {
+      "text": "6\u00d79\u00a0cm",
+      "label": "QUANTITY",
+      "start": 28492,
+      "end": 28498
+    },
+    {
+      "text": "Hasselblad",
+      "label": "ORG",
+      "start": 28651,
+      "end": 28661
+    },
+    {
+      "text": "Twin-lens",
+      "label": "PERSON",
+      "start": 28786,
+      "end": 28795
+    },
+    {
+      "text": "one",
+      "label": "CARDINAL",
+      "start": 28943,
+      "end": 28946
+    },
+    {
+      "text": "Mamiya",
+      "label": "ORG",
+      "start": 29190,
+      "end": 29196
+    },
+    {
+      "text": "TLR",
+      "label": "ORG",
+      "start": 29331,
+      "end": 29334
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 29828,
+      "end": 29831
+    },
+    {
+      "text": "120",
+      "label": "CARDINAL",
+      "start": 29862,
+      "end": 29865
+    },
+    {
+      "text": "220",
+      "label": "CARDINAL",
+      "start": 29869,
+      "end": 29872
+    },
+    {
+      "text": "127",
+      "label": "CARDINAL",
+      "start": 29902,
+      "end": 29905
+    },
+    {
+      "text": "a minute",
+      "label": "TIME",
+      "start": 30188,
+      "end": 30196
+    },
+    {
+      "text": "SX-70",
+      "label": "PRODUCT",
+      "start": 30471,
+      "end": 30476
+    },
+    {
+      "text": "Polaroid",
+      "label": "ORG",
+      "start": 30487,
+      "end": 30495
+    },
+    {
+      "text": "ten",
+      "label": "CARDINAL",
+      "start": 30515,
+      "end": 30518
+    },
+    {
+      "text": "first",
+      "label": "ORDINAL",
+      "start": 30857,
+      "end": 30862
+    },
+    {
+      "text": "the twentieth century",
+      "label": "DATE",
+      "start": 30875,
+      "end": 30896
+    },
+    {
+      "text": "8\u00d711mm Minox",
+      "label": "QUANTITY",
+      "start": 30957,
+      "end": 30969
+    },
+    {
+      "text": "1937 to 1976",
+      "label": "DATE",
+      "start": 31024,
+      "end": 31036
+    },
+    {
+      "text": "Minox",
+      "label": "PERSON",
+      "start": 31101,
+      "end": 31106
+    },
+    {
+      "text": "16\u00a0mm",
+      "label": "QUANTITY",
+      "start": 31230,
+      "end": 31235
+    },
+    {
+      "text": "One",
+      "label": "CARDINAL",
+      "start": 31637,
+      "end": 31640
+    },
+    {
+      "text": "the Vest Pocket Kodak",
+      "label": "ORG",
+      "start": 31686,
+      "end": 31707
+    },
+    {
+      "text": "two",
+      "label": "CARDINAL",
+      "start": 31717,
+      "end": 31720
+    },
+    {
+      "text": "between 1912 and 1934",
+      "label": "DATE",
+      "start": 31733,
+      "end": 31754
+    },
+    {
+      "text": "Kodak",
+      "label": "ORG",
+      "start": 31897,
+      "end": 31902
+    },
+    {
+      "text": "Box",
+      "label": "PERSON",
+      "start": 31914,
+      "end": 31917
+    },
+    {
+      "text": "Brownie",
+      "label": "ORG",
+      "start": 32012,
+      "end": 32019
+    },
+    {
+      "text": "Leica c. 1936",
+      "label": "PERSON",
+      "start": 32399,
+      "end": 32412
+    },
+    {
+      "text": "two",
+      "label": "CARDINAL",
+      "start": 32584,
+      "end": 32587
+    },
+    {
+      "text": "one",
+      "label": "CARDINAL",
+      "start": 32617,
+      "end": 32620
+    },
+    {
+      "text": "two",
+      "label": "CARDINAL",
+      "start": 32727,
+      "end": 32730
+    },
+    {
+      "text": "35\u00a0mm",
+      "label": "TIME",
+      "start": 33184,
+      "end": 33189
+    },
+    {
+      "text": "Digital",
+      "label": "ORG",
+      "start": 33298,
+      "end": 33305
+    },
+    {
+      "text": "24",
+      "label": "CARDINAL",
+      "start": 33477,
+      "end": 33479
+    },
+    {
+      "text": "second",
+      "label": "ORDINAL",
+      "start": 33491,
+      "end": 33497
+    },
+    {
+      "text": "4",
+      "label": "CARDINAL",
+      "start": 33593,
+      "end": 33594
+    },
+    {
+      "text": "Europe",
+      "label": "LOC",
+      "start": 33689,
+      "end": 33695
+    },
+    {
+      "text": "second",
+      "label": "ORDINAL",
+      "start": 34357,
+      "end": 34363
+    },
+    {
+      "text": "first",
+      "label": "ORDINAL",
+      "start": 34473,
+      "end": 34478
+    },
+    {
+      "text": "1888",
+      "label": "DATE",
+      "start": 34508,
+      "end": 34512
+    },
+    {
+      "text": "1890",
+      "label": "CARDINAL",
+      "start": 34520,
+      "end": 34524
+    },
+    {
+      "text": "35mm",
+      "label": "QUANTITY",
+      "start": 34631,
+      "end": 34635
+    },
+    {
+      "text": "70\u00a0mm",
+      "label": "QUANTITY",
+      "start": 34758,
+      "end": 34763
+    },
+    {
+      "text": "16\u00a0mm",
+      "label": "QUANTITY",
+      "start": 34773,
+      "end": 34778
+    },
+    {
+      "text": "9.5\u00a0mm",
+      "label": "QUANTITY",
+      "start": 34815,
+      "end": 34821
+    },
+    {
+      "text": "8\u00a0mm",
+      "label": "QUANTITY",
+      "start": 34828,
+      "end": 34832
+    },
+    {
+      "text": "Arri Alexa",
+      "label": "PERSON",
+      "start": 35202,
+      "end": 35212
+    },
+    {
+      "text": "Main",
+      "label": "ORG",
+      "start": 35237,
+      "end": 35241
+    },
+    {
+      "text": "Sony",
+      "label": "ORG",
+      "start": 35822,
+      "end": 35826
+    },
+    {
+      "text": "HDV",
+      "label": "ORG",
+      "start": 35839,
+      "end": 35842
+    },
+    {
+      "text": "Digital",
+      "label": "ORG",
+      "start": 36383,
+      "end": 36390
+    },
+    {
+      "text": "Digital",
+      "label": "ORG",
+      "start": 36447,
+      "end": 36454
+    },
+    {
+      "text": "Digital",
+      "label": "ORG",
+      "start": 36462,
+      "end": 36469
+    },
+    {
+      "text": "Digital",
+      "label": "ORG",
+      "start": 36479,
+      "end": 36486
+    },
+    {
+      "text": "Digital",
+      "label": "ORG",
+      "start": 36500,
+      "end": 36507
+    },
+    {
+      "text": "Digital",
+      "label": "ORG",
+      "start": 36539,
+      "end": 36546
+    },
+    {
+      "text": "digicam",
+      "label": "PERSON",
+      "start": 36574,
+      "end": 36581
+    },
+    {
+      "text": "today",
+      "label": "DATE",
+      "start": 36748,
+      "end": 36753
+    },
+    {
+      "text": "Digital",
+      "label": "ORG",
+      "start": 36878,
+      "end": 36885
+    },
+    {
+      "text": "stitch pictures & perform",
+      "label": "ORG",
+      "start": 37437,
+      "end": 37462
+    },
+    {
+      "text": "the 1990s",
+      "label": "DATE",
+      "start": 37532,
+      "end": 37541
+    },
+    {
+      "text": "2000s\u20132010s",
+      "label": "CARDINAL",
+      "start": 37605,
+      "end": 37616
+    },
+    {
+      "text": "the 2010s",
+      "label": "DATE",
+      "start": 37668,
+      "end": 37677
+    },
+    {
+      "text": "first",
+      "label": "ORDINAL",
+      "start": 37683,
+      "end": 37688
+    },
+    {
+      "text": "Kodak",
+      "label": "ORG",
+      "start": 37767,
+      "end": 37772
+    },
+    {
+      "text": "Steven Sasson",
+      "label": "PERSON",
+      "start": 37782,
+      "end": 37795
+    },
+    {
+      "text": "1975",
+      "label": "DATE",
+      "start": 37799,
+      "end": 37803
+    },
+    {
+      "text": "CCD",
+      "label": "ORG",
+      "start": 37838,
+      "end": 37841
+    },
+    {
+      "text": "Fairchild Semiconductor",
+      "label": "PERSON",
+      "start": 37855,
+      "end": 37878
+    },
+    {
+      "text": "only 0.01 megapixels",
+      "label": "QUANTITY",
+      "start": 37895,
+      "end": 37915
+    },
+    {
+      "text": "Sasson",
+      "label": "PERSON",
+      "start": 37935,
+      "end": 37941
+    },
+    {
+      "text": "CCD",
+      "label": "ORG",
+      "start": 37955,
+      "end": 37958
+    },
+    {
+      "text": "442",
+      "label": "CARDINAL",
+      "start": 38078,
+      "end": 38081
+    },
+    {
+      "text": "225",
+      "label": "CARDINAL",
+      "start": 38159,
+      "end": 38162
+    },
+    {
+      "text": "1986",
+      "label": "DATE",
+      "start": 38220,
+      "end": 38224
+    },
+    {
+      "text": "Japanese",
+      "label": "NORP",
+      "start": 38226,
+      "end": 38234
+    },
+    {
+      "text": "Nikon",
+      "label": "ORG",
+      "start": 38243,
+      "end": 38248
+    },
+    {
+      "text": "the Nikon SVC.[39] Sony",
+      "label": "ORG",
+      "start": 38318,
+      "end": 38341
+    },
+    {
+      "text": "1",
+      "label": "CARDINAL",
+      "start": 38348,
+      "end": 38349
+    },
+    {
+      "text": "first",
+      "label": "ORDINAL",
+      "start": 38394,
+      "end": 38399
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 38419,
+      "end": 38422
+    },
+    {
+      "text": "Japan",
+      "label": "GPE",
+      "start": 38449,
+      "end": 38454
+    },
+    {
+      "text": "around 2000 to 2002",
+      "label": "DATE",
+      "start": 38460,
+      "end": 38479
+    },
+    {
+      "text": "MZ",
+      "label": "ORG",
+      "start": 38485,
+      "end": 38487
+    },
+    {
+      "text": "Contax",
+      "label": "ORG",
+      "start": 38522,
+      "end": 38528
+    },
+    {
+      "text": "Japanese",
+      "label": "NORP",
+      "start": 38531,
+      "end": 38539
+    },
+    {
+      "text": "team,[41",
+      "label": "NORP",
+      "start": 38544,
+      "end": 38552
+    },
+    {
+      "text": "the 2000s",
+      "label": "DATE",
+      "start": 38597,
+      "end": 38606
+    },
+    {
+      "text": "DSLR",
+      "label": "ORG",
+      "start": 38623,
+      "end": 38627
+    },
+    {
+      "text": "LCD",
+      "label": "ORG",
+      "start": 38774,
+      "end": 38777
+    },
+    {
+      "text": "ISO",
+      "label": "ORG",
+      "start": 38851,
+      "end": 38854
+    },
+    {
+      "text": "6\u20137",
+      "label": "CARDINAL",
+      "start": 38896,
+      "end": 38899
+    },
+    {
+      "text": "43",
+      "label": "CARDINAL",
+      "start": 38901,
+      "end": 38903
+    },
+    {
+      "text": "12",
+      "label": "CARDINAL",
+      "start": 38906,
+      "end": 38908
+    },
+    {
+      "text": "Camera phone[edit] Smartphone",
+      "label": "WORK_OF_ART",
+      "start": 38909,
+      "end": 38938
+    },
+    {
+      "text": "Main",
+      "label": "ORG",
+      "start": 38960,
+      "end": 38964
+    },
+    {
+      "text": "Selfie",
+      "label": "NORP",
+      "start": 39032,
+      "end": 39038
+    },
+    {
+      "text": "2000",
+      "label": "DATE",
+      "start": 39042,
+      "end": 39046
+    },
+    {
+      "text": "Sharp",
+      "label": "ORG",
+      "start": 39048,
+      "end": 39053
+    },
+    {
+      "text": "first",
+      "label": "ORDINAL",
+      "start": 39077,
+      "end": 39082
+    },
+    {
+      "text": "J-Phone",
+      "label": "ORG",
+      "start": 39116,
+      "end": 39123
+    },
+    {
+      "text": "the mid-2000s",
+      "label": "DATE",
+      "start": 39142,
+      "end": 39155
+    },
+    {
+      "text": "the beginning of the 2010s",
+      "label": "DATE",
+      "start": 39221,
+      "end": 39247
+    },
+    {
+      "text": "Camera matrix History",
+      "label": "WORK_OF_ART",
+      "start": 39333,
+      "end": 39354
+    },
+    {
+      "text": "Michael",
+      "label": "PERSON",
+      "start": 40204,
+      "end": 40211
+    },
+    {
+      "text": "Nicholson",
+      "label": "PERSON",
+      "start": 40213,
+      "end": 40222
+    },
+    {
+      "text": "Angela",
+      "label": "PERSON",
+      "start": 40224,
+      "end": 40230
+    },
+    {
+      "text": "2005",
+      "label": "DATE",
+      "start": 40232,
+      "end": 40236
+    },
+    {
+      "text": "The Oxford Companion",
+      "label": "ORG",
+      "start": 40261,
+      "end": 40281
+    },
+    {
+      "text": "Photograph",
+      "label": "PRODUCT",
+      "start": 40289,
+      "end": 40299
+    },
+    {
+      "text": "Oxford University Press",
+      "label": "ORG",
+      "start": 40301,
+      "end": 40324
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 40331,
+      "end": 40334
+    },
+    {
+      "text": "10 November 2023",
+      "label": "DATE",
+      "start": 40380,
+      "end": 40396
+    },
+    {
+      "text": "12 December 2019",
+      "label": "DATE",
+      "start": 40408,
+      "end": 40424
+    },
+    {
+      "text": "Lagasse",
+      "label": "GPE",
+      "start": 40432,
+      "end": 40439
+    },
+    {
+      "text": "Paul",
+      "label": "PERSON",
+      "start": 40441,
+      "end": 40445
+    },
+    {
+      "text": "2018",
+      "label": "DATE",
+      "start": 40452,
+      "end": 40456
+    },
+    {
+      "text": "The Columbia Encyclopedia",
+      "label": "ORG",
+      "start": 40469,
+      "end": 40494
+    },
+    {
+      "text": "Columbia University Press",
+      "label": "ORG",
+      "start": 40504,
+      "end": 40529
+    },
+    {
+      "text": "Focal",
+      "label": "ORG",
+      "start": 40541,
+      "end": 40546
+    },
+    {
+      "text": "Michael R. Peres",
+      "label": "PERSON",
+      "start": 40638,
+      "end": 40654
+    },
+    {
+      "text": "ed.",
+      "label": "PERSON",
+      "start": 40656,
+      "end": 40659
+    },
+    {
+      "text": "4th",
+      "label": "ORDINAL",
+      "start": 40662,
+      "end": 40665
+    },
+    {
+      "text": "Amsterdam",
+      "label": "PERSON",
+      "start": 40672,
+      "end": 40681
+    },
+    {
+      "text": "2007",
+      "label": "DATE",
+      "start": 40693,
+      "end": 40697
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 40704,
+      "end": 40707
+    },
+    {
+      "text": "VentureBeat",
+      "label": "ORG",
+      "start": 40815,
+      "end": 40826
+    },
+    {
+      "text": "26 June 2014",
+      "label": "DATE",
+      "start": 40828,
+      "end": 40840
+    },
+    {
+      "text": "10 November 2023",
+      "label": "DATE",
+      "start": 40872,
+      "end": 40888
+    },
+    {
+      "text": "5 July 2023",
+      "label": "DATE",
+      "start": 40900,
+      "end": 40911
+    },
+    {
+      "text": "Timeline: The",
+      "label": "WORK_OF_ART",
+      "start": 40916,
+      "end": 40929
+    },
+    {
+      "text": "Digital Spy",
+      "label": "ORG",
+      "start": 40959,
+      "end": 40970
+    },
+    {
+      "text": "19 August 2014",
+      "label": "DATE",
+      "start": 40972,
+      "end": 40986
+    },
+    {
+      "text": "5 July 2023",
+      "label": "DATE",
+      "start": 41018,
+      "end": 41029
+    },
+    {
+      "text": "5 July 2023",
+      "label": "DATE",
+      "start": 41041,
+      "end": 41052
+    },
+    {
+      "text": "'70s",
+      "label": "DATE",
+      "start": 41090,
+      "end": 41094
+    },
+    {
+      "text": "Galaxy",
+      "label": "PERSON",
+      "start": 41120,
+      "end": 41126
+    },
+    {
+      "text": "CNET",
+      "label": "ORG",
+      "start": 41148,
+      "end": 41152
+    },
+    {
+      "text": "8 April 2023",
+      "label": "DATE",
+      "start": 41184,
+      "end": 41196
+    },
+    {
+      "text": "5 July 2023",
+      "label": "DATE",
+      "start": 41208,
+      "end": 41219
+    },
+    {
+      "text": "Gustavson",
+      "label": "PERSON",
+      "start": 41223,
+      "end": 41232
+    },
+    {
+      "text": "2009",
+      "label": "DATE",
+      "start": 41240,
+      "end": 41244
+    },
+    {
+      "text": "New York",
+      "label": "GPE",
+      "start": 41311,
+      "end": 41319
+    },
+    {
+      "text": "Sterling Publishing Co.",
+      "label": "ORG",
+      "start": 41321,
+      "end": 41344
+    },
+    {
+      "text": "Inc.",
+      "label": "CARDINAL",
+      "start": 41346,
+      "end": 41350
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 41356,
+      "end": 41359
+    },
+    {
+      "text": "designboom | architecture & design magazine",
+      "label": "PERSON",
+      "start": 41411,
+      "end": 41454
+    },
+    {
+      "text": "18 September 2021",
+      "label": "DATE",
+      "start": 41486,
+      "end": 41503
+    },
+    {
+      "text": "18 September 2021",
+      "label": "DATE",
+      "start": 41515,
+      "end": 41532
+    },
+    {
+      "text": "Young",
+      "label": "GPE",
+      "start": 41536,
+      "end": 41541
+    },
+    {
+      "text": "Freedman",
+      "label": "PERSON",
+      "start": 41552,
+      "end": 41560
+    },
+    {
+      "text": "Roger A.",
+      "label": "PERSON",
+      "start": 41562,
+      "end": 41570
+    },
+    {
+      "text": "Ford",
+      "label": "ORG",
+      "start": 41572,
+      "end": 41576
+    },
+    {
+      "text": "A. Lewis",
+      "label": "PERSON",
+      "start": 41578,
+      "end": 41586
+    },
+    {
+      "text": "2008",
+      "label": "DATE",
+      "start": 41588,
+      "end": 41592
+    },
+    {
+      "text": "Sears",
+      "label": "ORG",
+      "start": 41595,
+      "end": 41600
+    },
+    {
+      "text": "Zemansky's University Physics",
+      "label": "ORG",
+      "start": 41605,
+      "end": 41634
+    },
+    {
+      "text": "12",
+      "label": "CARDINAL",
+      "start": 41636,
+      "end": 41638
+    },
+    {
+      "text": "San Francisco",
+      "label": "GPE",
+      "start": 41645,
+      "end": 41658
+    },
+    {
+      "text": "California",
+      "label": "GPE",
+      "start": 41660,
+      "end": 41670
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 41701,
+      "end": 41704
+    },
+    {
+      "text": "London",
+      "label": "GPE",
+      "start": 41726,
+      "end": 41732
+    },
+    {
+      "text": "Barbara",
+      "label": "GPE",
+      "start": 41734,
+      "end": 41741
+    },
+    {
+      "text": "Upton",
+      "label": "GPE",
+      "start": 41743,
+      "end": 41748
+    },
+    {
+      "text": "John",
+      "label": "PERSON",
+      "start": 41750,
+      "end": 41754
+    },
+    {
+      "text": "Kobr\u00e9",
+      "label": "GPE",
+      "start": 41756,
+      "end": 41761
+    },
+    {
+      "text": "Kenneth",
+      "label": "PERSON",
+      "start": 41763,
+      "end": 41770
+    },
+    {
+      "text": "Brill",
+      "label": "ORG",
+      "start": 41772,
+      "end": 41777
+    },
+    {
+      "text": "Betsy",
+      "label": "PERSON",
+      "start": 41779,
+      "end": 41784
+    },
+    {
+      "text": "2002",
+      "label": "DATE",
+      "start": 41786,
+      "end": 41790
+    },
+    {
+      "text": "7\u00a0ed.",
+      "label": "DATE",
+      "start": 41806,
+      "end": 41811
+    },
+    {
+      "text": "Saddle River",
+      "label": "LOC",
+      "start": 41820,
+      "end": 41832
+    },
+    {
+      "text": "New Jersey",
+      "label": "GPE",
+      "start": 41834,
+      "end": 41844
+    },
+    {
+      "text": "Prentice Hall",
+      "label": "ORG",
+      "start": 41846,
+      "end": 41859
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 41866,
+      "end": 41869
+    },
+    {
+      "text": "k l Columbia University",
+      "label": "ORG",
+      "start": 41907,
+      "end": 41930
+    },
+    {
+      "text": "2018",
+      "label": "DATE",
+      "start": 41932,
+      "end": 41936
+    },
+    {
+      "text": "Paul Lagasse",
+      "label": "PERSON",
+      "start": 41952,
+      "end": 41964
+    },
+    {
+      "text": "The Columbia Encyclopedia",
+      "label": "ORG",
+      "start": 41972,
+      "end": 41997
+    },
+    {
+      "text": "Columbia University Press",
+      "label": "ORG",
+      "start": 42007,
+      "end": 42032
+    },
+    {
+      "text": "\"How Cameras Work\"",
+      "label": "WORK_OF_ART",
+      "start": 42046,
+      "end": 42064
+    },
+    {
+      "text": "21 March 2001",
+      "label": "DATE",
+      "start": 42083,
+      "end": 42096
+    },
+    {
+      "text": "14 December 2019",
+      "label": "DATE",
+      "start": 42128,
+      "end": 42144
+    },
+    {
+      "text": "13 December 2019",
+      "label": "DATE",
+      "start": 42156,
+      "end": 42172
+    },
+    {
+      "text": "Laney",
+      "label": "PERSON",
+      "start": 42180,
+      "end": 42185
+    },
+    {
+      "text": "Dawn A. ..",
+      "label": "PERSON",
+      "start": 42187,
+      "end": 42197
+    },
+    {
+      "text": "BA",
+      "label": "ORG",
+      "start": 42197,
+      "end": 42199
+    },
+    {
+      "text": "MS",
+      "label": "GPE",
+      "start": 42201,
+      "end": 42203
+    },
+    {
+      "text": "CGC",
+      "label": "ORG",
+      "start": 42205,
+      "end": 42208
+    },
+    {
+      "text": "CCRC",
+      "label": "ORG",
+      "start": 42210,
+      "end": 42214
+    },
+    {
+      "text": "Camera Technologies",
+      "label": "WORK_OF_ART",
+      "start": 42217,
+      "end": 42236
+    },
+    {
+      "text": "Science",
+      "label": "GPE",
+      "start": 42267,
+      "end": 42274
+    },
+    {
+      "text": "June 2020",
+      "label": "DATE",
+      "start": 42276,
+      "end": 42285
+    },
+    {
+      "text": "6 February 2022",
+      "label": "DATE",
+      "start": 42296,
+      "end": 42311
+    },
+    {
+      "text": "Lynne Warren",
+      "label": "PERSON",
+      "start": 42331,
+      "end": 42343
+    },
+    {
+      "text": "ed",
+      "label": "PERSON",
+      "start": 42345,
+      "end": 42347
+    },
+    {
+      "text": "2006",
+      "label": "DATE",
+      "start": 42350,
+      "end": 42354
+    },
+    {
+      "text": "Camera: An Overview",
+      "label": "WORK_OF_ART",
+      "start": 42358,
+      "end": 42377
+    },
+    {
+      "text": "twentieth-century",
+      "label": "DATE",
+      "start": 42396,
+      "end": 42413
+    },
+    {
+      "text": "New York",
+      "label": "GPE",
+      "start": 42427,
+      "end": 42435
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 42453,
+      "end": 42456
+    },
+    {
+      "text": "393",
+      "label": "CARDINAL",
+      "start": 42465,
+      "end": 42468
+    },
+    {
+      "text": "Britannica Academic",
+      "label": "ORG",
+      "start": 42513,
+      "end": 42532
+    },
+    {
+      "text": "10 November 2023",
+      "label": "DATE",
+      "start": 42564,
+      "end": 42580
+    },
+    {
+      "text": "13 December 2019",
+      "label": "DATE",
+      "start": 42592,
+      "end": 42608
+    },
+    {
+      "text": "Lynne Warren",
+      "label": "PERSON",
+      "start": 42622,
+      "end": 42634
+    },
+    {
+      "text": "ed",
+      "label": "PERSON",
+      "start": 42636,
+      "end": 42638
+    },
+    {
+      "text": "2006",
+      "label": "DATE",
+      "start": 42641,
+      "end": 42645
+    },
+    {
+      "text": "35\u00a0mm",
+      "label": "QUANTITY",
+      "start": 42657,
+      "end": 42662
+    },
+    {
+      "text": "twentieth-century",
+      "label": "DATE",
+      "start": 42681,
+      "end": 42698
+    },
+    {
+      "text": "New York",
+      "label": "GPE",
+      "start": 42712,
+      "end": 42720
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 42738,
+      "end": 42741
+    },
+    {
+      "text": "393",
+      "label": "CARDINAL",
+      "start": 42750,
+      "end": 42753
+    },
+    {
+      "text": "The British Journal Photographic Almanac",
+      "label": "ORG",
+      "start": 42759,
+      "end": 42799
+    },
+    {
+      "text": "Henry Greenwood",
+      "label": "PERSON",
+      "start": 42801,
+      "end": 42816
+    },
+    {
+      "text": "Co. Ltd.",
+      "label": "ORG",
+      "start": 42821,
+      "end": 42829
+    },
+    {
+      "text": "1956",
+      "label": "DATE",
+      "start": 42830,
+      "end": 42834
+    },
+    {
+      "text": "pp",
+      "label": "PERSON",
+      "start": 42836,
+      "end": 42838
+    },
+    {
+      "text": "468\u2013471",
+      "label": "CARDINAL",
+      "start": 42840,
+      "end": 42847
+    },
+    {
+      "text": "2007",
+      "label": "DATE",
+      "start": 42872,
+      "end": 42876
+    },
+    {
+      "text": "The Camera Defined",
+      "label": "WORK_OF_ART",
+      "start": 42880,
+      "end": 42898
+    },
+    {
+      "text": "pp",
+      "label": "PERSON",
+      "start": 42950,
+      "end": 42952
+    },
+    {
+      "text": "770\u2013771",
+      "label": "CARDINAL",
+      "start": 42954,
+      "end": 42961
+    },
+    {
+      "text": "doi:10.1016",
+      "label": "ORG",
+      "start": 42963,
+      "end": 42974
+    },
+    {
+      "text": "9.50152-5",
+      "label": "CARDINAL",
+      "start": 42992,
+      "end": 43001
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 43008,
+      "end": 43011
+    },
+    {
+      "text": "9",
+      "label": "CARDINAL",
+      "start": 43024,
+      "end": 43025
+    },
+    {
+      "text": "14 December 2019",
+      "label": "DATE",
+      "start": 43057,
+      "end": 43073
+    },
+    {
+      "text": "12 December 2019",
+      "label": "DATE",
+      "start": 43085,
+      "end": 43101
+    },
+    {
+      "text": "Britannica",
+      "label": "PERSON",
+      "start": 43143,
+      "end": 43153
+    },
+    {
+      "text": "12",
+      "label": "CARDINAL",
+      "start": 43165,
+      "end": 43167
+    },
+    {
+      "text": "December",
+      "label": "DATE",
+      "start": 43168,
+      "end": 43176
+    },
+    {
+      "text": "Philip",
+      "label": "PERSON",
+      "start": 43230,
+      "end": 43236
+    },
+    {
+      "text": "2004",
+      "label": "DATE",
+      "start": 43240,
+      "end": 43244
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 43251,
+      "end": 43254
+    },
+    {
+      "text": "12 December 2019",
+      "label": "DATE",
+      "start": 43280,
+      "end": 43296
+    },
+    {
+      "text": "Britannica Academic",
+      "label": "ORG",
+      "start": 43320,
+      "end": 43339
+    },
+    {
+      "text": "10 November 2023",
+      "label": "DATE",
+      "start": 43371,
+      "end": 43387
+    },
+    {
+      "text": "12 December 2019",
+      "label": "DATE",
+      "start": 43399,
+      "end": 43415
+    },
+    {
+      "text": "Understanding Camera Lenses",
+      "label": "WORK_OF_ART",
+      "start": 43432,
+      "end": 43459
+    },
+    {
+      "text": "Color",
+      "label": "GPE",
+      "start": 43475,
+      "end": 43480
+    },
+    {
+      "text": "19 June 2023",
+      "label": "DATE",
+      "start": 43512,
+      "end": 43524
+    },
+    {
+      "text": "13 December 2019",
+      "label": "DATE",
+      "start": 43536,
+      "end": 43552
+    },
+    {
+      "text": "Adams, Ansel",
+      "label": "ORG",
+      "start": 43556,
+      "end": 43568
+    },
+    {
+      "text": "Baker",
+      "label": "PERSON",
+      "start": 43570,
+      "end": 43575
+    },
+    {
+      "text": "Robert",
+      "label": "PERSON",
+      "start": 43577,
+      "end": 43583
+    },
+    {
+      "text": "1980",
+      "label": "DATE",
+      "start": 43585,
+      "end": 43589
+    },
+    {
+      "text": "Little, Brown",
+      "label": "ORG",
+      "start": 43612,
+      "end": 43625
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 43632,
+      "end": 43635
+    },
+    {
+      "text": "Roger Hicks",
+      "label": "PERSON",
+      "start": 43653,
+      "end": 43664
+    },
+    {
+      "text": "1984",
+      "label": "DATE",
+      "start": 43666,
+      "end": 43670
+    },
+    {
+      "text": "35\u00a0mm Still",
+      "label": "TIME",
+      "start": 43690,
+      "end": 43701
+    },
+    {
+      "text": "London & Boston",
+      "label": "ORG",
+      "start": 43723,
+      "end": 43738
+    },
+    {
+      "text": "137",
+      "label": "CARDINAL",
+      "start": 43743,
+      "end": 43746
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 43753,
+      "end": 43756
+    },
+    {
+      "text": "Rudolph Lea",
+      "label": "PERSON",
+      "start": 43774,
+      "end": 43785
+    },
+    {
+      "text": "1993",
+      "label": "DATE",
+      "start": 43787,
+      "end": 43791
+    },
+    {
+      "text": "35\u00a0mm SLR",
+      "label": "QUANTITY",
+      "start": 43806,
+      "end": 43815
+    },
+    {
+      "text": "Wittig Books",
+      "label": "ORG",
+      "start": 43825,
+      "end": 43837
+    },
+    {
+      "text": "H\u00fcckelhoven",
+      "label": "PRODUCT",
+      "start": 43839,
+      "end": 43850
+    },
+    {
+      "text": "23",
+      "label": "CARDINAL",
+      "start": 43855,
+      "end": 43857
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 43864,
+      "end": 43867
+    },
+    {
+      "text": "130",
+      "label": "CARDINAL",
+      "start": 43876,
+      "end": 43879
+    },
+    {
+      "text": "Michael R. Peres",
+      "label": "PERSON",
+      "start": 43885,
+      "end": 43901
+    },
+    {
+      "text": "2013",
+      "label": "DATE",
+      "start": 43903,
+      "end": 43907
+    },
+    {
+      "text": "The Focal Encyclopedia of Photography",
+      "label": "ORG",
+      "start": 43910,
+      "end": 43947
+    },
+    {
+      "text": "779",
+      "label": "CARDINAL",
+      "start": 43952,
+      "end": 43955
+    },
+    {
+      "text": "Taylor & Francis",
+      "label": "ORG",
+      "start": 43957,
+      "end": 43973
+    },
+    {
+      "text": "Canon Pellix Camera",
+      "label": "WORK_OF_ART",
+      "start": 43977,
+      "end": 43996
+    },
+    {
+      "text": "Malaysia",
+      "label": "GPE",
+      "start": 44014,
+      "end": 44022
+    },
+    {
+      "text": "16 October 2013",
+      "label": "DATE",
+      "start": 44054,
+      "end": 44069
+    },
+    {
+      "text": "Parker",
+      "label": "PERSON",
+      "start": 44073,
+      "end": 44079
+    },
+    {
+      "text": "Corfield Cameras",
+      "label": "PERSON",
+      "start": 44087,
+      "end": 44103
+    },
+    {
+      "text": "Wolverhampton Museum of Industry",
+      "label": "ORG",
+      "start": 44125,
+      "end": 44157
+    },
+    {
+      "text": "22 October 2013",
+      "label": "DATE",
+      "start": 44189,
+      "end": 44204
+    },
+    {
+      "text": "22 October 2013",
+      "label": "DATE",
+      "start": 44216,
+      "end": 44231
+    },
+    {
+      "text": "Wildi, Ernst",
+      "label": "ORG",
+      "start": 44235,
+      "end": 44247
+    },
+    {
+      "text": "2001",
+      "label": "DATE",
+      "start": 44249,
+      "end": 44253
+    },
+    {
+      "text": "2nd",
+      "label": "ORDINAL",
+      "start": 44285,
+      "end": 44288
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 44321,
+      "end": 44324
+    },
+    {
+      "text": "499049825",
+      "label": "DATE",
+      "start": 44345,
+      "end": 44354
+    },
+    {
+      "text": "Elizabeth Allen",
+      "label": "PERSON",
+      "start": 44385,
+      "end": 44400
+    },
+    {
+      "text": "Sophie Triantaphillidou",
+      "label": "PERSON",
+      "start": 44402,
+      "end": 44425
+    },
+    {
+      "text": "10th",
+      "label": "ORDINAL",
+      "start": 44427,
+      "end": 44431
+    },
+    {
+      "text": "Oxford",
+      "label": "PERSON",
+      "start": 44438,
+      "end": 44444
+    },
+    {
+      "text": "Elsevier/Focal Press",
+      "label": "ORG",
+      "start": 44446,
+      "end": 44466
+    },
+    {
+      "text": "2011",
+      "label": "DATE",
+      "start": 44468,
+      "end": 44472
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 44479,
+      "end": 44482
+    },
+    {
+      "text": "OCLC",
+      "label": "ORG",
+      "start": 44498,
+      "end": 44502
+    },
+    {
+      "text": "706802878.{{cite",
+      "label": "CARDINAL",
+      "start": 44503,
+      "end": 44519
+    },
+    {
+      "text": "Burrows",
+      "label": "ORG",
+      "start": 44555,
+      "end": 44562
+    },
+    {
+      "text": "Paul",
+      "label": "PERSON",
+      "start": 44564,
+      "end": 44568
+    },
+    {
+      "text": "13 September 2021",
+      "label": "DATE",
+      "start": 44570,
+      "end": 44587
+    },
+    {
+      "text": "TLR",
+      "label": "ORG",
+      "start": 44616,
+      "end": 44619
+    },
+    {
+      "text": "Digital Camera World",
+      "label": "ORG",
+      "start": 44673,
+      "end": 44693
+    },
+    {
+      "text": "Future US Inc.",
+      "label": "ORG",
+      "start": 44695,
+      "end": 44709
+    },
+    {
+      "text": "27 December 2021",
+      "label": "DATE",
+      "start": 44740,
+      "end": 44756
+    },
+    {
+      "text": "27 December 2021",
+      "label": "DATE",
+      "start": 44768,
+      "end": 44784
+    },
+    {
+      "text": "Ascher",
+      "label": "PERSON",
+      "start": 44788,
+      "end": 44794
+    },
+    {
+      "text": "Steven",
+      "label": "PERSON",
+      "start": 44796,
+      "end": 44802
+    },
+    {
+      "text": "Pincus",
+      "label": "GPE",
+      "start": 44804,
+      "end": 44810
+    },
+    {
+      "text": "Edward",
+      "label": "PERSON",
+      "start": 44812,
+      "end": 44818
+    },
+    {
+      "text": "2007",
+      "label": "DATE",
+      "start": 44820,
+      "end": 44824
+    },
+    {
+      "text": "New York",
+      "label": "GPE",
+      "start": 44904,
+      "end": 44912
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 44934,
+      "end": 44937
+    },
+    {
+      "text": "Farlex Inc",
+      "label": "PERSON",
+      "start": 44955,
+      "end": 44965
+    },
+    {
+      "text": "the Free Dictionary Archived",
+      "label": "ORG",
+      "start": 44999,
+      "end": 45027
+    },
+    {
+      "text": "9 December 2014",
+      "label": "DATE",
+      "start": 45028,
+      "end": 45043
+    },
+    {
+      "text": "September 2013",
+      "label": "DATE",
+      "start": 45080,
+      "end": 45094
+    },
+    {
+      "text": "Williams",
+      "label": "PERSON",
+      "start": 45097,
+      "end": 45105
+    },
+    {
+      "text": "J. B.",
+      "label": "PERSON",
+      "start": 45107,
+      "end": 45112
+    },
+    {
+      "text": "2017",
+      "label": "DATE",
+      "start": 45114,
+      "end": 45118
+    },
+    {
+      "text": "The Electronics Revolution: Inventing the Future",
+      "label": "LAW",
+      "start": 45121,
+      "end": 45169
+    },
+    {
+      "text": "pp",
+      "label": "PERSON",
+      "start": 45181,
+      "end": 45183
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 45197,
+      "end": 45200
+    },
+    {
+      "text": "10 November 2023",
+      "label": "DATE",
+      "start": 45246,
+      "end": 45262
+    },
+    {
+      "text": "26 November 2019",
+      "label": "DATE",
+      "start": 45274,
+      "end": 45290
+    },
+    {
+      "text": "Musgrove",
+      "label": "PERSON",
+      "start": 45294,
+      "end": 45302
+    },
+    {
+      "text": "Mike",
+      "label": "PERSON",
+      "start": 45304,
+      "end": 45308
+    },
+    {
+      "text": "12 January 2006",
+      "label": "DATE",
+      "start": 45310,
+      "end": 45325
+    },
+    {
+      "text": "Nikon Says It's Leaving Film-Camera Business",
+      "label": "WORK_OF_ART",
+      "start": 45329,
+      "end": 45373
+    },
+    {
+      "text": "Washington Post",
+      "label": "ORG",
+      "start": 45376,
+      "end": 45391
+    },
+    {
+      "text": "13 October 2008",
+      "label": "DATE",
+      "start": 45423,
+      "end": 45438
+    },
+    {
+      "text": "23 February 2007",
+      "label": "DATE",
+      "start": 45450,
+      "end": 45466
+    },
+    {
+      "text": "MakeUseOf",
+      "label": "PERSON",
+      "start": 45470,
+      "end": 45479
+    },
+    {
+      "text": "December 2017",
+      "label": "DATE",
+      "start": 45523,
+      "end": 45536
+    },
+    {
+      "text": "the Wayback Machine",
+      "label": "ORG",
+      "start": 45540,
+      "end": 45559
+    },
+    {
+      "text": "September 2013",
+      "label": "DATE",
+      "start": 45573,
+      "end": 45587
+    },
+    {
+      "text": "Gustavson",
+      "label": "PERSON",
+      "start": 45590,
+      "end": 45599
+    },
+    {
+      "text": "November 2011",
+      "label": "DATE",
+      "start": 45609,
+      "end": 45622
+    },
+    {
+      "text": "500",
+      "label": "CARDINAL",
+      "start": 45625,
+      "end": 45628
+    },
+    {
+      "text": "Photographic Innovation",
+      "label": "ORG",
+      "start": 45651,
+      "end": 45674
+    },
+    {
+      "text": "Toronto",
+      "label": "GPE",
+      "start": 45676,
+      "end": 45683
+    },
+    {
+      "text": "Sterling Publishing, Inc.",
+      "label": "ORG",
+      "start": 45694,
+      "end": 45719
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 45725,
+      "end": 45728
+    },
+    {
+      "text": "Hitchcock",
+      "label": "ORG",
+      "start": 45746,
+      "end": 45755
+    },
+    {
+      "text": "Susan",
+      "label": "PERSON",
+      "start": 45757,
+      "end": 45762
+    },
+    {
+      "text": "20 September 2011",
+      "label": "DATE",
+      "start": 45764,
+      "end": 45781
+    },
+    {
+      "text": "Hitchcock",
+      "label": "ORG",
+      "start": 45784,
+      "end": 45793
+    },
+    {
+      "text": "Susan Tyler",
+      "label": "PERSON",
+      "start": 45795,
+      "end": 45806
+    },
+    {
+      "text": "ed.",
+      "label": "PERSON",
+      "start": 45808,
+      "end": 45811
+    },
+    {
+      "text": "National Geographic",
+      "label": "ORG",
+      "start": 45814,
+      "end": 45833
+    },
+    {
+      "text": "Washington",
+      "label": "GPE",
+      "start": 45856,
+      "end": 45866
+    },
+    {
+      "text": "D.C.",
+      "label": "GPE",
+      "start": 45868,
+      "end": 45872
+    },
+    {
+      "text": "National Geographic Society",
+      "label": "ORG",
+      "start": 45874,
+      "end": 45901
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 45908,
+      "end": 45911
+    },
+    {
+      "text": "Nikon SLR-type",
+      "label": "ORG",
+      "start": 45929,
+      "end": 45943
+    },
+    {
+      "text": "Archived",
+      "label": "ORG",
+      "start": 45960,
+      "end": 45968
+    },
+    {
+      "text": "9 August 2011",
+      "label": "DATE",
+      "start": 45969,
+      "end": 45982
+    },
+    {
+      "text": "the Wayback Machine",
+      "label": "ORG",
+      "start": 45986,
+      "end": 46005
+    },
+    {
+      "text": "Pierre Jarleton",
+      "label": "PERSON",
+      "start": 46007,
+      "end": 46022
+    },
+    {
+      "text": "Archived",
+      "label": "ORG",
+      "start": 46117,
+      "end": 46125
+    },
+    {
+      "text": "4 July 2017",
+      "label": "DATE",
+      "start": 46126,
+      "end": 46137
+    },
+    {
+      "text": "the Wayback Machine",
+      "label": "ORG",
+      "start": 46141,
+      "end": 46160
+    },
+    {
+      "text": "Digital Photography Review",
+      "label": "ORG",
+      "start": 46162,
+      "end": 46188
+    },
+    {
+      "text": "British Journal of Photography",
+      "label": "ORG",
+      "start": 46191,
+      "end": 46221
+    },
+    {
+      "text": "7410-7422",
+      "label": "DATE",
+      "start": 46230,
+      "end": 46239
+    },
+    {
+      "text": "2003",
+      "label": "DATE",
+      "start": 46241,
+      "end": 46245
+    },
+    {
+      "text": "2",
+      "label": "CARDINAL",
+      "start": 46250,
+      "end": 46251
+    },
+    {
+      "text": "11",
+      "label": "CARDINAL",
+      "start": 46269,
+      "end": 46271
+    },
+    {
+      "text": "CMOS Archived",
+      "label": "ORG",
+      "start": 46293,
+      "end": 46306
+    },
+    {
+      "text": "26 January 2021",
+      "label": "DATE",
+      "start": 46307,
+      "end": 46322
+    },
+    {
+      "text": "the Wayback Machine",
+      "label": "ORG",
+      "start": 46326,
+      "end": 46345
+    },
+    {
+      "text": "Digital Photography Review",
+      "label": "ORG",
+      "start": 46347,
+      "end": 46373
+    },
+    {
+      "text": "Burian",
+      "label": "PERSON",
+      "start": 46376,
+      "end": 46382
+    },
+    {
+      "text": "Peter",
+      "label": "PERSON",
+      "start": 46384,
+      "end": 46389
+    },
+    {
+      "text": "Caputo",
+      "label": "PERSON",
+      "start": 46391,
+      "end": 46397
+    },
+    {
+      "text": "Robert",
+      "label": "PERSON",
+      "start": 46399,
+      "end": 46405
+    },
+    {
+      "text": "2003",
+      "label": "DATE",
+      "start": 46407,
+      "end": 46411
+    },
+    {
+      "text": "National Geographic",
+      "label": "ORG",
+      "start": 46414,
+      "end": 46433
+    },
+    {
+      "text": "2\u00a0ed.",
+      "label": "DATE",
+      "start": 46459,
+      "end": 46464
+    },
+    {
+      "text": "Washington",
+      "label": "GPE",
+      "start": 46467,
+      "end": 46477
+    },
+    {
+      "text": "D.C.",
+      "label": "GPE",
+      "start": 46479,
+      "end": 46483
+    },
+    {
+      "text": "National Geographic Society",
+      "label": "ORG",
+      "start": 46485,
+      "end": 46512
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 46519,
+      "end": 46522
+    },
+    {
+      "text": "Camera",
+      "label": "PERSON",
+      "start": 46558,
+      "end": 46564
+    },
+    {
+      "text": "Nokia 808 Pureview",
+      "label": "ORG",
+      "start": 46593,
+      "end": 46611
+    },
+    {
+      "text": "Hoista.net",
+      "label": "ORG",
+      "start": 46614,
+      "end": 46624
+    },
+    {
+      "text": "28 February 2012",
+      "label": "DATE",
+      "start": 46626,
+      "end": 46642
+    },
+    {
+      "text": "31 July 2013",
+      "label": "DATE",
+      "start": 46674,
+      "end": 46686
+    },
+    {
+      "text": "21 June 2013",
+      "label": "DATE",
+      "start": 46698,
+      "end": 46710
+    },
+    {
+      "text": "Ascher",
+      "label": "PERSON",
+      "start": 46734,
+      "end": 46740
+    },
+    {
+      "text": "Steven",
+      "label": "PERSON",
+      "start": 46742,
+      "end": 46748
+    },
+    {
+      "text": "Pincus",
+      "label": "GPE",
+      "start": 46750,
+      "end": 46756
+    },
+    {
+      "text": "Edward",
+      "label": "PERSON",
+      "start": 46758,
+      "end": 46764
+    },
+    {
+      "text": "2007",
+      "label": "DATE",
+      "start": 46766,
+      "end": 46770
+    },
+    {
+      "text": "New York",
+      "label": "GPE",
+      "start": 46850,
+      "end": 46858
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 46880,
+      "end": 46883
+    },
+    {
+      "text": "Michel",
+      "label": "PERSON",
+      "start": 46907,
+      "end": 46913
+    },
+    {
+      "text": "January 1998",
+      "label": "DATE",
+      "start": 46915,
+      "end": 46927
+    },
+    {
+      "text": "Michel Frizot",
+      "label": "PERSON",
+      "start": 46982,
+      "end": 46995
+    },
+    {
+      "text": "Koln",
+      "label": "GPE",
+      "start": 47033,
+      "end": 47037
+    },
+    {
+      "text": "Germany",
+      "label": "GPE",
+      "start": 47039,
+      "end": 47046
+    },
+    {
+      "text": "Konemann",
+      "label": "ORG",
+      "start": 47048,
+      "end": 47056
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 47063,
+      "end": 47066
+    },
+    {
+      "text": "Gernsheim",
+      "label": "GPE",
+      "start": 47082,
+      "end": 47091
+    },
+    {
+      "text": "Helmut",
+      "label": "PERSON",
+      "start": 47093,
+      "end": 47099
+    },
+    {
+      "text": "1986",
+      "label": "DATE",
+      "start": 47101,
+      "end": 47105
+    },
+    {
+      "text": "3\u00a0ed",
+      "label": "QUANTITY",
+      "start": 47142,
+      "end": 47146
+    },
+    {
+      "text": "New York",
+      "label": "GPE",
+      "start": 47159,
+      "end": 47167
+    },
+    {
+      "text": "Dover Publications, Inc.",
+      "label": "ORG",
+      "start": 47169,
+      "end": 47193
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 47199,
+      "end": 47202
+    },
+    {
+      "text": "Hirsch",
+      "label": "PERSON",
+      "start": 47218,
+      "end": 47224
+    },
+    {
+      "text": "Robert",
+      "label": "PERSON",
+      "start": 47226,
+      "end": 47232
+    },
+    {
+      "text": "2000",
+      "label": "DATE",
+      "start": 47234,
+      "end": 47238
+    },
+    {
+      "text": "New York",
+      "label": "GPE",
+      "start": 47286,
+      "end": 47294
+    },
+    {
+      "text": "McGraw-Hill Companies, Inc.",
+      "label": "ORG",
+      "start": 47296,
+      "end": 47323
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 47329,
+      "end": 47332
+    },
+    {
+      "text": "Hitchcock",
+      "label": "ORG",
+      "start": 47348,
+      "end": 47357
+    },
+    {
+      "text": "Susan Tyler",
+      "label": "PERSON",
+      "start": 47359,
+      "end": 47370
+    },
+    {
+      "text": "20 September 2011",
+      "label": "DATE",
+      "start": 47372,
+      "end": 47389
+    },
+    {
+      "text": "Hitchcock",
+      "label": "ORG",
+      "start": 47392,
+      "end": 47401
+    },
+    {
+      "text": "Susan Tyler",
+      "label": "PERSON",
+      "start": 47403,
+      "end": 47414
+    },
+    {
+      "text": "ed.",
+      "label": "PERSON",
+      "start": 47416,
+      "end": 47419
+    },
+    {
+      "text": "National Geographic",
+      "label": "ORG",
+      "start": 47422,
+      "end": 47441
+    },
+    {
+      "text": "Washington",
+      "label": "GPE",
+      "start": 47464,
+      "end": 47474
+    },
+    {
+      "text": "D.C.",
+      "label": "GPE",
+      "start": 47476,
+      "end": 47480
+    },
+    {
+      "text": "National Geographic Society",
+      "label": "ORG",
+      "start": 47482,
+      "end": 47509
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 47516,
+      "end": 47519
+    },
+    {
+      "text": "Johnson",
+      "label": "PERSON",
+      "start": 47535,
+      "end": 47542
+    },
+    {
+      "text": "William S.",
+      "label": "PERSON",
+      "start": 47544,
+      "end": 47554
+    },
+    {
+      "text": "Rice",
+      "label": "PERSON",
+      "start": 47556,
+      "end": 47560
+    },
+    {
+      "text": "Mark",
+      "label": "PERSON",
+      "start": 47562,
+      "end": 47566
+    },
+    {
+      "text": "Williams",
+      "label": "PERSON",
+      "start": 47568,
+      "end": 47576
+    },
+    {
+      "text": "Carla",
+      "label": "PERSON",
+      "start": 47578,
+      "end": 47583
+    },
+    {
+      "text": "2005",
+      "label": "DATE",
+      "start": 47585,
+      "end": 47589
+    },
+    {
+      "text": "Therese",
+      "label": "NORP",
+      "start": 47592,
+      "end": 47599
+    },
+    {
+      "text": "Mulligan",
+      "label": "PERSON",
+      "start": 47600,
+      "end": 47608
+    },
+    {
+      "text": "David Wooters",
+      "label": "PERSON",
+      "start": 47610,
+      "end": 47623
+    },
+    {
+      "text": "Los Angeles",
+      "label": "GPE",
+      "start": 47658,
+      "end": 47669
+    },
+    {
+      "text": "California",
+      "label": "GPE",
+      "start": 47671,
+      "end": 47681
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 47705,
+      "end": 47708
+    },
+    {
+      "text": "Spira",
+      "label": "GPE",
+      "start": 47724,
+      "end": 47729
+    },
+    {
+      "text": "S.F.",
+      "label": "GPE",
+      "start": 47731,
+      "end": 47735
+    },
+    {
+      "text": "Lothrop",
+      "label": "GPE",
+      "start": 47737,
+      "end": 47744
+    },
+    {
+      "text": "Easton S. Jr.",
+      "label": "PERSON",
+      "start": 47746,
+      "end": 47759
+    },
+    {
+      "text": "Spira",
+      "label": "GPE",
+      "start": 47761,
+      "end": 47766
+    },
+    {
+      "text": "Jonathan B.",
+      "label": "PERSON",
+      "start": 47768,
+      "end": 47779
+    },
+    {
+      "text": "2001",
+      "label": "DATE",
+      "start": 47781,
+      "end": 47785
+    },
+    {
+      "text": "The History of Photography as Seen Through",
+      "label": "ORG",
+      "start": 47788,
+      "end": 47830
+    },
+    {
+      "text": "the Spira Collection",
+      "label": "FAC",
+      "start": 47831,
+      "end": 47851
+    },
+    {
+      "text": "New York",
+      "label": "GPE",
+      "start": 47853,
+      "end": 47861
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 47878,
+      "end": 47881
+    },
+    {
+      "text": "Starl",
+      "label": "PERSON",
+      "start": 47897,
+      "end": 47902
+    },
+    {
+      "text": "Timm",
+      "label": "PERSON",
+      "start": 47904,
+      "end": 47908
+    },
+    {
+      "text": "January 1998",
+      "label": "DATE",
+      "start": 47910,
+      "end": 47922
+    },
+    {
+      "text": "New World of Pictures",
+      "label": "ORG",
+      "start": 47928,
+      "end": 47949
+    },
+    {
+      "text": "Michel Frizot",
+      "label": "PERSON",
+      "start": 47974,
+      "end": 47987
+    },
+    {
+      "text": "Koln",
+      "label": "GPE",
+      "start": 48025,
+      "end": 48029
+    },
+    {
+      "text": "Germany",
+      "label": "GPE",
+      "start": 48031,
+      "end": 48038
+    },
+    {
+      "text": "Konemann",
+      "label": "ORG",
+      "start": 48040,
+      "end": 48048
+    },
+    {
+      "text": "978",
+      "label": "CARDINAL",
+      "start": 48055,
+      "end": 48058
+    },
+    {
+      "text": "Norma",
+      "label": "PERSON",
+      "start": 48083,
+      "end": 48088
+    },
+    {
+      "text": "2007",
+      "label": "DATE",
+      "start": 48090,
+      "end": 48094
+    },
+    {
+      "text": "PDF",
+      "label": "ORG",
+      "start": 48135,
+      "end": 48138
+    },
+    {
+      "text": "Wolfgang Lef\u00e8vre",
+      "label": "PERSON",
+      "start": 48144,
+      "end": 48160
+    },
+    {
+      "text": "ed",
+      "label": "PERSON",
+      "start": 48162,
+      "end": 48164
+    },
+    {
+      "text": "Max Planck Institute",
+      "label": "ORG",
+      "start": 48216,
+      "end": 48236
+    },
+    {
+      "text": "13\u201330",
+      "label": "CARDINAL",
+      "start": 48269,
+      "end": 48274
+    },
+    {
+      "text": "PDF",
+      "label": "ORG",
+      "start": 48304,
+      "end": 48307
+    },
+    {
+      "text": "2 April 2012",
+      "label": "DATE",
+      "start": 48312,
+      "end": 48324
+    },
+    {
+      "text": "Wikimedia Commons",
+      "label": "ORG",
+      "start": 48384,
+      "end": 48401
+    },
+    {
+      "text": "Camera",
+      "label": "PERSON",
+      "start": 48423,
+      "end": 48429
+    },
+    {
+      "text": "SLR",
+      "label": "ORG",
+      "start": 48566,
+      "end": 48569
+    },
+    {
+      "text": "Darkroom",
+      "label": "ORG",
+      "start": 48589,
+      "end": 48597
+    },
+    {
+      "text": "Film",
+      "label": "PERSON",
+      "start": 48617,
+      "end": 48621
+    },
+    {
+      "text": "Filter Flash",
+      "label": "ORG",
+      "start": 48682,
+      "end": 48694
+    },
+    {
+      "text": "Tripod head Zone",
+      "label": "PERSON",
+      "start": 48892,
+      "end": 48908
+    },
+    {
+      "text": "35 mm",
+      "label": "QUANTITY",
+      "start": 48927,
+      "end": 48932
+    },
+    {
+      "text": "Chromatic",
+      "label": "ORG",
+      "start": 49008,
+      "end": 49017
+    },
+    {
+      "text": "Circle",
+      "label": "LOC",
+      "start": 49029,
+      "end": 49035
+    },
+    {
+      "text": "Clipping Color",
+      "label": "PERSON",
+      "start": 49049,
+      "end": 49063
+    },
+    {
+      "text": "F-number",
+      "label": "PRODUCT",
+      "start": 49183,
+      "end": 49191
+    },
+    {
+      "text": "Lens",
+      "label": "PERSON",
+      "start": 49274,
+      "end": 49278
+    },
+    {
+      "text": "Science",
+      "label": "ORG",
+      "start": 49413,
+      "end": 49420
+    },
+    {
+      "text": "Shutter",
+      "label": "PERSON",
+      "start": 49436,
+      "end": 49443
+    },
+    {
+      "text": "Landscape Monochrome Nature Neues Sehen Nude Photojournalism Pictorialism Pornography Portrait Post-mortem",
+      "label": "WORK_OF_ART",
+      "start": 49670,
+      "end": 49776
+    },
+    {
+      "text": "Selfie",
+      "label": "NORP",
+      "start": 49783,
+      "end": 49789
+    },
+    {
+      "text": "Stock Straight",
+      "label": "ORG",
+      "start": 49840,
+      "end": 49854
+    },
+    {
+      "text": "Crittercam",
+      "label": "GPE",
+      "start": 49974,
+      "end": 49984
+    },
+    {
+      "text": "Pigeon",
+      "label": "PERSON",
+      "start": 49986,
+      "end": 49992
+    },
+    {
+      "text": "Fireworks",
+      "label": "PERSON",
+      "start": 50022,
+      "end": 50031
+    },
+    {
+      "text": "Harris",
+      "label": "PERSON",
+      "start": 50047,
+      "end": 50053
+    },
+    {
+      "text": "Kirlian Kite",
+      "label": "PERSON",
+      "start": 50121,
+      "end": 50133
+    },
+    {
+      "text": "Lo",
+      "label": "PERSON",
+      "start": 50141,
+      "end": 50143
+    },
+    {
+      "text": "Lomography Long-exposure",
+      "label": "PERSON",
+      "start": 50159,
+      "end": 50183
+    },
+    {
+      "text": "Luminogram Macro Mordan\u00e7age Multiple",
+      "label": "ORG",
+      "start": 50184,
+      "end": 50220
+    },
+    {
+      "text": "HDR",
+      "label": "ORG",
+      "start": 50245,
+      "end": 50248
+    },
+    {
+      "text": "Redscale Rephotography Rollout Scanography Schlieren",
+      "label": "ORG",
+      "start": 50304,
+      "end": 50356
+    },
+    {
+      "text": "Slow",
+      "label": "PERSON",
+      "start": 50386,
+      "end": 50390
+    },
+    {
+      "text": "Stereoscopy Stopping",
+      "label": "PERSON",
+      "start": 50398,
+      "end": 50418
+    },
+    {
+      "text": "Strip Slit-",
+      "label": "GPE",
+      "start": 50424,
+      "end": 50435
+    },
+    {
+      "text": "Sun",
+      "label": "LOC",
+      "start": 50454,
+      "end": 50457
+    },
+    {
+      "text": "Tilt",
+      "label": "PERSON",
+      "start": 50467,
+      "end": 50471
+    },
+    {
+      "text": "Time",
+      "label": "ORG",
+      "start": 50495,
+      "end": 50499
+    },
+    {
+      "text": "Ultraviolet Vignetting Xerography Zoom",
+      "label": "ORG",
+      "start": 50506,
+      "end": 50544
+    },
+    {
+      "text": "Composition Diagonal",
+      "label": "ORG",
+      "start": 50551,
+      "end": 50571
+    },
+    {
+      "text": "Headroom Lead",
+      "label": "PERSON",
+      "start": 50587,
+      "end": 50600
+    },
+    {
+      "text": "thirds",
+      "label": "CARDINAL",
+      "start": 50614,
+      "end": 50620
+    },
+    {
+      "text": "Simplicity Golden",
+      "label": "LOC",
+      "start": 50621,
+      "end": 50638
+    },
+    {
+      "text": "Ambrotype Film",
+      "label": "PERSON",
+      "start": 50705,
+      "end": 50719
+    },
+    {
+      "text": "Autochrome Lumi\u00e8re Box",
+      "label": "ORG",
+      "start": 50732,
+      "end": 50754
+    },
+    {
+      "text": "Dufaycolor Heliography Lippmann",
+      "label": "PERSON",
+      "start": 50800,
+      "end": 50831
+    },
+    {
+      "text": "Painted",
+      "label": "PERSON",
+      "start": 50838,
+      "end": 50845
+    },
+    {
+      "text": "Glass",
+      "label": "PERSON",
+      "start": 50892,
+      "end": 50897
+    },
+    {
+      "text": "Tintype Visual",
+      "label": "PERSON",
+      "start": 50904,
+      "end": 50918
+    },
+    {
+      "text": "Regional Albania Bangladesh Canada",
+      "label": "ORG",
+      "start": 50924,
+      "end": 50958
+    },
+    {
+      "text": "China",
+      "label": "GPE",
+      "start": 50959,
+      "end": 50964
+    },
+    {
+      "text": "Denmark",
+      "label": "GPE",
+      "start": 50965,
+      "end": 50972
+    },
+    {
+      "text": "Greece",
+      "label": "GPE",
+      "start": 50973,
+      "end": 50979
+    },
+    {
+      "text": "India",
+      "label": "GPE",
+      "start": 50980,
+      "end": 50985
+    },
+    {
+      "text": "Japan",
+      "label": "GPE",
+      "start": 50986,
+      "end": 50991
+    },
+    {
+      "text": "Korea",
+      "label": "GPE",
+      "start": 50992,
+      "end": 50997
+    },
+    {
+      "text": "Luxembourg",
+      "label": "GPE",
+      "start": 50998,
+      "end": 51008
+    },
+    {
+      "text": "Norway",
+      "label": "GPE",
+      "start": 51009,
+      "end": 51015
+    },
+    {
+      "text": "Philippines",
+      "label": "GPE",
+      "start": 51016,
+      "end": 51027
+    },
+    {
+      "text": "Serbia",
+      "label": "GPE",
+      "start": 51028,
+      "end": 51034
+    },
+    {
+      "text": "Sudan",
+      "label": "GPE",
+      "start": 51044,
+      "end": 51049
+    },
+    {
+      "text": "Taiwan",
+      "label": "GPE",
+      "start": 51050,
+      "end": 51056
+    },
+    {
+      "text": "Turkey",
+      "label": "GPE",
+      "start": 51057,
+      "end": 51063
+    },
+    {
+      "text": "Ukraine United",
+      "label": "GPE",
+      "start": 51064,
+      "end": 51078
+    },
+    {
+      "text": "Digital",
+      "label": "ORG",
+      "start": 51125,
+      "end": 51132
+    },
+    {
+      "text": "CMOS APS",
+      "label": "ORG",
+      "start": 51244,
+      "end": 51252
+    },
+    {
+      "text": "CCD",
+      "label": "ORG",
+      "start": 51253,
+      "end": 51256
+    },
+    {
+      "text": "Three",
+      "label": "CARDINAL",
+      "start": 51257,
+      "end": 51262
+    },
+    {
+      "text": "Foveon X3",
+      "label": "FAC",
+      "start": 51274,
+      "end": 51283
+    },
+    {
+      "text": "Pixel Color",
+      "label": "PERSON",
+      "start": 51305,
+      "end": 51316
+    },
+    {
+      "text": "Chromogenic",
+      "label": "NORP",
+      "start": 51340,
+      "end": 51351
+    },
+    {
+      "text": "Reversal",
+      "label": "PERSON",
+      "start": 51358,
+      "end": 51366
+    },
+    {
+      "text": "Color",
+      "label": "PERSON",
+      "start": 51372,
+      "end": 51377
+    },
+    {
+      "text": "CMYK",
+      "label": "ORG",
+      "start": 51415,
+      "end": 51419
+    },
+    {
+      "text": "RGB",
+      "label": "ORG",
+      "start": 51432,
+      "end": 51435
+    },
+    {
+      "text": "Photographicprocessing Bleach",
+      "label": "ORG",
+      "start": 51448,
+      "end": 51477
+    },
+    {
+      "text": "C-41",
+      "label": "PRODUCT",
+      "start": 51485,
+      "end": 51489
+    },
+    {
+      "text": "Dye",
+      "label": "PERSON",
+      "start": 51578,
+      "end": 51581
+    },
+    {
+      "text": "Fixer Gelatin",
+      "label": "PERSON",
+      "start": 51602,
+      "end": 51615
+    },
+    {
+      "text": "K-14",
+      "label": "PRODUCT",
+      "start": 51657,
+      "end": 51661
+    },
+    {
+      "text": "Lists Largest",
+      "label": "ORG",
+      "start": 51713,
+      "end": 51726
+    },
+    {
+      "text": "Museums",
+      "label": "PERSON",
+      "start": 51766,
+      "end": 51773
+    },
+    {
+      "text": "one",
+      "label": "CARDINAL",
+      "start": 51785,
+      "end": 51788
+    },
+    {
+      "text": "Photographs",
+      "label": "PERSON",
+      "start": 51802,
+      "end": 51813
+    },
+    {
+      "text": "Photographers Norwegian",
+      "label": "NORP",
+      "start": 51844,
+      "end": 51867
+    },
+    {
+      "text": "Polish",
+      "label": "NORP",
+      "start": 51868,
+      "end": 51874
+    },
+    {
+      "text": "Polaroid",
+      "label": "ORG",
+      "start": 51989,
+      "end": 51997
+    },
+    {
+      "text": "vteCamera",
+      "label": "ORG",
+      "start": 52025,
+      "end": 52034
+    },
+    {
+      "text": "ADOX",
+      "label": "ORG",
+      "start": 52042,
+      "end": 52046
+    },
+    {
+      "text": "Aigo Aiptek Alpa Arri Argus Asahiflex Beier",
+      "label": "PERSON",
+      "start": 52057,
+      "end": 52100
+    },
+    {
+      "text": "Beirette",
+      "label": "PERSON",
+      "start": 52102,
+      "end": 52110
+    },
+    {
+      "text": "Bronica Canon",
+      "label": "PERSON",
+      "start": 52147,
+      "end": 52160
+    },
+    {
+      "text": "Diana Edixa",
+      "label": "PERSON",
+      "start": 52191,
+      "end": 52202
+    },
+    {
+      "text": "Hasselblad Hewlett-Packard",
+      "label": "PERSON",
+      "start": 52246,
+      "end": 52272
+    },
+    {
+      "text": "Honeywell",
+      "label": "ORG",
+      "start": 52279,
+      "end": 52288
+    },
+    {
+      "text": "Kodak",
+      "label": "GPE",
+      "start": 52302,
+      "end": 52307
+    },
+    {
+      "text": "Konica",
+      "label": "GPE",
+      "start": 52308,
+      "end": 52314
+    },
+    {
+      "text": "Konica",
+      "label": "GPE",
+      "start": 52315,
+      "end": 52321
+    },
+    {
+      "text": "Minolta",
+      "label": "GPE",
+      "start": 52322,
+      "end": 52329
+    },
+    {
+      "text": "Leica Camera Leidolf Linhof",
+      "label": "PERSON",
+      "start": 52330,
+      "end": 52357
+    },
+    {
+      "text": "Lumix Mamiya Micro Precision",
+      "label": "ORG",
+      "start": 52363,
+      "end": 52391
+    },
+    {
+      "text": "Miranda Newman &",
+      "label": "ORG",
+      "start": 52415,
+      "end": 52431
+    },
+    {
+      "text": "Nikon Olympus Oregon Scientific Panasonic Pentax Petri Phase",
+      "label": "ORG",
+      "start": 52440,
+      "end": 52500
+    },
+    {
+      "text": "Reid Ricoh Rollei Samsung",
+      "label": "PERSON",
+      "start": 52531,
+      "end": 52556
+    },
+    {
+      "text": "Silvestri Sinar",
+      "label": "PERSON",
+      "start": 52577,
+      "end": 52592
+    },
+    {
+      "text": "Tessina Thornton-Pickard",
+      "label": "PERSON",
+      "start": 52598,
+      "end": 52622
+    },
+    {
+      "text": "Topcon Vivitar Voigtl\u00e4nder Wray",
+      "label": "ORG",
+      "start": 52639,
+      "end": 52670
+    },
+    {
+      "text": "Yashica Zeiss Zenit Zorki Authority",
+      "label": "ORG",
+      "start": 52680,
+      "end": 52715
+    },
+    {
+      "text": "LUX Retrieved",
+      "label": "PERSON",
+      "start": 52825,
+      "end": 52838
+    },
+    {
+      "text": "https://en.wikipedia.org/w/index.php?title=Camera&oldid=1320273068",
+      "label": "WORK_OF_ART",
+      "start": 52845,
+      "end": 52911
+    },
+    {
+      "text": "CamerasPhotography",
+      "label": "ORG",
+      "start": 52925,
+      "end": 52943
+    },
+    {
+      "text": "November",
+      "label": "DATE",
+      "start": 53080,
+      "end": 53088
+    },
+    {
+      "text": "WikidataWikipedia",
+      "label": "ORG",
+      "start": 53193,
+      "end": 53210
+    },
+    {
+      "text": "American",
+      "label": "NORP",
+      "start": 53246,
+      "end": 53254
+    },
+    {
+      "text": "January 2022All",
+      "label": "DATE",
+      "start": 53268,
+      "end": 53283
+    },
+    {
+      "text": "Wikipedia",
+      "label": "ORG",
+      "start": 53284,
+      "end": 53293
+    },
+    {
+      "text": "American",
+      "label": "NORP",
+      "start": 53314,
+      "end": 53322
+    },
+    {
+      "text": "EnglishUse",
+      "label": "ORG",
+      "start": 53323,
+      "end": 53333
+    },
+    {
+      "text": "dmy",
+      "label": "PERSON",
+      "start": 53334,
+      "end": 53337
+    },
+    {
+      "text": "January 2020All",
+      "label": "DATE",
+      "start": 53349,
+      "end": 53364
+    },
+    {
+      "text": "March 2019CS1",
+      "label": "DATE",
+      "start": 53439,
+      "end": 53452
+    },
+    {
+      "text": "Wikidata",
+      "label": "ORG",
+      "start": 53497,
+      "end": 53505
+    },
+    {
+      "text": "3 November 2025",
+      "label": "DATE",
+      "start": 53535,
+      "end": 53550
+    },
+    {
+      "text": "UTC",
+      "label": "ORG",
+      "start": 53562,
+      "end": 53565
+    },
+    {
+      "text": "the Creative Commons Attribution-ShareAlike 4.0 License",
+      "label": "ORG",
+      "start": 53592,
+      "end": 53647
+    },
+    {
+      "text": "the Terms of Use and Privacy Policy",
+      "label": "ORG",
+      "start": 53710,
+      "end": 53745
+    },
+    {
+      "text": "Wikipedia\u00ae",
+      "label": "ORG",
+      "start": 53747,
+      "end": 53757
+    },
+    {
+      "text": "the Wikimedia Foundation, Inc.",
+      "label": "ORG",
+      "start": 53787,
+      "end": 53817
+    },
+    {
+      "text": "Search Search Toggle",
+      "label": "ORG",
+      "start": 53974,
+      "end": 53994
+    },
+    {
+      "text": "106",
+      "label": "CARDINAL",
+      "start": 54024,
+      "end": 54027
+    },
+    {
+      "text": "2025",
+      "label": "DATE",
+      "start": 54183,
+      "end": 54187
+    },
+    {
+      "text": "Google LLC Coursera",
+      "label": "PRODUCT",
+      "start": 54188,
+      "end": 54207
+    },
+    {
+      "text": "InJoin",
+      "label": "ORG",
+      "start": 54333,
+      "end": 54339
+    },
+    {
+      "text": "FreeJoin",
+      "label": "ORG",
+      "start": 54344,
+      "end": 54352
+    },
+    {
+      "text": "FreeResults",
+      "label": "ORG",
+      "start": 54357,
+      "end": 54368
+    },
+    {
+      "text": "UniversityCamera",
+      "label": "ORG",
+      "start": 54432,
+      "end": 54448
+    },
+    {
+      "text": "ImagingSkills",
+      "label": "ORG",
+      "start": 54453,
+      "end": 54466
+    },
+    {
+      "text": "Image Quality",
+      "label": "ORG",
+      "start": 54480,
+      "end": 54493
+    },
+    {
+      "text": "Image Analysis",
+      "label": "ORG",
+      "start": 54495,
+      "end": 54509
+    },
+    {
+      "text": "Computer Vision",
+      "label": "ORG",
+      "start": 54511,
+      "end": 54526
+    },
+    {
+      "text": "Color Theory",
+      "label": "ORG",
+      "start": 54541,
+      "end": 54553
+    },
+    {
+      "text": "Computer Graphics, Visualization (Computer Graphics",
+      "label": "ORG",
+      "start": 54555,
+      "end": 54606
+    },
+    {
+      "text": "Electronic Components,",
+      "label": "ORG",
+      "start": 54609,
+      "end": 54631
+    },
+    {
+      "text": "Algorithms",
+      "label": "PERSON",
+      "start": 54648,
+      "end": 54658
+    },
+    {
+      "text": "4.7",
+      "label": "CARDINAL",
+      "start": 54712,
+      "end": 54715
+    },
+    {
+      "text": "5",
+      "label": "CARDINAL",
+      "start": 54723,
+      "end": 54724
+    },
+    {
+      "text": "1 - 3",
+      "label": "CARDINAL",
+      "start": 54765,
+      "end": 54770
+    },
+    {
+      "text": "UniversityPhotography Basics",
+      "label": "PERSON",
+      "start": 54821,
+      "end": 54849
+    },
+    {
+      "text": "Photo Editing",
+      "label": "PERSON",
+      "start": 54950,
+      "end": 54963
+    },
+    {
+      "text": "Peer Review",
+      "label": "ORG",
+      "start": 54965,
+      "end": 54976
+    },
+    {
+      "text": "Image Quality",
+      "label": "ORG",
+      "start": 54978,
+      "end": 54991
+    },
+    {
+      "text": "Photo/Video Production and Technology",
+      "label": "ORG",
+      "start": 54993,
+      "end": 55030
+    },
+    {
+      "text": "Digital Design, File Management",
+      "label": "ORG",
+      "start": 55032,
+      "end": 55063
+    },
+    {
+      "text": "Creative Cloud",
+      "label": "PERSON",
+      "start": 55071,
+      "end": 55085
+    },
+    {
+      "text": "Digital Publishing",
+      "label": "ORG",
+      "start": 55113,
+      "end": 55131
+    },
+    {
+      "text": "Social Media",
+      "label": "ORG",
+      "start": 55133,
+      "end": 55145
+    },
+    {
+      "text": "Content Creation,",
+      "label": "ORG",
+      "start": 55147,
+      "end": 55164
+    },
+    {
+      "text": "Writing",
+      "label": "PERSON",
+      "start": 55199,
+      "end": 55206
+    },
+    {
+      "text": "4.7",
+      "label": "CARDINAL",
+      "start": 55245,
+      "end": 55248
+    },
+    {
+      "text": "5",
+      "label": "CARDINAL",
+      "start": 55256,
+      "end": 55257
+    },
+    {
+      "text": "3 - 6",
+      "label": "CARDINAL",
+      "start": 55307,
+      "end": 55312
+    },
+    {
+      "text": "UniversityCameras",
+      "label": "PERSON",
+      "start": 55363,
+      "end": 55380
+    },
+    {
+      "text": "Peer Review",
+      "label": "ORG",
+      "start": 55440,
+      "end": 55451
+    },
+    {
+      "text": "Photo/Video Production and Technology",
+      "label": "ORG",
+      "start": 55453,
+      "end": 55490
+    },
+    {
+      "text": "Image Quality",
+      "label": "ORG",
+      "start": 55492,
+      "end": 55505
+    },
+    {
+      "text": "4.8",
+      "label": "CARDINAL",
+      "start": 55560,
+      "end": 55563
+    },
+    {
+      "text": "5",
+      "label": "CARDINAL",
+      "start": 55571,
+      "end": 55572
+    },
+    {
+      "text": "1",
+      "label": "CARDINAL",
+      "start": 55611,
+      "end": 55612
+    },
+    {
+      "text": "UniversityCamera ControlSkills",
+      "label": "PERSON",
+      "start": 55666,
+      "end": 55696
+    },
+    {
+      "text": "Peer Review",
+      "label": "ORG",
+      "start": 55723,
+      "end": 55734
+    },
+    {
+      "text": "Photo/Video Production and Technology",
+      "label": "ORG",
+      "start": 55736,
+      "end": 55773
+    },
+    {
+      "text": "4.8",
+      "label": "CARDINAL",
+      "start": 55799,
+      "end": 55802
+    },
+    {
+      "text": "5",
+      "label": "CARDINAL",
+      "start": 55810,
+      "end": 55811
+    },
+    {
+      "text": "1",
+      "label": "CARDINAL",
+      "start": 55850,
+      "end": 55851
+    },
+    {
+      "text": "CinematographySkills",
+      "label": "ORG",
+      "start": 55920,
+      "end": 55940
+    },
+    {
+      "text": "Photo/Video Production and Technology",
+      "label": "ORG",
+      "start": 55985,
+      "end": 56022
+    },
+    {
+      "text": "Media Production",
+      "label": "ORG",
+      "start": 56066,
+      "end": 56082
+    },
+    {
+      "text": "Post-Production",
+      "label": "ORG",
+      "start": 56084,
+      "end": 56099
+    },
+    {
+      "text": "Image Quality",
+      "label": "ORG",
+      "start": 56143,
+      "end": 56156
+    },
+    {
+      "text": "Color Theory",
+      "label": "PERSON",
+      "start": 56158,
+      "end": 56170
+    },
+    {
+      "text": "3 - 6",
+      "label": "CARDINAL",
+      "start": 56212,
+      "end": 56217
+    },
+    {
+      "text": "Adobe Premiere",
+      "label": "PERSON",
+      "start": 56333,
+      "end": 56347
+    },
+    {
+      "text": "Post-Production",
+      "label": "ORG",
+      "start": 56380,
+      "end": 56395
+    },
+    {
+      "text": "Photo/Video Production and Technology",
+      "label": "ORG",
+      "start": 56397,
+      "end": 56434
+    },
+    {
+      "text": "Creative Cloud",
+      "label": "PERSON",
+      "start": 56486,
+      "end": 56500
+    },
+    {
+      "text": "Image Quality",
+      "label": "ORG",
+      "start": 56520,
+      "end": 56533
+    },
+    {
+      "text": "Proposal Development",
+      "label": "ORG",
+      "start": 56535,
+      "end": 56555
+    },
+    {
+      "text": "Writing",
+      "label": "PERSON",
+      "start": 56566,
+      "end": 56573
+    },
+    {
+      "text": "Graphic",
+      "label": "PERSON",
+      "start": 56575,
+      "end": 56582
+    },
+    {
+      "text": "Creativity",
+      "label": "NORP",
+      "start": 56625,
+      "end": 56635
+    },
+    {
+      "text": "Timelines",
+      "label": "ORG",
+      "start": 56637,
+      "end": 56646
+    },
+    {
+      "text": "4.6",
+      "label": "CARDINAL",
+      "start": 56674,
+      "end": 56677
+    },
+    {
+      "text": "5",
+      "label": "CARDINAL",
+      "start": 56685,
+      "end": 56686
+    },
+    {
+      "text": "3 - 6",
+      "label": "CARDINAL",
+      "start": 56735,
+      "end": 56740
+    },
+    {
+      "text": "Coursera",
+      "label": "PERSON",
+      "start": 56766,
+      "end": 56774
+    },
+    {
+      "text": "Videography",
+      "label": "GPE",
+      "start": 56987,
+      "end": 56998
+    },
+    {
+      "text": "Photo/Video Production and Technology",
+      "label": "ORG",
+      "start": 57013,
+      "end": 57050
+    },
+    {
+      "text": "Image Quality",
+      "label": "ORG",
+      "start": 57067,
+      "end": 57080
+    },
+    {
+      "text": "Color Theory",
+      "label": "PERSON",
+      "start": 57082,
+      "end": 57094
+    },
+    {
+      "text": "1 - 3",
+      "label": "CARDINAL",
+      "start": 57128,
+      "end": 57133
+    },
+    {
+      "text": "Peer Review",
+      "label": "ORG",
+      "start": 57273,
+      "end": 57284
+    },
+    {
+      "text": "Photo/Video Production and Technology",
+      "label": "ORG",
+      "start": 57317,
+      "end": 57354
+    },
+    {
+      "text": "Post-Production",
+      "label": "ORG",
+      "start": 57356,
+      "end": 57371
+    },
+    {
+      "text": "CreativityBeginner",
+      "label": "ORG",
+      "start": 57442,
+      "end": 57460
+    },
+    {
+      "text": "1 - 3",
+      "label": "CARDINAL",
+      "start": 57474,
+      "end": 57479
+    },
+    {
+      "text": "Images & Historical Interpretation",
+      "label": "ORG",
+      "start": 57535,
+      "end": 57569
+    },
+    {
+      "text": "the 20th Century",
+      "label": "DATE",
+      "start": 57573,
+      "end": 57589
+    },
+    {
+      "text": "Photo Editing",
+      "label": "PERSON",
+      "start": 57661,
+      "end": 57674
+    },
+    {
+      "text": "Media",
+      "label": "ORG",
+      "start": 57676,
+      "end": 57681
+    },
+    {
+      "text": "World History",
+      "label": "ORG",
+      "start": 57702,
+      "end": 57715
+    },
+    {
+      "text": "European History",
+      "label": "PERSON",
+      "start": 57717,
+      "end": 57733
+    },
+    {
+      "text": "Case Studies",
+      "label": "ORG",
+      "start": 57735,
+      "end": 57747
+    },
+    {
+      "text": "Political Sciences",
+      "label": "ORG",
+      "start": 57749,
+      "end": 57767
+    },
+    {
+      "text": "4.6",
+      "label": "CARDINAL",
+      "start": 57809,
+      "end": 57812
+    },
+    {
+      "text": "5",
+      "label": "CARDINAL",
+      "start": 57820,
+      "end": 57821
+    },
+    {
+      "text": "stars\u00c2\u00b7391",
+      "label": "PERSON",
+      "start": 57822,
+      "end": 57832
+    },
+    {
+      "text": "1 - 3",
+      "label": "CARDINAL",
+      "start": 57862,
+      "end": 57867
+    },
+    {
+      "text": "Photography - Lighting",
+      "label": "ORG",
+      "start": 57936,
+      "end": 57958
+    },
+    {
+      "text": "Image Quality",
+      "label": "ORG",
+      "start": 58024,
+      "end": 58037
+    },
+    {
+      "text": "Post-Production",
+      "label": "ORG",
+      "start": 58039,
+      "end": 58054
+    },
+    {
+      "text": "1",
+      "label": "CARDINAL",
+      "start": 58090,
+      "end": 58091
+    },
+    {
+      "text": "BeginnersSkills",
+      "label": "ORG",
+      "start": 58191,
+      "end": 58206
+    },
+    {
+      "text": "Storytelling, Photo/Video Production and Technology",
+      "label": "ORG",
+      "start": 58233,
+      "end": 58284
+    },
+    {
+      "text": "Image Quality",
+      "label": "ORG",
+      "start": 58318,
+      "end": 58331
+    },
+    {
+      "text": "CreativityBeginner",
+      "label": "ORG",
+      "start": 58333,
+      "end": 58351
+    },
+    {
+      "text": "1",
+      "label": "CARDINAL",
+      "start": 58365,
+      "end": 58366
+    },
+    {
+      "text": "Photo Editing",
+      "label": "PERSON",
+      "start": 58519,
+      "end": 58532
+    },
+    {
+      "text": "Image Quality",
+      "label": "ORG",
+      "start": 58534,
+      "end": 58547
+    },
+    {
+      "text": "Storytelling, Adobe Photoshop",
+      "label": "ORG",
+      "start": 58549,
+      "end": 58578
+    },
+    {
+      "text": "Content Creation",
+      "label": "ORG",
+      "start": 58580,
+      "end": 58596
+    },
+    {
+      "text": "CreativityBeginner",
+      "label": "ORG",
+      "start": 58598,
+      "end": 58616
+    },
+    {
+      "text": "1",
+      "label": "CARDINAL",
+      "start": 58630,
+      "end": 58631
+    },
+    {
+      "text": "WeeksSearches",
+      "label": "ORG",
+      "start": 58636,
+      "end": 58649
+    },
+    {
+      "text": "images & historical",
+      "label": "ORG",
+      "start": 58788,
+      "end": 58807
+    },
+    {
+      "text": "the 20th century",
+      "label": "DATE",
+      "start": 58826,
+      "end": 58842
+    },
+    {
+      "text": "3d",
+      "label": "CARDINAL",
+      "start": 58889,
+      "end": 58891
+    },
+    {
+      "text": "5",
+      "label": "CARDINAL",
+      "start": 58937,
+      "end": 58938
+    },
+    {
+      "text": "FooterSkillsArtificial Intelligence",
+      "label": "ORG",
+      "start": 58994,
+      "end": 59029
+    },
+    {
+      "text": "ExcelMicrosoft Power BIProject ManagementPythonCertificates & ProgramsGoogle Cybersecurity CertificateGoogle Data Analytics",
+      "label": "ORG",
+      "start": 59125,
+      "end": 59248
+    },
+    {
+      "text": "CertificateGoogle Project Management CertificateGoogle UX Design CertificateIBM Data",
+      "label": "ORG",
+      "start": 59278,
+      "end": 59362
+    },
+    {
+      "text": "ScienceData ScienceEducation & TeachingEngineeringFinanceHealthcareHuman Resources (HR)Information Technology",
+      "label": "ORG",
+      "start": 59544,
+      "end": 59653
+    },
+    {
+      "text": "Strengths and Weaknesses for Job InterviewsHigh-Income Skills",
+      "label": "ORG",
+      "start": 59715,
+      "end": 59776
+    },
+    {
+      "text": "Google SheetsHow",
+      "label": "ORG",
+      "start": 59845,
+      "end": 59861
+    },
+    {
+      "text": "Learn Artificial IntelligencePopular Cybersecurity CertificationsPreparing",
+      "label": "ORG",
+      "start": 59865,
+      "end": 59939
+    },
+    {
+      "text": "EnterpriseFor GovernmentFor CampusBecome",
+      "label": "ORG",
+      "start": 60167,
+      "end": 60207
+    },
+    {
+      "text": "PartnerSocial ImpactFree CoursesShare",
+      "label": "ORG",
+      "start": 60210,
+      "end": 60247
+    },
+    {
+      "text": "Coursera",
+      "label": "PERSON",
+      "start": 60253,
+      "end": 60261
+    },
+    {
+      "text": "storyCommunityLearnersPartnersBeta TestersBlogThe Coursera PodcastTech BlogMorePressInvestorsTermsPrivacyHelpAccessibilityContactArticlesDirectoryAffiliatesModern",
+      "label": "LAW",
+      "start": 60271,
+      "end": 60433
+    },
+    {
+      "text": "2025",
+      "label": "DATE",
+      "start": 60493,
+      "end": 60497
+    },
+    {
+      "text": "Kaggle",
+      "label": "PERSON",
+      "start": 60542,
+      "end": 60548
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "camera",
+      "frequency": 194,
+      "score": 1.0
+    },
+    {
+      "keyword": "cameras",
+      "frequency": 104,
+      "score": 0.5360824742268041
+    },
+    {
+      "keyword": "lens",
+      "frequency": 90,
+      "score": 0.4639175257731959
+    },
+    {
+      "keyword": "film",
+      "frequency": 82,
+      "score": 0.422680412371134
+    },
+    {
+      "keyword": "digital",
+      "frequency": 72,
+      "score": 0.3711340206185567
+    },
+    {
+      "keyword": "light",
+      "frequency": 68,
+      "score": 0.35051546391752575
+    },
+    {
+      "keyword": "photography",
+      "frequency": 68,
+      "score": 0.35051546391752575
+    },
+    {
+      "keyword": "image",
+      "frequency": 59,
+      "score": 0.30412371134020616
+    },
+    {
+      "keyword": "exposure",
+      "frequency": 48,
+      "score": 0.24742268041237114
+    },
+    {
+      "keyword": "shutter",
+      "frequency": 40,
+      "score": 0.20618556701030927
+    },
+    {
+      "keyword": "use",
+      "frequency": 30,
+      "score": 0.15463917525773196
+    },
+    {
+      "keyword": "video",
+      "frequency": 27,
+      "score": 0.13917525773195877
+    },
+    {
+      "keyword": "isbn",
+      "frequency": 27,
+      "score": 0.13917525773195877
+    },
+    {
+      "keyword": "images",
+      "frequency": 25,
+      "score": 0.12886597938144329
+    },
+    {
+      "keyword": "main",
+      "frequency": 23,
+      "score": 0.11855670103092783
+    },
+    {
+      "keyword": "history",
+      "frequency": 23,
+      "score": 0.11855670103092783
+    },
+    {
+      "keyword": "aperture",
+      "frequency": 23,
+      "score": 0.11855670103092783
+    },
+    {
+      "keyword": "format",
+      "frequency": 22,
+      "score": 0.1134020618556701
+    },
+    {
+      "keyword": "archived",
+      "frequency": 22,
+      "score": 0.1134020618556701
+    },
+    {
+      "keyword": "reflex",
+      "frequency": 21,
+      "score": 0.10824742268041238
+    }
+  ],
+  "noun_phrases": [
+    "camera - wikipedia jump",
+    "main menu",
+    "main menu",
+    "sidebar",
+    "navigation main pagecontentscurrent",
+    "us contribute helplearn",
+    "editcommunity",
+    "portalrecent changesupload",
+    "filespecial pages",
+    "personal tools",
+    "account",
+    "contents",
+    "sidebar hide",
+    "mechanics toggle mechanics subsection",
+    "2.1 exposure control",
+    "sensor",
+    "2.5 camera accessories",
+    "other accessories",
+    "3 primary types",
+    "toggle primary types",
+    "3.1 single-lens reflex",
+    "slr) camera",
+    "3.6.1 professional video camera",
+    "8 external links",
+    "toggle",
+    "the table",
+    "contents camera 106 languages",
+    "d\u0115\u0324ng",
+    "-ng\u1e73\u0304\u1019\u103c\u1014\u103a\u1019\u102c\u1018\u102c\u101e\u102cna vosa",
+    "vakavitinederlandsnedersaksies\u0928\u0947\u092a\u093e\u0932\u0940\u65e5\u672c\u8a9enordfriisknorsk",
+    "what links",
+    "pdfprintable version",
+    "other projects",
+    "wikimedia commonswikidata item appearance",
+    "wikipedia",
+    "statusthis",
+    "an accepted version",
+    "this",
+    "pagethis",
+    "the latest accepted revision",
+    "3 november",
+    "optical device",
+    "recording images",
+    "other uses",
+    "camera",
+    "(disambiguation",
+    "leica camera",
+    "hasselblad 500 c/m",
+    "zeiss lens",
+    "a camera",
+    "an instrument",
+    "images",
+    "videos",
+    "an electronic image sensor",
+    "a light-sensitive material",
+    "photographic film",
+    "a pivotal technology",
+    "the fields",
+    "photography",
+    "videography",
+    "cameras",
+    "a significant role",
+    "the progression",
+    "visual arts",
+    "media",
+    "entertainment",
+    "surveillance",
+    "scientific research",
+    "the invention",
+    "the camera",
+    "the 19th century",
+    "advancements",
+    "technology",
+    "a vast array",
+    "types",
+    "models",
+    "the 21st century",
+    "cameras",
+    "a combination",
+    "multiple mechanical components",
+    "principles",
+    "these",
+    "exposure control",
+    "which",
+    "the amount",
+    "light",
+    "the sensor",
+    "film",
+    "the lens",
+    "which",
+    "the light",
+    "the viewfinder",
+    "which",
+    "the user",
+    "the scene",
+    "the film",
+    "sensor",
+    "which",
+    "the image",
+    "several types",
+    "camera exist",
+    "each",
+    "specific uses",
+    "unique capabilities",
+    "single-lens reflex",
+    "slr) cameras",
+    "real-time, exact imaging",
+    "the lens",
+    "large-format and medium-format cameras",
+    "higher image resolution",
+    "professional and artistic photography",
+    "compact cameras",
+    "their portability",
+    "simplicity",
+    "consumer photography",
+    "rangefinder cameras",
+    "photojournalism",
+    "motion picture cameras",
+    "cinematic content",
+    "digital cameras",
+    "which",
+    "the late 20th",
+    "early 21st century",
+    "electronic sensors",
+    "the rapid development",
+    "smartphone camera technology",
+    "the 21st century",
+    "the lines",
+    "dedicated cameras",
+    "multifunctional devices",
+    "the smartphone camera",
+    "society",
+    "visual content",
+    "history[edit",
+    "main article",
+    "history",
+    "the camera 19th century[edit",
+    "the use",
+    "the camera obscura",
+    "complex photographic cameras",
+    "the evolution",
+    "the technology",
+    "the 19th century",
+    "pioneers",
+    "thomas wedgwood",
+    "nic\u00e9phore ni\u00e9pce",
+    "henry fox talbot",
+    "the camera obscura",
+    "chemical experiments",
+    "they",
+    "cameras",
+    "chemical photography",
+    "the camera's size",
+    "optimized lens configurations",
+    "the introduction",
+    "the daguerreotype process",
+    "various producers",
+    "diverse designs",
+    "camera manufacturing",
+    "a specialized trade",
+    "the 1850s",
+    "designs",
+    "sizes",
+    "the latter half",
+    "the century",
+    "the advent",
+    "dry plates",
+    "roll-film",
+    "a shift",
+    "the original kodak camera",
+    "this period",
+    "significant advancements",
+    "lens technology",
+    "the emergence",
+    "color photography",
+    "a surge",
+    "camera",
+    "20th century[edit",
+    "the first half",
+    "the 20th century",
+    "continued miniaturization",
+    "the integration",
+    "new manufacturing materials",
+    "world war",
+    "i",
+    "germany",
+    "the lead",
+    "camera development",
+    "industry consolidation",
+    "precision-made cameras",
+    "the industry",
+    "significant product launches",
+    "the leica camera",
+    "the contax",
+    "which",
+    "advancements",
+    "film and lens designs",
+    "a marked increase",
+    "accessibility",
+    "amateurs",
+    "eastman kodak's production",
+    "a focus",
+    "the development",
+    "the overall pace",
+    "non-military camera innovation",
+    "the second half",
+    "the century",
+    "particular advanced camera technology",
+    "the introduction",
+    "the first 35mm slr",
+    "automatic exposure",
+    "the olympus autoeye",
+    "new designs",
+    "features",
+    "electronics",
+    "camera design",
+    "the 1970s",
+    "models",
+    "polaroid's sx-70",
+    "canon's ae-1",
+    "transition",
+    "digital photography",
+    "the late 20th century",
+    "digital camera sales",
+    "film cameras",
+    "the united states",
+    "contrast",
+    "the film camera industry",
+    "the uk",
+    "western europe",
+    "the usa",
+    "this period",
+    "manufacturing",
+    "the ussr",
+    "western designs.[1][2][3] 21st century[edit",
+    "the 21st century",
+    "the mass adoption",
+    "digital cameras",
+    "significant improvements",
+    "sensor technology",
+    "a major revolution",
+    "the incorporation",
+    "cameras",
+    "smartphones",
+    "photography",
+    "the century",
+    "the rise",
+    "computational photography",
+    "algorithms",
+    "ai",
+    "image quality",
+    "features",
+    "low-light and hdr photography",
+    "optical image stabilization",
+    "depth-sensing",
+    "dslr",
+    "still camera",
+    "most cameras",
+    "light",
+    "the visible light spectrum",
+    "specialized cameras",
+    "other portions",
+    "the electromagnetic spectrum",
+    "infrared.[7",
+    "all cameras",
+    "the same basic design",
+    "light",
+    "an enclosed box",
+    "an image",
+    "a light-sensitive medium.[8",
+    "a shutter mechanism",
+    "the length",
+    "time",
+    "the camera.[9",
+    "most cameras",
+    "a viewfinder",
+    "which",
+    "the scene",
+    "means",
+    "various combinations",
+    "focus",
+    "aperture",
+    "shutter speed.[10",
+    "(photography",
+    "main article",
+    "different apertures",
+    "a lens light",
+    "the camera",
+    "an aperture",
+    "plates",
+    "the aperture ring.[11][12][13",
+    "the lens,[14",
+    "this opening",
+    "the amount",
+    "light",
+    "that",
+    "the film",
+    "sensor.[11",
+    "the size",
+    "the aperture",
+    "the lens",
+    "a dial",
+    "readings",
+    "an internal light meter.[11",
+    "the aperture",
+    "the opening",
+    "increments",
+    "f",
+    "stops.[a][11",
+    "the smaller the f-stop",
+    "the more light",
+    "the lens",
+    "the exposure",
+    "f/1.4",
+    "f/32[b",
+    "standard increments",
+    "32.[15",
+    "the light",
+    "the camera",
+    "which",
+    "objects",
+    "depth",
+    "field",
+    "many cameras",
+    "this",
+    "a photographer",
+    "which objects",
+    "focus",
+    "which",
+    "the wider opening",
+    "lower f-stops",
+    "the range",
+    "focus",
+    "the background",
+    "the foreground",
+    "focus",
+    "this depth",
+    "field increases",
+    "the aperture",
+    "a narrow aperture results",
+    "a high depth",
+    "field",
+    "many different distances",
+    "the camera",
+    "focus.[16",
+    "what",
+    "focus",
+    "the circle",
+    "confusion",
+    "the photographic technique",
+    "the equipment",
+    "use",
+    "the degree",
+    "magnification",
+    "shutter",
+    "(photography",
+    "the shutter",
+    "the aperture",
+    "two ways",
+    "the amount",
+    "light",
+    "the camera",
+    "the shutter",
+    "the duration",
+    "the light-sensitive surface",
+    "light",
+    "the shutter",
+    "the camera",
+    "the film",
+    "sensor",
+    "light",
+    "two types",
+    "mechanical shutters",
+    "the leaf-type shutter",
+    "the focal-plane shutter",
+    "the leaf-type",
+    "a circular iris diaphragm",
+    "spring tension",
+    "the lens",
+    "that",
+    "the shutter",
+    "released.[15",
+    "a focal-plane shutter",
+    "this shutter",
+    "the metal shutter blades",
+    "a focal-plane shutter",
+    "used.[14",
+    "this shutter",
+    "the film plane",
+    "metal plates",
+    "cloth curtains",
+    "an opening",
+    "that",
+    "the light-sensitive surface",
+    "the curtains",
+    "plates",
+    "an opening",
+    "that",
+    "the film plane",
+    "exposure",
+    "the focal-plane shutter",
+    "single-lens reflex",
+    "slr) cameras",
+    "the film",
+    "the light",
+    "the lens",
+    "the photographer",
+    "the image",
+    "the lens",
+    "all times",
+    "the exposure",
+    "itself",
+    "the film",
+    "the lens",
+    "a loaded camera",
+    "many slrs",
+    "interchangeable lenses.[11][15",
+    "a digital camera",
+    "which",
+    "smartphone cameras",
+    "electronic shutters",
+    "either record data",
+    "the entire sensor",
+    "a global shutter",
+    "the data line",
+    "line",
+    "the sensor",
+    "a rolling shutter).[11",
+    "movie cameras",
+    "a rotary shutter",
+    "sync",
+    "the advancement",
+    "each frame",
+    "film.[11][19",
+    "the duration",
+    "which",
+    "the shutter",
+    "the shutter speed",
+    "exposure time",
+    "typical exposure times",
+    "one second",
+    "durations",
+    "the early stages",
+    "photography",
+    "exposures",
+    "these long exposure times",
+    "blurry images",
+    "a single object",
+    "multiple places",
+    "a single image",
+    "the duration",
+    "the exposure",
+    "this",
+    "shorter exposure times",
+    "very short exposure times",
+    "fast-moving action",
+    "motion",
+    "shorter exposure times",
+    "more light",
+    "a properly exposed image",
+    "the exposure time",
+    "aperture settings",
+    "powers",
+    "the two settings",
+    "the exposure value",
+    "ev",
+    "a measure",
+    "how much light",
+    "the exposure",
+    "a direct relationship",
+    "the exposure times",
+    "aperture settings",
+    "the exposure time",
+    "the aperture opening",
+    "one step",
+    "the amount",
+    "light",
+    "that",
+    "the film",
+    "sensor",
+    "light meter",
+    "an exposure",
+    "an aperture",
+    "f/11",
+    "iso",
+    "the light sensor",
+    "the white diffusing hemisphere",
+    "most modern cameras",
+    "the amount",
+    "light",
+    "the camera",
+    "a built-in light meter",
+    "exposure",
+    "the lens",
+    "ttl metering",
+    "these readings",
+    "a panel",
+    "light-sensitive semiconductors.[12",
+    "they",
+    "optimal exposure settings",
+    "these settings",
+    "the reading",
+    "the camera's microprocessor",
+    "the reading",
+    "the light meter",
+    "aperture settings",
+    "exposure times",
+    "film or sensor sensitivity",
+    "the optimal exposure.[d",
+    "light meters",
+    "the light",
+    "a scene",
+    "18% middle gray",
+    "more advanced cameras",
+    "their metering",
+    "the center",
+    "the frame",
+    "the differences",
+    "light",
+    "the image",
+    "matrix metering",
+    "the photographer",
+    "a light reading",
+    "a specific point",
+    "the image",
+    "camera lens",
+    "photographic lens",
+    "a camera lens",
+    "an assembly",
+    "multiple optical elements",
+    "high-quality glass.[22",
+    "its primary function",
+    "light",
+    "a camera's film",
+    "digital sensor",
+    "this process",
+    "image quality",
+    "the overall appearance",
+    "the photo",
+    "which",
+    "parts",
+    "the scene",
+    "focus.[22",
+    "a camera lens",
+    "a series",
+    "lens elements",
+    "small pieces",
+    "glass",
+    "an image",
+    "the light-sensitive surface",
+    "each element",
+    "optical aberrations",
+    "distortions",
+    "chromatic aberration",
+    "a failure",
+    "the lens",
+    "all colors",
+    "the same point",
+    "image corners",
+    "the image",
+    "the degree",
+    "these distortions",
+    "the subject",
+    "the photo.[22",
+    "the focal length",
+    "the lens",
+    "millimeters",
+    "a critical role",
+    "it",
+    "the scene",
+    "the camera",
+    "the objects",
+    "wide-angle lenses",
+    "a broad view",
+    "the scene",
+    "telephoto lenses",
+    "a narrower view",
+    "the objects",
+    "the focal length",
+    "the ease",
+    "clear pictures",
+    "longer lengths",
+    "it",
+    "blur",
+    "small camera movements.[22",
+    "two primary types",
+    "lenses",
+    "zoom and prime lenses",
+    "a zoom lens",
+    "its focal length",
+    "a certain range",
+    "the convenience",
+    "the scene",
+    "the camera",
+    "the lens",
+    "a prime lens",
+    "contrast",
+    "a fixed focal length",
+    "prime lenses",
+    "superior image quality",
+    "focus",
+    "the lens elements",
+    "the image",
+    "the subject",
+    "various distances.[23",
+    "the focus",
+    "the focus ring",
+    "the lens",
+    "which",
+    "the lens elements",
+    "the sensor",
+    "autofocus",
+    "a feature",
+    "many lenses",
+    "which",
+    "a motor",
+    "the lens",
+    "the focus",
+    "the lens's detection",
+    "contrast",
+    "differences",
+    "this feature",
+    "switches",
+    "the lens body.[12",
+    "advanced lenses",
+    "mechanical image stabilization systems",
+    "that",
+    "lens elements",
+    "the image sensor",
+    "itself",
+    "camera shake",
+    "low-light conditions",
+    "filters",
+    "caps",
+    "accessories",
+    "a lens",
+    "image quality",
+    "the lens",
+    "viewfinder the camera's viewfinder",
+    "a real-time approximation",
+    "what",
+    "the sensor",
+    "film",
+    "it",
+    "photographers",
+    "the composition",
+    "lighting",
+    "exposure",
+    "their shots",
+    "the accuracy",
+    "the final image.[14",
+    "viewfinders",
+    "two primary categories",
+    "optical viewfinders",
+    "single-lens reflex (slr) cameras",
+    "a system",
+    "mirrors",
+    "prisms",
+    "light",
+    "the lens",
+    "the viewfinder",
+    "a clear, real-time view",
+    "the scene",
+    "electronic viewfinders",
+    "mirrorless cameras",
+    "an electronic image",
+    "a small display",
+    "a wider range",
+    "information",
+    "live exposure previews",
+    "histograms",
+    "the cost",
+    "potential lag",
+    "specialized viewfinder systems",
+    "specific applications",
+    "subminiature cameras",
+    "spying",
+    "photography.[18",
+    "parallax error",
+    "misalignment",
+    "inaccurate representations",
+    "the subject's position",
+    "distant subjects",
+    "this error",
+    "closer ones",
+    "some viewfinders",
+    "parallax-compensating devices",
+    "a camera",
+    "a light-sensitive surface",
+    "the camera body",
+    "the film",
+    "sensor",
+    "the light's pattern",
+    "the shutter",
+    "light",
+    "the exposure.[16",
+    "loading film",
+    "a film camera",
+    "a manual process",
+    "the film",
+    "a cartridge",
+    "a designated slot",
+    "the camera",
+    "one end",
+    "the film strip",
+    "the film leader",
+    "a take-up spool",
+    "the back",
+    "the camera",
+    "the film advance lever",
+    "knob",
+    "the film",
+    "the photographer",
+    "the film",
+    "the camera",
+    "a blank portion",
+    "the film",
+    "the path",
+    "the light",
+    "a photo",
+    "the film advance mechanism",
+    "the exposed film",
+    "the way",
+    "a new, unexposed section",
+    "film",
+    "position",
+    "the next shot.[16",
+    "the film",
+    "each shot",
+    "double exposure",
+    "the same section",
+    "film",
+    "light",
+    "overlapped images",
+    "all frames",
+    "the film roll",
+    "the film",
+    "the cartridge",
+    "the camera",
+    "developing.[18",
+    "digital cameras",
+    "sensors",
+    "charge-coupled devices",
+    "ccds",
+    "cmos",
+    "both",
+    "which",
+    "incoming light",
+    "electrical charges",
+    "digital images.[11] ccd sensors",
+    "cmos sensors",
+    "individual pixel readouts",
+    "less power consumption",
+    "faster frame rates",
+    "their image quality",
+    "time",
+    "digital cameras",
+    "light",
+    "electronic data",
+    "that",
+    "the volume",
+    "data",
+    "the sensor's size",
+    "properties",
+    "necessitating storage media",
+    "compact flash",
+    "memory sticks",
+    "a built-in monitor",
+    "immediate image review",
+    "digital images",
+    "computers",
+    "a significant advantage",
+    "terms",
+    "flexibility",
+    "post-processing potential",
+    "traditional film.[18",
+    "flash[edit",
+    "a flash",
+    "a short burst",
+    "bright light",
+    "exposure",
+    "photography",
+    "most modern flash systems",
+    "a battery-powered high-voltage discharge",
+    "a gas-filled tube",
+    "bright light",
+    "a very short time",
+    "less).[e][21",
+    "many flash units",
+    "the light",
+    "the flash",
+    "the appropriate duration",
+    "the flash",
+    "the flash",
+    "the camera",
+    "a slot",
+    "the top",
+    "the camera",
+    "a cable",
+    "the shutter",
+    "the camera",
+    "the flash",
+    "the duration",
+    "the flash.[21][16",
+    "additional flash equipment",
+    "a light diffuser",
+    "mount",
+    "reflector",
+    "soft box",
+    "trigger",
+    "cord",
+    "other accessories[edit",
+    "accessories",
+    "cameras",
+    "care",
+    "protection",
+    "special effects",
+    "functions",
+    "lens hood",
+    "the end",
+    "a lens",
+    "the sun",
+    "other light source",
+    "glare",
+    "lens flare",
+    "matte box",
+    "lens cap",
+    "covers",
+    "the camera lens",
+    "use",
+    "lens adapter",
+    "the use",
+    "lenses",
+    "those",
+    "which",
+    "the camera",
+    "filter",
+    "artificial colors",
+    "changes",
+    "light density",
+    "lens extension tube",
+    "close focus",
+    "macro photography",
+    "care",
+    "protection",
+    "camera case",
+    "cover",
+    "maintenance tools",
+    "screen protector",
+    "camera monitor",
+    "-camera",
+    "the composition",
+    "more advanced tools",
+    "guides",
+    "focus peaking",
+    "zebra stripes",
+    "monitors",
+    "oftentimes",
+    "an \"rgb parade",
+    "vectorscopes",
+    "false color",
+    "areas",
+    "the image",
+    "the photographer",
+    "tripod",
+    "the camera",
+    "recording video",
+    "a long exposure",
+    "microscope adapter",
+    "a camera",
+    "a microscope",
+    "what",
+    "the microscope",
+    "cable release",
+    "the shutter",
+    "a remote shutter button",
+    "that",
+    "the camera",
+    "a cable",
+    "it",
+    "the shutter",
+    "open",
+    "the desired period",
+    "it",
+    "the camera shake",
+    "dew shield",
+    "moisture build-up",
+    "the lens",
+    "uv filter",
+    "the front element",
+    "a lens",
+    "scratches",
+    "cracks",
+    "smudges",
+    "dirt",
+    "dust",
+    "a minimum impact",
+    "image quality",
+    "battery",
+    "sometimes a charger",
+    "large format cameras",
+    "special equipment",
+    "that",
+    "a magnifier loupe",
+    "view finder",
+    "angle finder",
+    "rail/truck",
+    "some professional slrs",
+    "interchangeable finders",
+    "screens",
+    "eyecup",
+    "data backs",
+    "motor-drives",
+    "film transportation",
+    "external battery packs",
+    "single-lens reflex",
+    "slr",
+    "camera[edit",
+    "] main article",
+    "mounted flashin photography",
+    "the single-lens reflex camera",
+    "slr",
+    "a mirror",
+    "light",
+    "the lens",
+    "the viewfinder",
+    "the shutter",
+    "an image",
+    "the shutter",
+    "the exposure",
+    "the photographic medium",
+    "the exposure",
+    "no slr camera",
+    "this feature",
+    "the mirror",
+    "some early slr cameras",
+    "the force",
+    "the shutter release",
+    "the finger pressure",
+    "released.[24][25",
+    "the asahiflex ii",
+    "japanese company",
+    "asahi",
+    "pentax",
+    "an instant return mirror.[26",
+    "the single-lens reflex camera",
+    "the photographer",
+    "the scene",
+    "the camera lens",
+    "this",
+    "the problem",
+    "parallax",
+    "which",
+    "the taking lens",
+    "single-lens reflex cameras",
+    "several formats",
+    "sheet film",
+    "roll film 220/120",
+    "16 photographs",
+    "a 120 roll",
+    "twice that number",
+    "a 220 film",
+    "these",
+    "6x9",
+    "all dimensions",
+    "cm",
+    "notable manufacturers",
+    "bronica",
+    "graflex",
+    "hasselblad",
+    "seagull",
+    "mamiya",
+    "pentax",
+    "the most common format",
+    "slr cameras",
+    "35\u00a0mm",
+    "subsequently the migration",
+    "digital slr cameras",
+    "almost identical sized bodies",
+    "the same lens systems",
+    "almost all slr cameras",
+    "a front-surfaced mirror",
+    "the optical path",
+    "the light",
+    "the lens",
+    "a viewing screen",
+    "pentaprism",
+    "the eyepiece",
+    "the time",
+    "exposure",
+    "the mirror",
+    "the light path",
+    "the shutter",
+    "some early cameras",
+    "other methods",
+    "the-lens",
+    "viewing",
+    "the use",
+    "a semi-transparent pellicle",
+    "the canon pellix[27",
+    "others",
+    "a small periscope",
+    "the corfield periflex series.[28",
+    "large-format camera[edit] main article",
+    "view camera",
+    "the large-format camera",
+    "sheet film",
+    "a direct successor",
+    "the early plate cameras",
+    "use",
+    "high-quality photography",
+    "three common types",
+    "the view camera",
+    "the press camera",
+    "they",
+    "extensible bellows",
+    "the lens",
+    "shutter",
+    "a lens plate",
+    "the front",
+    "backs",
+    "roll film",
+    "digital backs",
+    "addition",
+    "the standard dark slide",
+    "these cameras",
+    "a wide range",
+    "movements",
+    "very close control",
+    "focus",
+    "perspective",
+    "composition",
+    "focusing",
+    "view cameras",
+    "a ground-glass screen",
+    "which",
+    "the film",
+    "the exposure",
+    "they",
+    "static subjects",
+    "plate camera[edit",
+    "19th-century studio camera",
+    "bellows",
+    "the earliest cameras",
+    "significant numbers",
+    "plate cameras",
+    "sensitized glass plates",
+    "light",
+    "a lens",
+    "a lens board",
+    "which",
+    "the plate",
+    "extendible bellows",
+    "simple box cameras",
+    "glass plates",
+    "single-lens reflex cameras",
+    "interchangeable lenses",
+    "color photography",
+    "autochrome lumi\u00e8re",
+    "these cameras",
+    "controls",
+    "the lens",
+    "perspective",
+    "these plate cameras",
+    "the use",
+    "a ground glass screen",
+    "the point",
+    "focus",
+    "lens design",
+    "rather small aperture lenses",
+    "the image",
+    "the ground glass screen",
+    "most photographers",
+    "a dark cloth",
+    "their heads",
+    "focus",
+    "composition",
+    "the ground glass screen",
+    "a sensitized plate",
+    "its place",
+    "a dark slide",
+    "the exposure",
+    "the dark decline",
+    "the shutter",
+    "the dark fall",
+    "glass plates",
+    "sheet film",
+    "a dark slide",
+    "sheet film",
+    "adapter sleeves",
+    "sheet film",
+    "plate holders",
+    "addition",
+    "the ground glass",
+    "a simple optical viewfinder",
+    "medium-format camera[edit",
+    "a film size",
+    "the large-format cameras",
+    "smaller 35\u00a0mm cameras.[29",
+    "these systems",
+    "6\u00d74.5\u00a0cm",
+    "6\u00d76\u00a0cm",
+    "6\u00d77\u00a0cm",
+    "the older 6\u00d79\u00a0cm",
+    "the designs",
+    "this kind",
+    "camera",
+    "greater variation",
+    "their larger brethren",
+    "monorail systems",
+    "the classic hasselblad model",
+    "separate backs",
+    "smaller rangefinder cameras",
+    "even compact amateur cameras",
+    "this format",
+    "a pair",
+    "nearly identical lenses",
+    "the image",
+    "one",
+    "the lenses",
+    "the viewing lens",
+    "the taking lens",
+    "the viewing lens",
+    "an image",
+    "a viewing screen",
+    "which",
+    "some manufacturers",
+    "mamiya",
+    "a reflex head",
+    "the viewing screen",
+    "the camera",
+    "the eye",
+    "use",
+    "the advantage",
+    "a tlr",
+    "it",
+    "the viewing screen",
+    "most circumstances",
+    "the view",
+    "the viewing screen",
+    "that",
+    "film",
+    "close distances",
+    "parallax errors",
+    "some cameras",
+    "an indicator",
+    "what part",
+    "the composition",
+    "some tlrs",
+    "interchangeable lenses",
+    "these",
+    "lenses",
+    "they",
+    "the range",
+    "focal lengths",
+    "that",
+    "the slr",
+    "most tlrs",
+    "120 or 220 films",
+    "some",
+    "the smaller 127 films",
+    "compact cameras[edit",
+    "instant camera[edit] main article",
+    "instant camera instant camera",
+    "exposure",
+    "every photograph",
+    "pinch rollers",
+    "the instant camera",
+    "the developer paste",
+    "the paper",
+    "'sandwich",
+    "the image",
+    "a minute",
+    "the cover sheet",
+    "a fixed format",
+    "some systems",
+    "it",
+    "which",
+    "copies",
+    "the photo lab",
+    "the ultimate development",
+    "the sx-70 system",
+    "polaroid",
+    "which",
+    "a row",
+    "ten shots",
+    "engine",
+    "any cover sheets",
+    "the picture",
+    "instant cameras",
+    "a variety",
+    "formats",
+    "adapters",
+    "instant film use",
+    "medium- and large-format cameras",
+    "subminiature camera[edit] main article",
+    "camerasubminiature",
+    "the twentieth century",
+    "film",
+    "the expensive 8\u00d711mm minox",
+    "the only type",
+    "camera",
+    "the company",
+    "espionage",
+    "the minox company",
+    "larger cameras",
+    "inexpensive subminiatures",
+    "general use",
+    "some",
+    "image quality",
+    "these small film sizes",
+    "camera[edit",
+    "main article",
+    "camera folding camera",
+    "the introduction",
+    "films",
+    "the existing designs",
+    "plate cameras",
+    "the baseplate",
+    "it",
+    "the bellows",
+    "these designs",
+    "vest pocket cameras",
+    "the vest pocket kodak",
+    "two generations",
+    "roll film cameras",
+    "plate cameras",
+    "other designs",
+    "box camera[edit] main article",
+    "budget-level cameras",
+    "few if any controls",
+    "a small reflex viewfinder",
+    "the top",
+    "the camera",
+    "no aperture",
+    "controls",
+    "just a simple shutter",
+    "later models",
+    "a curved film path",
+    "the impact",
+    "deficiencies",
+    "the lens",
+    "rangefinder camera[edit] main article",
+    "rangefinder camera rangefinder camera",
+    "leica c.",
+    "camera lens technology",
+    "aperture lenses",
+    "rangefinder cameras",
+    "early rangefinders",
+    "two separate viewfinder windows",
+    "which",
+    "the focusing mechanisms",
+    "the focusing ring",
+    "the two separate images",
+    "vertical lines",
+    "the object",
+    "the combined image",
+    "the object",
+    "focus",
+    "a normal composition viewfinder",
+    "rangefinder",
+    "many rangefinder cameras",
+    "interchangeable lenses",
+    "rangefinder cameras",
+    "movie camera further information",
+    "a video camera",
+    "a still camera",
+    "it",
+    "a series",
+    "static images",
+    "rapid succession",
+    "a rate",
+    "24 frames",
+    "second",
+    "the images",
+    "order",
+    "the illusion",
+    "motion",
+    "achieved.[32",
+    "4 cameras",
+    "that",
+    "many images",
+    "sequence",
+    "movie cameras",
+    "cine cameras",
+    "europe",
+    "those",
+    "single images",
+    "cameras",
+    "these categories",
+    "still cameras",
+    "moving images",
+    "special effects work",
+    "many modern cameras",
+    "a rapid sequence",
+    "photographs",
+    "an image sensor",
+    "strips",
+    "film",
+    "contrast",
+    "a still camera",
+    "which",
+    "a single snapshot",
+    "a time",
+    "the cin\u00e9 camera",
+    "a series",
+    "images",
+    "each",
+    "a frame",
+    "the use",
+    "an intermittent mechanism",
+    "the frames",
+    "a cin\u00e9 projector",
+    "a specific speed",
+    "the frame rate",
+    "number",
+    "frames",
+    "a person's visual system",
+    "the separate pictures",
+    "the illusion",
+    "motion",
+    "the first cin\u00e9 camera",
+    "several types",
+    "the standard film size",
+    "cin\u00e9 cameras",
+    "35mm film",
+    "this",
+    "use",
+    "the transition",
+    "digital cinematography",
+    "other professional standard formats",
+    "70\u00a0mm film",
+    "16\u00a0mm film",
+    "amateur filmmakers",
+    "9.5\u00a0mm film",
+    "8\u00a0mm film",
+    "standard",
+    "the move",
+    "digital format",
+    "the size",
+    "complexity",
+    "cin\u00e9 cameras",
+    "the uses",
+    "the camera",
+    "some professional equipment",
+    "some amateur cameras",
+    "single-handed operation",
+    "professional video camera[edit",
+    "arri alexa",
+    "video camera",
+    "a professional video camera",
+    "a television camera",
+    "the use",
+    "television",
+    "a high-end device",
+    "electronic moving images",
+    "a movie camera",
+    "that",
+    "the images",
+    "film",
+    "use",
+    "television studios",
+    "they",
+    "music videos",
+    "video",
+    "corporate and educational videos",
+    "marriage videos",
+    "these cameras",
+    "vacuum tubes",
+    "later electronic image sensors",
+    "camcorders[edit",
+    "sony hdr-hc1e",
+    "a hdv camcorder",
+    "main article",
+    "camcorder a camcorder",
+    "an electronic device",
+    "a video camera",
+    "a video recorder",
+    "marketing materials",
+    "the colloquial term \"camcorder",
+    "the name",
+    "the package",
+    "manual",
+    "\"video camera recorder",
+    "most devices",
+    "recording video",
+    "camera phones",
+    "digital cameras",
+    "still pictures",
+    "the term \"camcorder",
+    "a portable, self-contained device",
+    "video capture",
+    "its primary function",
+    "digital camera[edit] main article",
+    "digital camera",
+    "digital camera further information",
+    "digital image",
+    "digital imaging",
+    "digital photography",
+    "digital single-lens reflex camera",
+    "digital video",
+    "a digital camera",
+    "digicam",
+    "a camera",
+    "that",
+    "digital images",
+    "videos",
+    "them",
+    "later reproduction.[33",
+    "they",
+    "semiconductor image sensors.[34",
+    "most cameras",
+    "they",
+    "many devices",
+    "mobile phones",
+    "camera phones",
+    "vehicles",
+    "digital",
+    "film cameras",
+    "an optical system",
+    "a lens",
+    "variable aperture",
+    "light",
+    "an image pickup device.[36",
+    "the aperture",
+    "shutter",
+    "the correct amount",
+    "light",
+    "film",
+    "the image pickup device",
+    "film cameras",
+    "digital cameras",
+    "images",
+    "a screen",
+    "delete images",
+    "memory",
+    "most digital cameras",
+    "videos",
+    "sound",
+    "some digital cameras",
+    "pictures",
+    "other elementary image editing",
+    "consumers",
+    "digital cameras",
+    "professional video cameras",
+    "the 2000s\u20132010s",
+    "movie cameras",
+    "the first camera",
+    "digital electronics",
+    "store images",
+    "kodak engineer steven sasson",
+    "he",
+    "a charge-coupled device",
+    "ccd",
+    "fairchild semiconductor",
+    "which",
+    "only 0.01 megapixels",
+    "images",
+    "sasson",
+    "the ccd device",
+    "movie camera parts",
+    "a digital camera",
+    "that",
+    "black and white images",
+    "a cassette",
+    "tape.[37",
+    "the images",
+    "the cassette",
+    "a tv monitor.[38",
+    "cassette tapes",
+    "flash memory",
+    "japanese company nikon",
+    "the nikon svc.[39",
+    "sony alpha",
+    "japan",
+    "the mz-d",
+    "the n digital",
+    "the eos-1ds",
+    "canon.[42",
+    "the 2000s",
+    "the full-frame dslr",
+    "the dominant camera type",
+    "professional photography.[citation",
+    "most digital cameras",
+    "a display",
+    "lcd",
+    "the user",
+    "the scene",
+    "settings",
+    "iso speed",
+    "exposure",
+    "shutter speed.[10",
+    "6\u20137",
+    "[43]:\u200a12 camera phone[edit",
+    "smartphone",
+    "camera",
+    "camera phone further information",
+    "front-facing camera",
+    "selfie",
+    "sharp",
+    "the j-sh04 j-phone",
+    "japan.[44",
+    "the mid-2000s",
+    "higher-end cell phones",
+    "an integrated digital camera",
+    "the beginning",
+    "the 2010s",
+    "almost all smartphones",
+    "an integrated digital camera",
+    "also[edit",
+    "the camera list",
+    "camera types",
+    "list",
+    "digital camera brands footnotes[edit",
+    "these f-stops",
+    "f-numbers",
+    "numbers",
+    "steps",
+    "stops",
+    "the f-number",
+    "the focal length",
+    "the lens",
+    "the diameter",
+    "the effective aperture",
+    "they",
+    "f/64",
+    "higher.[13",
+    "some photographers",
+    "handheld exposure meters",
+    "the camera",
+    "the readings",
+    "the exposure settings",
+    "the camera.[21",
+    "film canisters",
+    "a dx code",
+    "that",
+    "modern cameras",
+    "the camera's computer",
+    "the sensitivity",
+    "the film",
+    "the iso.[14",
+    "the older type",
+    "disposable flashbulb",
+    "a glass tube",
+    "oxygen",
+    "the exposure",
+    "the wire",
+    "a bright flash.[21] references[edit",
+    "a b pritchard",
+    "michael",
+    "nicholson",
+    "angela",
+    "\"camera development",
+    "the oxford companion",
+    "the photograph",
+    "oxford university press",
+    "november",
+    "^ a b lagasse",
+    "paul",
+    "ed",
+    "\"camera",
+    "the columbia encyclopedia",
+    "8\u00a0ed",
+    "columbia university press",
+    "photography",
+    "digital imaging",
+    "theory",
+    "applications",
+    "history",
+    "science",
+    "michael r. peres",
+    "ed",
+    "(4th\u00a0ed",
+    "amsterdam",
+    "elsevier",
+    "isbn",
+    "cs1 maint",
+    "others",
+    "link",
+    "\"a snapshot history",
+    "digital camera technology",
+    "venturebeat",
+    "26 june",
+    "november",
+    "^ \"timeline",
+    "the history",
+    "digital cameras",
+    "digital spy",
+    "19 august",
+    "5 july",
+    "^ \"history",
+    "digital cameras",
+    "'",
+    "70s",
+    "prototypes",
+    "iphone",
+    "galaxy's everyday wonders",
+    "cnet",
+    "april",
+    "^",
+    "gustavson",
+    "todd",
+    "camera",
+    "a history",
+    "photography",
+    "daguerreotype",
+    "digital",
+    "new york",
+    "sterling publishing co.",
+    "isbn",
+    "\"camera design",
+    "designboom | architecture",
+    "design magazine",
+    "18 september",
+    "^",
+    "young",
+    "hugh d.",
+    "freedman",
+    "roger a.",
+    "ford",
+    "a. lewis",
+    "12\u00a0ed",
+    "san francisco",
+    "california",
+    "pearson addison-wesley",
+    "a b london",
+    "kenneth",
+    "photography",
+    "7\u00a0ed",
+    "upper saddle river",
+    "new jersey",
+    "prentice hall",
+    "g",
+    "\"camera",
+    "paul lagasse",
+    "ed",
+    "the columbia encyclopedia",
+    "8\u00a0ed",
+    "columbia university press",
+    "\"how cameras work",
+    "21 march",
+    "14 december",
+    "^ a b laney",
+    "dawn a. ..ba, ms",
+    "cgc",
+    "ccrc",
+    "\u201ccamera technologies",
+    "salem press encyclopedia",
+    "science",
+    "ed",
+    "\"camera",
+    "an overview",
+    "encyclopedia",
+    "twentieth-century photography",
+    "new york",
+    "routledge",
+    "isbn",
+    "photography",
+    "britannica academic",
+    "november",
+    "ed",
+    "\"camera",
+    "35\u00a0mm",
+    "encyclopedia",
+    "twentieth-century photography",
+    "new york",
+    "routledge",
+    "isbn",
+    "henry greenwood",
+    "co. ltd.",
+    "pp.\u00a0468\u2013471",
+    "b",
+    "\"the camera defined",
+    "the focal encyclopedia",
+    "photography",
+    "pp.\u00a0770\u2013771",
+    "isbn",
+    "14 december",
+    "^ \"motion-picture camera",
+    "encyclopedia britannica",
+    "12 december 2019.[dead link",
+    "a b \"camera",
+    "world encyclopedia",
+    "philip",
+    "isbn",
+    "britannica academic",
+    "november",
+    "cambridge",
+    "color",
+    "the original",
+    "19 june",
+    "^",
+    "adams",
+    "ansel",
+    "baker",
+    "robert",
+    "the camera",
+    "boston",
+    "little, brown",
+    "isbn",
+    "roger hicks",
+    "a history",
+    "the 35\u00a0mm",
+    "still camera",
+    "focal press",
+    "london",
+    "boston",
+    "p.",
+    "rudolph lea",
+    "register",
+    "35\u00a0mm slr cameras",
+    "wittig books",
+    "h\u00fcckelhoven",
+    "p.",
+    "isbn",
+    "michael r. peres",
+    "the focal encyclopedia",
+    "photography",
+    "taylor",
+    "francis",
+    "canon pellix camera",
+    "photography",
+    "malaysia",
+    "the original",
+    "16 october",
+    "^ parker",
+    "bev",
+    "\"corfield cameras",
+    "the periflex era",
+    "wolverhampton museum",
+    "industry",
+    "22 october",
+    "^",
+    "wildi",
+    "ernst",
+    "the medium format advantage",
+    "2nd\u00a0ed",
+    "boston",
+    "focal press",
+    "oclc",
+    "^",
+    "the manual",
+    "photography",
+    "elizabeth allen",
+    "sophie triantaphillidou",
+    "10th\u00a0ed",
+    "oxford",
+    "elsevier/focal press",
+    "oclc\u00a0706802878.{{cite book",
+    "cs1 maint",
+    "others",
+    "link",
+    "burrows",
+    "paul",
+    "13 september",
+    "\"the rise",
+    "fall",
+    "the tlr",
+    "the twin-lens reflex camera",
+    "a real classic",
+    "digital camera world",
+    "future us inc.",
+    "27 december",
+    "^",
+    "ascher",
+    "steven",
+    "pincus",
+    "edward",
+    "the filmmaker's handbook",
+    "a comprehensive guide",
+    "the digital age",
+    "(3\u00a0ed",
+    "new york",
+    "penguin group",
+    "isbn",
+    "farlex inc",
+    "definition",
+    "digital camera",
+    "the free dictionary",
+    "the wayback machine",
+    "williams",
+    "j. b.",
+    "the electronics revolution",
+    "the future",
+    "springer",
+    "pp.\u00a0245\u20138",
+    "isbn",
+    "november",
+    "^",
+    "musgrove",
+    "12 january",
+    "nikon",
+    "it",
+    "leaving film-camera business",
+    "washington post",
+    "13 october",
+    "a digital camera work",
+    "the wayback machine",
+    "gustavson",
+    "todd",
+    "november",
+    "500 cameras",
+    "170 years",
+    "photographic innovation",
+    "toronto",
+    "ontario",
+    "sterling publishing, inc. isbn",
+    "hitchcock",
+    "susan",
+    "20 september",
+    "hitchcock",
+    "susan tyler",
+    "ed",
+    "national geographic complete photography",
+    "washington",
+    "d.c.",
+    "national geographic society",
+    "isbn",
+    "nikon slr-type digital cameras",
+    "the wayback machine",
+    "pierre jarleton",
+    "the long, difficult road",
+    "pentax full-frame",
+    "the long, difficult road",
+    "pentax full-frame",
+    "the wayback machine",
+    "digital photography review",
+    "british journal",
+    "photography",
+    "issues",
+    "canon eos-1ds",
+    "11 megapixel full-frame cmos",
+    "the wayback machine",
+    "burian",
+    "peter",
+    "caputo",
+    "robert",
+    "2\u00a0ed",
+    "washington",
+    "d.c.",
+    "national geographic society",
+    "isbn",
+    "\"evolution",
+    "the camera phone",
+    "sharp j-sh04",
+    "nokia 808 pureview",
+    "hoista.net",
+    "28 february",
+    "the original",
+    "31 july",
+    "further reading[edit",
+    "ascher",
+    "steven",
+    "pincus",
+    "edward",
+    "the filmmaker's handbook",
+    "a comprehensive guide",
+    "the digital age",
+    "(3\u00a0ed",
+    "new york",
+    "penguin group",
+    "isbn",
+    "frizot",
+    "january",
+    "\"light machines",
+    "the threshold",
+    "invention",
+    "michel frizot",
+    "ed",
+    "a new history",
+    "photography",
+    "germany",
+    "isbn",
+    "gernsheim",
+    "helmut",
+    "a concise history",
+    "photography",
+    "3\u00a0ed",
+    "mineola",
+    "new york",
+    "dover publications, inc. isbn",
+    "hirsch",
+    "the light",
+    "a history",
+    "photography",
+    "new york",
+    "isbn",
+    "hitchcock",
+    "susan tyler",
+    "20 september",
+    "hitchcock",
+    "susan tyler",
+    "ed",
+    "national geographic complete photography",
+    "washington",
+    "d.c.",
+    "national geographic society",
+    "isbn",
+    "johnson",
+    "william s.",
+    "rice",
+    "mark",
+    "williams",
+    "carla",
+    "therese mulligan",
+    "david wooters",
+    "eds",
+    "a history",
+    "photography",
+    "los angeles",
+    "california",
+    "taschen america",
+    "isbn",
+    "spira",
+    "s.f.",
+    "lothrop",
+    "easton s. jr.",
+    "spira",
+    "jonathan b.",
+    "the history",
+    "photography",
+    "the spira collection",
+    "new york",
+    "aperture",
+    "starl",
+    "timm",
+    "january",
+    "\"a new world",
+    "pictures",
+    "the daguerreotype",
+    "michel frizot",
+    "ed",
+    "a new history",
+    "photography",
+    "germany",
+    "isbn",
+    "wenczel",
+    ", norma",
+    "\"part i",
+    "an instrument",
+    "pdf",
+    "wolfgang lef\u00e8vre",
+    "ed",
+    "texts",
+    "max planck institute",
+    "the history",
+    "science",
+    "pp",
+    "13\u201330",
+    "the original (pdf",
+    "2 april",
+    "{{cite book",
+    "|work=",
+    "external links[edit",
+    "wikimedia commons",
+    "media",
+    "camera",
+    "cameras",
+    "stuff",
+    "holder",
+    "films",
+    "terminology",
+    "equivalent focal length angle",
+    "view",
+    "confusion",
+    "field depth",
+    "reciprocity red-eye effect",
+    "science",
+    "photography",
+    "sports",
+    "still life",
+    "stock straight photography",
+    "wedding wildlife techniques",
+    "pigeon photography",
+    "ettr fill flash",
+    "fireworks hand-colouring harris",
+    "kirlian kite aerial lo",
+    "fi photography",
+    "lomography",
+    "photography",
+    "slow motion",
+    "stereoscopy",
+    "tilt",
+    "miniature",
+    "composition diagonal method",
+    "thirds",
+    "composition",
+    "photography technology",
+    "ambrotype film photography",
+    "regional albania bangladesh canada",
+    "slovenia sudan",
+    "taiwan turkey ukraine",
+    "united states",
+    "uzbekistan vietnam digital photography",
+    "digiscoping comparison",
+    "chromogenic print",
+    "reversal film",
+    "color management",
+    "most expensive photographs",
+    "museums",
+    "one photographer",
+    "photographs",
+    "related conservation",
+    "restoration",
+    "photographs film photographic plates",
+    "polaroid art stereoscopy",
+    "cheese vtecamera",
+    "adox",
+    "beirette",
+    "minolta",
+    "guardia nikon olympus",
+    "sharp sigma",
+    "lenses",
+    "topcon vivitar voigtl\u00e4nder wray",
+    "lenses",
+    "\"https://en.wikipedia.org/w/index.php?title=camera&oldid=1320273068\" categories",
+    "camerasphotography equipmentoptical deviceshidden categories",
+    "cs1 maint",
+    "othersall articles",
+    "dead external linksarticles",
+    "dead external links",
+    "november",
+    "linksarticles",
+    "short descriptionshort description",
+    "wikidatawikipedia",
+    "changes",
+    "american english",
+    "january 2022all wikipedia articles",
+    "american englishuse",
+    "dmy",
+    "january 2020all articles",
+    "unsourced statementsarticles",
+    "unsourced statements",
+    "march 2019cs1 errors",
+    "wikidata",
+    "this page",
+    "3 november",
+    "utc",
+    "text",
+    "additional terms",
+    "this site",
+    "you",
+    "the terms",
+    "use",
+    "privacy policy",
+    "wikipedia\u00ae",
+    "a registered trademark",
+    "the wikimedia foundation, inc.",
+    "a non-profit organization",
+    "privacy policy",
+    "the table",
+    "contents",
+    "camera 106 languages",
+    "topic",
+    "osskreat\u00f6rerannonserautvecklarevillkorintegritetpolicy och s\u00e4kerhets\u00e5 fungerar",
+    "youtubetesta nya funktioner\u00a9",
+    "top universities",
+    "free",
+    "individualsfor businessesfor universitiesfor",
+    "governmentsexplorelog injoin",
+    "freejoin",
+    "freeresults",
+    "camera\"filter",
+    "sortstatus",
+    "free trialfree trialccolumbia universitycamera",
+    "imagingskills",
+    "you",
+    "image quality",
+    "image analysis",
+    "computer vision",
+    "photography",
+    "color theory",
+    "computer graphics",
+    "visualization",
+    "computer graphics",
+    "electronic components",
+    "semiconductors",
+    "algorithms",
+    "advanced mathematics",
+    "applied mathematics4.7rating",
+    "reviewsbeginner",
+    "\u00e2\u00b7 course \u00e2",
+    "monthsstatus",
+    "smartphone",
+    "dslrskills",
+    "you",
+    "design elements",
+    "principles",
+    "photography",
+    "photo editing",
+    "peer review",
+    "image quality",
+    "photo/video production",
+    "technology",
+    "digital design",
+    "file management",
+    "adobe creative cloud",
+    "creativity",
+    "storytelling",
+    "digital publishing",
+    "social media",
+    "content creation",
+    "copywriting",
+    "information privacy",
+    "writing",
+    "web design",
+    "development4.7rating",
+    "monthsstatus",
+    "free trialfree trialmmichigan",
+    "state universitycameras",
+    "exposure",
+    "photographyskills",
+    "you",
+    "photography",
+    "peer review",
+    "photo/video production",
+    "technology",
+    "image quality",
+    "creativity",
+    "design elements",
+    "principles4.8rating",
+    "free trialfree trialmmichigan",
+    "you",
+    "photography",
+    "peer review",
+    "photo/video production",
+    "technology",
+    "image quality4.8rating",
+    "stars\u00e2\u00b71.9",
+    "newnewstatus",
+    "free trialfree",
+    "you",
+    "videography",
+    "video production",
+    "photo/video production",
+    "technology",
+    "photography",
+    "storyboarding",
+    "storytelling",
+    "media production",
+    "post",
+    "production",
+    "multimedia",
+    "creativity",
+    "content creation",
+    "image quality",
+    "color theory",
+    "aestheticsbeginner \u00e2",
+    "specialization \u00e2",
+    "monthsstatus",
+    "free trialfree trialuuniversity",
+    "colorado boulderthe art",
+    "visual storytellingskills",
+    "you",
+    "adobe premiere",
+    "video production",
+    "videography",
+    "post",
+    "production",
+    "photo/video production",
+    "technology",
+    "video editing",
+    "storyboarding",
+    "storytelling",
+    "adobe creative cloud",
+    "media production",
+    "image quality",
+    "proposal development",
+    "editing",
+    "writing",
+    "graphic",
+    "visual",
+    "design",
+    "scripting",
+    "multimedia",
+    "creativity",
+    "timelines",
+    "file management4.6rating",
+    "5 stars\u00e2\u00b7134",
+    "reviewsbeginner \u00e2\u00b7 specialization \u00e2",
+    "3 - 6 monthswhat",
+    "you",
+    "coursera today?start",
+    "my careerchange",
+    "my careergrow",
+    "my current roleexplore topics",
+    "workstatus",
+    "newnewstatus",
+    "free trialfree trialsskillsharecinematography",
+    "videography guide",
+    "camera basicsskills",
+    "you",
+    "image quality",
+    "color theory",
+    "aestheticsbeginner \u00e2",
+    "1 - 3 monthsstatus",
+    "the artsthe art",
+    "composition",
+    "moving image",
+    "skills",
+    "you",
+    "peer review",
+    "videography",
+    "video production",
+    "photo/video production",
+    "technology",
+    "post",
+    "-",
+    "production",
+    "editing",
+    "design elements",
+    "principles",
+    "storytelling",
+    "color theory",
+    "creativitybeginner \u00e2",
+    "course",
+    "\u00e2",
+    "monthsstatus",
+    "previewpreviewuuniversity",
+    "londonfilm",
+    "images",
+    "historical interpretation",
+    "the 20th century",
+    "the camera",
+    "you",
+    "public history",
+    "photography",
+    "photo editing",
+    "media",
+    "communications",
+    "world history",
+    "european history",
+    "case studies",
+    "political sciences",
+    "ethical standards",
+    "conduct4.6rating",
+    "newnewstatus",
+    "posing modelsskills",
+    "you",
+    "photo editing",
+    "photography",
+    "image quality",
+    "post",
+    "production",
+    "color theorybeginner \u00e2",
+    "\u00e2",
+    "newnewstatus",
+    "free trialfree",
+    "landscape photography",
+    "beginnersskills",
+    "you",
+    "photography",
+    "storytelling",
+    "photo/video production",
+    "technology",
+    "design elements",
+    "principles",
+    "image quality",
+    "creativitybeginner \u00e2",
+    "\u00e2",
+    "newnewstatus",
+    "free trialfree",
+    "portrait photography",
+    "a captivating seriesskills",
+    "you",
+    "photography",
+    "photo editing",
+    "image quality",
+    "storytelling",
+    "adobe photoshop",
+    "content creation",
+    "creativitybeginner \u00e2",
+    "\u00e2",
+    "cameracameras",
+    "exposure",
+    "photographycamera",
+    "imagingcamera controlcinematography",
+    "videography guide",
+    "camera basicsfilm",
+    "images",
+    "historical interpretation",
+    "the 20th century",
+    "the camera",
+    "filmmakers",
+    "beginners",
+    "programsgoogle cybersecurity",
+    "certificategoogle data analytics certificategoogle",
+    "careersbusinesscomputer sciencedata scienceeducation",
+    "teachingengineeringfinancehealthcarehuman resources",
+    "(hr)information technology",
+    "it)marketingcareer resourcescareer aptitude testexamples",
+    "strengths",
+    "weaknesses",
+    "job interviewshigh-income skills",
+    "learnhow",
+    "cryptocurrency",
+    "highlight duplicates",
+    "google sheetshow",
+    "artificial intelligencepopular cybersecurity certificationspreparing",
+    "the pmp certificationsigns",
+    "you",
+    "the job",
+    "an interviewwhat",
+    "we",
+    "plusprofessional certificatesmastertrack\u00e2\u00ae",
+    "certificatesdegreesfor",
+    "enterprisefor governmentfor campusbecome",
+    "a partnersocial impactfree coursesshare",
+    "your coursera",
+    "storycommunitylearnerspartnersbeta testersblogthe coursera podcasttech",
+    "anywhere\u00e2\u00a9 2025 coursera inc.",
+    "all rights",
+    "search | kaggle"
+  ],
+  "sentiment": {
+    "sentiment": "positive",
+    "score": 0.7367417362876861,
+    "token_count": 11012
+  },
+  "summary": [
+    "Folding camera[edit] Main article: Folding camera Folding camera",
+    "\"camera\".",
+    "\"camera\".",
+    "The camera.",
+    "Digital Camera World."
+  ],
+  "success": true,
+  "added_at": "2025-11-08T18:55:21.145993"
+}

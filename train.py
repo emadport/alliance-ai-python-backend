@@ -41,17 +41,31 @@ model = UNet().to(device)
 # Build the filename as before
 model_filename = f"model_{model_name.upper()}_{detection_type}.pth"
 
-# Download from Hugging Face if the file doesn't exist locally
-if not os.path.exists(model_filename):
-    print(f"Downloading {model_filename} from Hugging Face...")
-    model_filename = hf_hub_download(
-        repo_id="Emad-askari/alliance-ai-models",
-        filename=model_filename
-    )
+# Try to load pre-trained model if it exists locally
+if os.path.exists(model_filename):
+    print(f"Loading pre-trained model from {model_filename}...")
+    try:
+        model.load_state_dict(torch.load(model_filename, map_location="cpu"))
+        print("Pre-trained model loaded successfully")
+    except Exception as e:
+        print(f"Warning: Could not load pre-trained model: {e}")
+        print("Starting with fresh model...")
+else:
+    print(f"Pre-trained model not found locally: {model_filename}")
+    print("Starting with fresh model...")
+    # Try to download from HuggingFace as fallback
+    try:
+        print(f"Attempting to download from Hugging Face...")
+        model_filename = hf_hub_download(
+            repo_id="Emad-askari/alliance-ai-models",
+            filename=model_filename
+        )
+        model.load_state_dict(torch.load(model_filename, map_location="cpu"))
+        print("Downloaded and loaded pre-trained model successfully")
+    except Exception as e:
+        print(f"Note: Could not download from HuggingFace: {e}")
+        print("Continuing with fresh model initialization")
 
-# Load the model weights
-print(f"Loading pre-trained model from {model_filename}...")
-model.load_state_dict(torch.load(model_filename, map_location="cpu"))
 criterion = nn.BCELoss()
 optimizer = optim.Adam(model.parameters(), lr=1e-4)
 

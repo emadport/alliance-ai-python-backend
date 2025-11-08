@@ -17,3 +17,6 @@ gradio
 pymongo
 motor
 segment-anything
+beautifulsoup4>=4.11.0
+spacy>=3.5.0
+requests>=2.28.0

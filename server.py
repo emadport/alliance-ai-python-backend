@@ -1,5 +1,6 @@
 from fastapi import FastAPI, File, UploadFile, Request
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 from PIL import Image
 import torch
 import torch.nn.functional as F
@@ -13,6 +14,11 @@ from datetime import datetime
 from unet import UNet
 from motor.motor_asyncio import AsyncIOMotorClient
 from pymongo import MongoClient
+from web_scraper import WebScraper
+from web_learner import WebLearner
+from model_persistence import ModelPersistence, KnowledgeBase
+from auto_trainer import AutoTrainer
+from typing import List, Optional
 
 # Try to import parking segmenter
 try:
@@ -27,6 +33,81 @@ except Exception as e:
 
 app = FastAPI()
 
+# Pydantic models for web learning API
+class URLRequest(BaseModel):
+    url: str
+
+class URLListRequest(BaseModel):
+    urls: List[str]
+
+class TextAnalysisRequest(BaseModel):
+    text: str
+    url: Optional[str] = ""
+
+class TextComparisonRequest(BaseModel):
+    text1: str
+    text2: str
+
+class AutoTrainRequest(BaseModel):
+    topic: str
+    model: str = "unet"
+    detection_type: str = "line_detection"
+    urls: Optional[List[str]] = None
+    synthetic_images: int = 20
+    epochs: int = 10
+
+# Initialize web learning modules
+web_scraper = None
+web_learner = None
+model_persistence = None
+knowledge_base = None
+auto_trainer = None
+
+def get_web_scraper():
+    global web_scraper
+    if web_scraper is None:
+        try:
+            web_scraper = WebScraper()
+        except Exception as e:
+            print(f"Warning: Could not initialize WebScraper: {e}")
+    return web_scraper
+
+def get_web_learner():
+    global web_learner
+    if web_learner is None:
+        try:
+            web_learner = WebLearner()
+        except Exception as e:
+            print(f"Warning: Could not initialize WebLearner: {e}")
+    return web_learner
+
+def get_model_persistence():
+    global model_persistence
+    if model_persistence is None:
+        try:
+            model_persistence = ModelPersistence()
+        except Exception as e:
+            print(f"Warning: Could not initialize ModelPersistence: {e}")
+    return model_persistence
+
+def get_knowledge_base():
+    global knowledge_base
+    if knowledge_base is None:
+        try:
+            knowledge_base = KnowledgeBase()
+        except Exception as e:
+            print(f"Warning: Could not initialize KnowledgeBase: {e}")
+    return knowledge_base
+
+def get_auto_trainer():
+    global auto_trainer
+    if auto_trainer is None:
+        try:
+            auto_trainer = AutoTrainer()
+        except Exception as e:
+            print(f"Warning: Could not initialize AutoTrainer: {e}")
+    return auto_trainer
+
 # MongoDB connection - lazy init
 MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://emadaskari_db_user:kLnkczzLG9QpgXn6@cluster0.mongodb.net/emadaskari_db?retryWrites=true&w=majority")
 mongo_client = None
@@ -35,8 +116,16 @@ db = None
 def get_db():
     global mongo_client, db
     if db is None:
-        mongo_client = MongoClient(MONGO_URI)
-        db = mongo_client.emadaskari_db
+        try:
+            mongo_client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=5000)
+            db = mongo_client.emadaskari_db
+            # Test connection
+            db.command('ping')
+            print("✓ MongoDB connected successfully")
+        except Exception as e:
+            print(f"⚠ MongoDB connection failed: {e}")
+            print("Continuing without database persistence...")
+            db = None
     return db
 
 # Enable CORS
@@ -460,6 +549,479 @@ async def segment_parking(file: UploadFile = File(...)):
             "success": False,
             "error": str(e)
         }
+
+# ==================== WEB LEARNING ENDPOINTS ====================
+
+@app.post("/web/scrape")
+async def scrape_single_url(request: URLRequest):
+    """Scrape a single URL and extract information"""
+    try:
+        scraper = get_web_scraper()
+        if not scraper:
+            return {
+                "success": False,
+                "error": "Web scraper not available"
+            }
+        
+        result = scraper.scrape_url(request.url)
+        
+        # Save to MongoDB if available
+        try:
+            db = get_db()
+            if db:
+                db.web_content.insert_one({
+                    **result,
+                    "created_at": datetime.now()
+                })
+        except Exception as e:
+            print(f"⚠ MongoDB error (continuing without storage): {e}")
+        
+        return result
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+@app.post("/web/scrape-batch")
+async def scrape_multiple_urls(request: URLListRequest):
+    """Scrape multiple URLs"""
+    try:
+        scraper = get_web_scraper()
+        if not scraper:
+            return {
+                "success": False,
+                "error": "Web scraper not available"
+            }
+        
+        results = scraper.scrape_multiple_urls(request.urls)
+        
+        # Save to MongoDB
+        try:
+            for result in results:
+                get_db().web_content.insert_one({
+                    **result,
+                    "created_at": datetime.now()
+                })
+        except Exception as e:
+            print(f"MongoDB error: {e}")
+        
+        return {
+            "success": True,
+            "count": len(results),
+            "results": results
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+@app.post("/web/analyze")
+async def analyze_content(request: TextAnalysisRequest):
+    """Analyze text content using NLP"""
+    try:
+        learner = get_web_learner()
+        if not learner:
+            return {
+                "success": False,
+                "error": "Web learner not available. Install spaCy: python -m spacy download en_core_web_sm"
+            }
+        
+        analysis = learner.analyze_content(request.text, request.url)
+        
+        # Save to MongoDB
+        try:
+            get_db().content_analysis.insert_one({
+                **analysis,
+                "created_at": datetime.now()
+            })
+        except Exception as e:
+            print(f"MongoDB error: {e}")
+        
+        return analysis
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+@app.post("/web/extract-learning")
+async def extract_learning_data(request: TextAnalysisRequest):
+    """Extract structured learning data from content"""
+    try:
+        learner = get_web_learner()
+        if not learner:
+            return {
+                "success": False,
+                "error": "Web learner not available"
+            }
+        
+        learning_data = learner.extract_learning_data(request.text, request.url)
+        
+        # Save to MongoDB
+        try:
+            get_db().learning_data.insert_one({
+                **learning_data,
+                "created_at": datetime.now()
+            })
+        except Exception as e:
+            print(f"MongoDB error: {e}")
+        
+        return learning_data
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+@app.post("/web/compare")
+async def compare_texts(request: TextComparisonRequest):
+    """Compare two texts for similarity and common elements"""
+    try:
+        learner = get_web_learner()
+        if not learner:
+            return {
+                "success": False,
+                "error": "Web learner not available"
+            }
+        
+        comparison = learner.compare_texts(request.text1, request.text2)
+        return comparison
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+@app.post("/web/entities")
+async def extract_entities(request: TextAnalysisRequest):
+    """Extract named entities from text"""
+    try:
+        learner = get_web_learner()
+        if not learner:
+            return {
+                "success": False,
+                "error": "Web learner not available"
+            }
+        
+        entities = learner.extract_entities(request.text)
+        return {
+            "success": True,
+            "entities": entities,
+            "count": len(entities)
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+@app.post("/web/keywords")
+async def extract_keywords(request: TextAnalysisRequest):
+    """Extract keywords from text"""
+    try:
+        learner = get_web_learner()
+        if not learner:
+            return {
+                "success": False,
+                "error": "Web learner not available"
+            }
+        
+        keywords = learner.extract_keywords(request.text)
+        return {
+            "success": True,
+            "keywords": keywords,
+            "count": len(keywords)
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+@app.post("/web/summarize")
+async def summarize_text(request: TextAnalysisRequest):
+    """Summarize text by extracting key sentences"""
+    try:
+        learner = get_web_learner()
+        if not learner:
+            return {
+                "success": False,
+                "error": "Web learner not available"
+            }
+        
+        summary = learner.summarize_text(request.text, num_sentences=5)
+        return {
+            "success": True,
+            "summary": summary,
+            "sentence_count": len(summary)
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+@app.post("/web/sentiment")
+async def analyze_sentiment(request: TextAnalysisRequest):
+    """Analyze sentiment of text"""
+    try:
+        learner = get_web_learner()
+        if not learner:
+            return {
+                "success": False,
+                "error": "Web learner not available"
+            }
+        
+        sentiment = learner.sentiment_analysis(request.text)
+        return {
+            "success": True,
+            "sentiment": sentiment
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+@app.get("/web/history")
+async def get_scraping_history(limit: int = 10):
+    """Get recent web scraping history"""
+    try:
+        history = list(
+            get_db().web_content.find(
+                {},
+                {"_id": 0}
+            ).sort("created_at", -1).limit(limit)
+        )
+        return {
+            "success": True,
+            "count": len(history),
+            "history": history
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+@app.get("/web/learning-history")
+async def get_learning_history(limit: int = 10):
+    """Get recent learning data"""
+    try:
+        history = list(
+            get_db().learning_data.find(
+                {},
+                {"_id": 0}
+            ).sort("created_at", -1).limit(limit)
+        )
+        return {
+            "success": True,
+            "count": len(history),
+            "history": history
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+# ==================== MODEL PERSISTENCE ENDPOINTS ====================
+
+@app.get("/models/list")
+async def list_saved_models():
+    """Get all saved models"""
+    try:
+        persistence = get_model_persistence()
+        if not persistence:
+            return {"success": False, "error": "Model persistence not available"}
+        
+        models = persistence.list_models()
+        return {
+            "success": True,
+            "count": len(models),
+            "models": models
+        }
+    except Exception as e:
+        return {"success": False, "error": str(e)}
+
+@app.get("/models/{model_name}")
+async def get_model_info(model_name: str):
+    """Get info about a saved model"""
+    try:
+        persistence = get_model_persistence()
+        if not persistence:
+            return {"success": False, "error": "Model persistence not available"}
+        
+        info = persistence.get_model_info(model_name)
+        if not info:
+            return {"success": False, "error": f"Model '{model_name}' not found"}
+        
+        return {"success": True, "info": info}
+    except Exception as e:
+        return {"success": False, "error": str(e)}
+
+@app.delete("/models/{model_name}")
+async def delete_model(model_name: str):
+    """Delete a saved model"""
+    try:
+        persistence = get_model_persistence()
+        if not persistence:
+            return {"success": False, "error": "Model persistence not available"}
+        
+        success = persistence.delete_model(model_name)
+        return {
+            "success": success,
+            "message": f"Model '{model_name}' deleted" if success else f"Failed to delete model '{model_name}'"
+        }
+    except Exception as e:
+        return {"success": False, "error": str(e)}
+
+# ==================== KNOWLEDGE BASE ENDPOINTS ====================
+
+@app.get("/knowledge/topics")
+async def list_knowledge_topics():
+    """List all topics in knowledge base"""
+    try:
+        kb = get_knowledge_base()
+        if not kb:
+            return {"success": False, "error": "Knowledge base not available"}
+        
+        topics = kb.list_topics()
+        return {
+            "success": True,
+            "count": len(topics),
+            "topics": topics
+        }
+    except Exception as e:
+        return {"success": False, "error": str(e)}
+
+@app.get("/knowledge/{topic}")
+async def get_knowledge(topic: str):
+    """Get knowledge about a topic"""
+    try:
+        kb = get_knowledge_base()
+        if not kb:
+            return {"success": False, "error": "Knowledge base not available"}
+        
+        knowledge = kb.get_knowledge(topic)
+        if not knowledge:
+            return {"success": False, "error": f"No knowledge found for topic: {topic}"}
+        
+        return {
+            "success": True,
+            "topic": topic,
+            "knowledge": knowledge
+        }
+    except Exception as e:
+        return {"success": False, "error": str(e)}
+
+@app.post("/knowledge/{topic}")
+async def save_knowledge(topic: str, request: TextAnalysisRequest):
+    """Save learning data to knowledge base"""
+    try:
+        learner = get_web_learner()
+        kb = get_knowledge_base()
+        
+        if not learner or not kb:
+            return {"success": False, "error": "Learning modules not available"}
+        
+        # Extract learning data
+        learning_data = learner.extract_learning_data(request.text, request.url)
+        
+        # Save to knowledge base
+        kb.add_knowledge(topic, learning_data)
+        
+        return {
+            "success": True,
+            "topic": topic,
+            "message": f"Knowledge saved for topic: {topic}",
+            "learning_data": learning_data
+        }
+    except Exception as e:
+        return {"success": False, "error": str(e)}
+
+@app.get("/knowledge/search/{keyword}")
+async def search_knowledge(keyword: str):
+    """Search knowledge base for keyword"""
+    try:
+        kb = get_knowledge_base()
+        if not kb:
+            return {"success": False, "error": "Knowledge base not available"}
+        
+        results = kb.search_knowledge(keyword)
+        return {
+            "success": True,
+            "keyword": keyword,
+            "count": len(results),
+            "results": results
+        }
+    except Exception as e:
+        return {"success": False, "error": str(e)}
+
+# ==================== AUTO-TRAINING ENDPOINTS ====================
+
+@app.post("/auto-train")
+async def auto_train(request: AutoTrainRequest):
+    """
+    Automated learning from web
+    Given a topic, automatically:
+    1. Search web for related content
+    2. Scrape websites
+    3. Learn and extract knowledge (entities, keywords, definitions, etc.)
+    4. Save to knowledge base
+    
+    NO images, NO masks, NO model training here
+    This is ONLY for learning and building knowledge base
+    """
+    try:
+        trainer = get_auto_trainer()
+        if not trainer:
+            return {"success": False, "error": "Auto trainer not available"}
+        
+        # Learn from web
+        result = trainer.learn_from_topic(
+            topic=request.topic,
+            urls=request.urls,
+            max_urls=5
+        )
+        
+        # Save to MongoDB if available
+        try:
+            db = get_db()
+            if db:
+                db.learning_results.insert_one({
+                    **result,
+                    "created_at": datetime.now()
+                })
+        except Exception as e:
+            print(f"⚠ MongoDB error (continuing without storage): {e}")
+        
+        return result
+    except Exception as e:
+        return {
+            "success": False,
+            "error": str(e)
+        }
+
+@app.get("/auto-train/history")
+async def get_auto_train_history(limit: int = 10):
+    """Get history of learning jobs"""
+    try:
+        history = list(
+            get_db().learning_results.find(
+                {},
+                {"_id": 0}
+            ).sort("created_at", -1).limit(limit)
+        )
+        return {
+            "success": True,
+            "count": len(history),
+            "history": history
+        }
+    except Exception as e:
+        return {"success": False, "error": str(e)}
 
 if __name__ == "__main__":
     import uvicorn
