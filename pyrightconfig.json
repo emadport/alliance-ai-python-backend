@@ -1,0 +1,9 @@
+{
+  "pythonVersion": "3.9",
+  "pythonPlatform": "Darwin", 
+  "typeCheckingMode": "basic",
+  "extraPaths": ["/Users/emadaskari/Library/Python/3.9/lib/python/site-packages"],
+  "reportMissingImports": false,
+  "reportMissingTypeStubs": false
+}
+

@@ -1,4 +1,4 @@
-from fastapi import FastAPI, File, UploadFile, Request
+from fastapi import FastAPI, File, UploadFile, Request, Form
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from PIL import Image
@@ -185,12 +185,12 @@ transform = transforms.Compose([
 def preprocess_image(image_bytes):
     """Convert image bytes to tensor"""
     image = Image.open(io.BytesIO(image_bytes)).convert("RGB")
-    image_tensor = transform(image).unsqueeze(0)
+    image_tensor = transform(image).unsqueeze(0)  # type: ignore
     return image_tensor, image
 
 def predict_mask(image_tensor):
     """Get prediction from model"""
-    with torch.no_grad():
+    with torch.no_grad():  # type: ignore
         pred = model(image_tensor.to(device))
     return pred
 
@@ -233,7 +233,8 @@ def health_check():
 def get_datasets():
     """Get all saved datasets"""
     try:
-        datasets = list(get_db().datasets.find({}, {"_id": 0}).sort("created_at", -1))
+        db = get_db()
+        datasets = list(db.datasets.find({}, {"_id": 0}).sort("created_at", -1)) if db else []  # type: ignore
         return {"success": True, "datasets": datasets}
     except Exception as e:
         return {"success": False, "error": str(e)}
@@ -434,7 +435,9 @@ async def save_mask(request: Request, original: UploadFile = File(None), mask: U
                 "created_at": datetime.now(),
                 "folders": {"images": img_folder, "masks": mask_folder}
             }
-            get_db().datasets.insert_one(dataset_doc)
+            db = get_db()
+            if db:  # type: ignore
+                db.datasets.insert_one(dataset_doc)
         except Exception as e:
             print(f"MongoDB error: {e}")
         
@@ -598,11 +601,13 @@ async def scrape_multiple_urls(request: URLListRequest):
         
         # Save to MongoDB
         try:
-            for result in results:
-                get_db().web_content.insert_one({
-                    **result,
-                    "created_at": datetime.now()
-                })
+            db = get_db()
+            if db:
+                for result in results:
+                    db.web_content.insert_one({
+                        **result,
+                        "created_at": datetime.now()
+                    })
         except Exception as e:
             print(f"MongoDB error: {e}")
         
@@ -632,10 +637,12 @@ async def analyze_content(request: TextAnalysisRequest):
         
         # Save to MongoDB
         try:
-            get_db().content_analysis.insert_one({
-                **analysis,
-                "created_at": datetime.now()
-            })
+            db = get_db()
+            if db:
+                db.content_analysis.insert_one({
+                    **analysis,
+                    "created_at": datetime.now()
+                })
         except Exception as e:
             print(f"MongoDB error: {e}")
         
@@ -661,10 +668,12 @@ async def extract_learning_data(request: TextAnalysisRequest):
         
         # Save to MongoDB
         try:
-            get_db().learning_data.insert_one({
-                **learning_data,
-                "created_at": datetime.now()
-            })
+            db = get_db()
+            if db:
+                db.learning_data.insert_one({
+                    **learning_data,
+                    "created_at": datetime.now()
+                })
         except Exception as e:
             print(f"MongoDB error: {e}")
         
@@ -789,12 +798,16 @@ async def analyze_sentiment(request: TextAnalysisRequest):
 async def get_scraping_history(limit: int = 10):
     """Get recent web scraping history"""
     try:
-        history = list(
-            get_db().web_content.find(
-                {},
-                {"_id": 0}
-            ).sort("created_at", -1).limit(limit)
-        )
+        db = get_db()
+        if db:
+            history = list(
+                db.web_content.find(
+                    {},
+                    {"_id": 0}
+                ).sort("created_at", -1).limit(limit)
+            )
+        else:
+            history = []
         return {
             "success": True,
             "count": len(history),
@@ -810,12 +823,16 @@ async def get_scraping_history(limit: int = 10):
 async def get_learning_history(limit: int = 10):
     """Get recent learning data"""
     try:
-        history = list(
-            get_db().learning_data.find(
-                {},
-                {"_id": 0}
-            ).sort("created_at", -1).limit(limit)
-        )
+        db = get_db()
+        if db:
+            history = list(
+                db.learning_data.find(
+                    {},
+                    {"_id": 0}
+                ).sort("created_at", -1).limit(limit)
+            )
+        else:
+            history = []
         return {
             "success": True,
             "count": len(history),
@@ -1009,12 +1026,16 @@ async def auto_train(request: AutoTrainRequest):
 async def get_auto_train_history(limit: int = 10):
     """Get history of learning jobs"""
     try:
-        history = list(
-            get_db().learning_results.find(
-                {},
-                {"_id": 0}
-            ).sort("created_at", -1).limit(limit)
-        )
+        db = get_db()
+        if db:
+            history = list(
+                db.learning_results.find(
+                    {},
+                    {"_id": 0}
+                ).sort("created_at", -1).limit(limit)
+            )
+        else:
+            history = []
         return {
             "success": True,
             "count": len(history),
@@ -1022,6 +1043,115 @@ async def get_auto_train_history(limit: int = 10):
         }
     except Exception as e:
         return {"success": False, "error": str(e)}
+
+# ==================== CLASSIFICATION & PREDICTION ENDPOINTS ====================
+
+@app.post("/api/classify")
+async def classify_file(
+    file: UploadFile = File(...), 
+    model_type: str = Form("classification"),
+    target: str = Form(""),
+    value: str = Form("")
+):
+    """
+    Classify or make predictions on uploaded files
+    Supports: Images (JPG, PNG), CSV, JSON, TXT
+    model_type: 'classification' or 'regression'
+    target: what to predict/classify (optional, for context)
+    value: value for the target to predict (optional)
+    """
+    try:
+        from classifier import get_predictor
+        
+        # DEBUG: Print what we received
+        print(f"DEBUG: Received model_type='{model_type}', target='{target}', value='{value}'")
+        
+        predictor = get_predictor()
+        file_content = await file.read()
+        
+        # Determine file type
+        file_ext = file.filename.split('.')[-1].lower() if file.filename else ''
+        
+        result = {
+            'success': False,
+            'model_type': model_type,
+            'filename': file.filename,
+            'target': target or 'general analysis',
+            'value': value
+        }
+        
+        # Image files
+        if file_ext in ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'webp']:
+            if model_type == 'regression':
+                prediction_result = predictor.regress_image(file_content)
+            else:
+                prediction_result = predictor.classify_image(file_content)
+            
+            result.update(prediction_result)
+            result['success'] = True
+        
+        # CSV files
+        elif file_ext == 'csv':
+            if model_type == 'regression':
+                prediction_result = predictor.regress_csv(file_content)
+            else:
+                print(f"DEBUG: Calling classify_csv with value='{value}', target='{target}'")
+                prediction_result = predictor.classify_csv(file_content, value, target)
+                print(f"DEBUG: Got result={prediction_result}")
+            
+            result.update(prediction_result)
+            result['success'] = True
+        
+        # JSON files
+        elif file_ext == 'json':
+            if model_type == 'regression':
+                prediction_result = predictor.regress_csv(file_content)  # Use CSV regressor for JSON
+            else:
+                print(f"DEBUG: Calling classify_json with value='{value}'")
+                prediction_result = predictor.classify_json(file_content, value)
+                print(f"DEBUG: Got result={prediction_result}")
+            
+            result.update(prediction_result)
+            result['success'] = True
+        
+        else:
+            result['error'] = f"Unsupported file type: {file_ext}"
+            return result
+        
+        return result
+    
+    except Exception as e:
+        return {
+            'success': False,
+            'error': str(e),
+            'model_type': model_type,
+            'filename': file.filename
+        }
+
+@app.get("/api/classify/models")
+async def get_available_models():
+    """Get list of available classification and regression models"""
+    return {
+        'success': True,
+        'models': {
+            'classification': [
+                {
+                    'name': 'Simple CNN Classifier',
+                    'description': 'Convolutional Neural Network for image classification',
+                    'supported_formats': ['jpg', 'png', 'gif', 'bmp', 'webp', 'csv', 'json'],
+                    'num_classes': 10
+                }
+            ],
+            'regression': [
+                {
+                    'name': 'Simple Neural Network Regressor',
+                    'description': 'Neural network for regression tasks',
+                    'supported_formats': ['jpg', 'png', 'csv', 'json'],
+                    'output_type': 'continuous'
+                }
+            ]
+        }
+    }
 
 if __name__ == "__main__":
     import uvicorn
